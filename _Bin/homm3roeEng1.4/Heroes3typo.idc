@@ -329,6 +329,14 @@ static ApplyStrucTInfos_0(void) {
 	id = GetStrucIdByName("DDSCAPS");
 	id = GetStrucIdByName("IDirDrawSurf");
 	id = GetStrucIdByName("IDirDrawClipper");
+	id = GetStrucIdByName("_CRT_FLOAT");
+	SetType(GetMemberId(id, 0x0), "float");
+	id = GetStrucIdByName("_exception");
+	SetType(GetMemberId(id, 0x0), "int");
+	SetType(GetMemberId(id, 0x4), "char *");
+	SetType(GetMemberId(id, 0x8), "double");
+	SetType(GetMemberId(id, 0x10), "double");
+	SetType(GetMemberId(id, 0x18), "double");
 	return id;
 }
 
@@ -473,6 +481,8 @@ static Structures_0(id) {
 	id = AddStrucEx(-1,"DDSCAPS",0);
 	id = AddStrucEx(-1,"IDirDrawSurf",0);
 	id = AddStrucEx(-1,"IDirDrawClipper",0);
+	id = AddStrucEx(-1,"_CRT_FLOAT",0);
+	id = AddStrucEx(-1,"_exception",0);
 	
 	id = GetStrucIdByName("_SCOPETABLE_ENTRY");
 	mid = AddStrucMember(id,"EnclosingLevel",	0,	0x20000400,	-1,	4);
@@ -1901,14 +1911,14 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"rightClick_Ptr",	0X4,	0x20000400,	-1,	4);
 	
 	id = GetStrucIdByName("UnitAnimInfo");
-	mid = AddStrucMember(id,"UR_MO_X",	0,	0x10000400,	-1,	2);
-	SetMemberComment(id,	0,	"Upper-right Missile Offset",	0);
 	return id;
 }
 
 static Structures_1(id) {
         auto mid;
 
+	mid = AddStrucMember(id,"UR_MO_X",	0,	0x10000400,	-1,	2);
+	SetMemberComment(id,	0,	"Upper-right Missile Offset",	0);
 	mid = AddStrucMember(id,"UR_MO_Y",	0X2,	0x10000400,	-1,	2);
 	mid = AddStrucMember(id,"R_MO_X",	0X4,	0x10000400,	-1,	2);
 	SetMemberComment(id,	0X4,	"Right Missile Offset",	0);
@@ -2061,6 +2071,18 @@ static Structures_1(id) {
 	mid = AddStrucMember(id,"IsClipListChanged",	0X18,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"SetClipList",	0X1C,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"SetHWnd",	0X20,	0x20000400,	-1,	4);
+	
+	id = GetStrucIdByName("_CRT_FLOAT");
+	mid = AddStrucMember(id,"f",	0,	0x80000400,	-1,	4);
+	SetStrucAlign(id,2);
+	
+	id = GetStrucIdByName("_exception");
+	mid = AddStrucMember(id,"type",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"name",	0X4,	0x25500400,	0XFFFFFFFF,	4,	0XFFFFFFFF,	0,	0x000002);
+	mid = AddStrucMember(id,"arg1",	0X8,	0x90000400,	-1,	8);
+	mid = AddStrucMember(id,"arg2",	0X10,	0x90000400,	-1,	8);
+	mid = AddStrucMember(id,"retval",	0X18,	0x90000400,	-1,	8);
+	SetStrucAlign(id,3);
 	return id;
 }
 
