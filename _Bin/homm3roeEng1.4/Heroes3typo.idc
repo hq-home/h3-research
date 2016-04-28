@@ -940,6 +940,8 @@ static Enums_0(id) {
 	AddConstEx(id,"IDC_HAND",	0X7F89,	-1);
 	AddConstEx(id,"IDC_APPSTARTING",	0X7F8A,	-1);
 	AddConstEx(id,"IDC_HELP",	0X7F8B,	-1);
+	id = AddEnum(-1,"_Mref",0x1100000);
+	AddConstEx(id,"_FROZEN",	0XFF,	-1);
 	return id;
 }
 

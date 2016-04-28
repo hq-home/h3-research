@@ -446,7 +446,7 @@
  0001:00003353       loc_404353
  0001:000033B0       std::runtime_error::what(void)
  0001:000033BC       locret_4043BC
- 0001:000033C0       sub_4043C0
+ 0001:000033C0       std::logic_error::logic_error(std::logic_error const &)
  0001:0000341A       loc_40441A
  0001:00003429       loc_404429
  0001:0000343B       loc_40443B
@@ -494,7 +494,7 @@
  0001:000038E5       loc_4048E5
  0001:000038F1       loc_4048F1
  0001:00003917       loc_404917
- 0001:00003920       std_str__Eos_byte
+ 0001:00003920       std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Eos(uint,bool)
  0001:00003940       std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Grow(uint,bool)
  0001:00003955       loc_404955
  0001:00003989       loc_404989
@@ -530,7 +530,7 @@
  0001:00003C39       loc_404C39
  0001:00003C41       loc_404C41
  0001:00003C61       loc_404C61
- 0001:00003C70       sub_404C70
+ 0001:00003C70       CopyEDXPtrToECXPtr
  0001:00003C78       locret_404C78
  0001:00003C94       loc_404C94
  0001:00003CA0       nullsub_2
@@ -21983,7 +21983,7 @@
  0001:000BF71F       loc_4C071F
  0001:000BF73C       loc_4C073C
  0001:000BF773       loc_4C0773
- 0001:000BF7D0       sub_4C07D0
+ 0001:000BF7D0       std::logic_error::logic_error(std::basic_string<char,std::char_traits<char>,std::allocator<char>> const &)
  0001:000BF832       loc_4C0832
  0001:000BF841       loc_4C0841
  0001:000BF853       loc_4C0853
@@ -54139,11 +54139,11 @@
  0001:001E0E82       loc_5E1E82
  0001:001E0ED0       operator delete(void *)
  0001:001E0EDB       std::_Xlen(void)
- 0001:001E0F35       unknown_libname_36
- 0001:001E0F72       sub_5E1F72
+ 0001:001E0F35       std::logic_error::~logic_error(void)
+ 0001:001E0F72       std::length_error::_Doraise(void)
  0001:001E0F8F       sub_5E1F8F
  0001:001E0FA5       loc_5E1FA5
- 0001:001E0FAB       sub_5E1FAB
+ 0001:001E0FAB       std::length_error::length_error(std::length_error const &)
  0001:001E0FC3       std::_Xran(void)
  0001:001E102D       loc_5E202D
  0001:001E1042       loc_5E2042
@@ -64493,11 +64493,11 @@
  0001:0020D350       sub_60E350
  0001:0020D358       $L12551
  0001:0020D364       sub_60E364
- 0001:0020D36C       loc_60E36C
+ 0001:0020D36C       sub_60E36C
  0001:0020D378       sub_60E378
- 0001:0020D380       loc_60E380
+ 0001:0020D380       $L9817
  0001:0020D38C       sub_60E38C
- 0001:0020D394       loc_60E394
+ 0001:0020D394       sub_60E394
  0001:0020D3A0       sub_60E3A0
  0001:0020D3A8       loc_60E3A8
  0001:0020D3B4       sub_60E3B4
@@ -65732,9 +65732,9 @@
  0002:0000B02C       zlib_cplext
  0002:0000B0A8       zlib_cpdist
  0002:0000B120       zlib_cpdext
- 0002:0000B19C       const bad_cast::`vftable'
+ 0002:0000B19C       const std::length_error::`vftable'
  0002:0000B1A8       `string'
- 0002:0000B1BC       off_61B1BC
+ 0002:0000B1BC       const std::logic_error::`vftable'
  0002:0000B1CC       const std::out_of_range::`vftable'
  0002:0000B1D8       `string'
  0002:0000B1F0       int std::fpos<int>::_Stz
@@ -74755,9 +74755,6 @@
  0003:0003E160       unk_670160
  0003:0003E2F0       unk_6702F0
  0003:0003E480       stdStrDATApath
- 0003:0003E484       dword_670484
- 0003:0003E488       dword_670488
- 0003:0003E48C       dword_67048C
  0003:0003E490       dword_670490
  0003:0003E494       dword_670494
  0003:0003E498       dword_670498
