@@ -5611,7 +5611,7 @@
  0001:0003354A       loc_43454A
  0001:00033570       sub_434570
  0001:00033578       loc_434578
- 0001:000335A0       sub_4345A0
+ 0001:000335A0       std::basic_string<char,std::char_traits<char>,std::allocator<char>>::~basic_string<char,std::char_traits<char>,std::allocator<char>>(void)
  0001:000335D0       sub_4345D0
  0001:00033600       sub_434600
  0001:00033669       loc_434669
@@ -9059,14 +9059,14 @@
  0001:00050424       loc_451424
  0001:00050434       loc_451434
  0001:0005043E       loc_45143E
- 0001:00050460       sub_451460
+ 0001:00050460       std::ios_base::ios_base(void)
  0001:00050470       sub_451470
  0001:0005048A       loc_45148A
- 0001:000504A0       sub_4514A0
+ 0001:000504A0       some_streambuf_ctor
  0001:000504EC       loc_4514EC
- 0001:00050590       sub_451590
+ 0001:00050590       std::strstreambuf::`vector deleting destructor'(uint)
  0001:000505AA       loc_4515AA
- 0001:000505C0       sub_4515C0
+ 0001:000505C0       std::ostrstream::`vector deleting destructor'(uint)
  0001:000505E8       loc_4515E8
  0001:000505F0       loc_4515F0
  0001:00050610       sub_451610
@@ -9306,7 +9306,7 @@
  0001:00052792       loc_453792
  0001:0005279D       loc_45379D
  0001:000527FA       loc_4537FA
- 0001:00052810       sub_453810
+ 0001:00052810       std::basic_ostream<char,std::char_traits<char>>::basic_ostream<char,std::char_traits<char>>(std::basic_streambuf<char,std::char_traits<char>> *,bool,bool)
  0001:00052859       loc_453859
  0001:0005289D       loc_45389D
  0001:000528A9       loc_4538A9
@@ -9339,7 +9339,7 @@
  0001:00052BF0       loc_453BF0
  0001:00052C10       std::locale::~locale(void)
  0001:00052C27       locret_453C27
- 0001:00052C30       some_std_Incref
+ 0001:00052C30       std::locale::facet::_Incref2(void)
  0001:00052C59       loc_453C59
  0001:00052C70       oStreamBuf_close
  0001:00052CB7       loc_453CB7
@@ -9366,22 +9366,22 @@
  0001:00052F00       std::basic_streambuf<char,std::char_traits<char>>::underflow(void)
  0001:00052F10       sub_453F10
  0001:00052F21       loc_453F21
- 0001:00052F40       sub_453F40
+ 0001:00052F40       std::basic_streambuf<char,std::char_traits<char>>::xsgetn(char *,int)
  0001:00052F55       loc_453F55
  0001:00052F6D       loc_453F6D
  0001:00052FA8       loc_453FA8
  0001:00052FC8       loc_453FC8
  0001:00052FCC       loc_453FCC
  0001:00052FCF       loc_453FCF
- 0001:00052FE0       sub_453FE0
+ 0001:00052FE0       std::basic_streambuf<char,std::char_traits<char>>::xsputn(char const *,int)
  0001:00052FF9       loc_453FF9
  0001:00053011       loc_454011
  0001:0005304E       loc_45404E
  0001:00053074       loc_454074
  0001:00053078       loc_454078
  0001:0005307B       loc_45407B
- 0001:00053090       sub_454090
- 0001:000530C0       sub_4540C0
+ 0001:00053090       std::basic_streambuf<char,std::char_traits<char>>::seekoff(long,std::ios_base::seekdir,int)
+ 0001:000530C0       std::basic_streambuf<char,std::char_traits<char>>::seekpos(std::fpos<int>,int)
  0001:000530F0       sub_4540F0
  0001:00053100       sub_454100
  0001:00053110       nullsub_11
@@ -9395,8 +9395,8 @@
  0001:000531FF       loc_4541FF
  0001:00053218       loc_454218
  0001:00053220       loc_454220
- 0001:00053230       sub_454230
- 0001:00053270       sub_454270
+ 0001:00053230       std::fpos<int>::fpos<int>(long)
+ 0001:00053270       std::basic_ostream<char,std::char_traits<char>>::flush(void)
  0001:000532AF       loc_4542AF
  0001:000532C8       loc_4542C8
  0001:000532D0       loc_4542D0
@@ -9595,7 +9595,7 @@
  0001:00054692       loc_455692
  0001:00054695       loc_455695
  0001:000546A0       sub_4556A0
- 0001:000546C0       sub_4556C0
+ 0001:000546C0       std::ctype<char>::ctype<char>(short const *,bool,uint)
  0001:0005473C       loc_45573C
  0001:00054745       loc_455745
  0001:0005476D       loc_45576D
@@ -23185,7 +23185,7 @@
  0001:000CAC60       sub_4CBC60
  0001:000CAC81       loc_4CBC81
  0001:000CAC8A       loc_4CBC8A
- 0001:000CACB0       sub_4CBCB0
+ 0001:000CACB0       std::basic_string<char,std::char_traits<char>,std::allocator<char>>::~basic_string<char,std::char_traits<char>,std::allocator<char>>(void)
  0001:000CACF0       sub_4CBCF0
  0001:000CAD10       sub_4CBD10
  0001:000CB060       sub_4CC060
@@ -27063,7 +27063,7 @@
  0001:000EAE10       loc_4EBE10
  0001:000EAE2D       loc_4EBE2D
  0001:000EAE5B       loc_4EBE5B
- 0001:000EAE70       sub_4EBE70
+ 0001:000EAE70       gameStart
  0001:000EAEB2       loc_4EBEB2
  0001:000EAF64       loc_4EBF64
  0001:000EAFA7       loc_4EBFA7
@@ -27259,7 +27259,7 @@
  0001:000ED524       off_4EE524
  0001:000ED550       sub_4EE550
  0001:000ED56A       loc_4EE56A
- 0001:000ED580       sub_4EE580
+ 0001:000ED580       std::basic_ios<char,std::char_traits<char>>::~basic_ios<char,std::char_traits<char>>(void)
  0001:000ED590       sub_4EE590
  0001:000ED5DC       loc_4EE5DC
  0001:000ED612       loc_4EE612
@@ -31422,7 +31422,7 @@
  0001:00111DDF       loc_512DDF
  0001:00111DF5       loc_512DF5
  0001:00111DFA       loc_512DFA
- 0001:00111E30       sub_512E30
+ 0001:00111E30       std::basic_ostream<char,std::char_traits<char>>::`vector deleting destructor'(uint)
  0001:00111E5B       loc_512E5B
  0001:00111E70       sub_512E70
  0001:00111E8A       loc_512E8A
@@ -35931,7 +35931,7 @@
  0001:00139B89       loc_53AB89
  0001:00139B98       off_53AB98
  0001:00139BB0       byte_53ABB0
- 0001:00139C10       sub_53AC10
+ 0001:00139C10       LoadH3FAT
  0001:00139C66       loc_53AC66
  0001:00139C7C       loc_53AC7C
  0001:00139CE3       loc_53ACE3
@@ -36108,7 +36108,7 @@
  0001:0013B74B       loc_53C74B
  0001:0013B74D       loc_53C74D
  0001:0013B75D       loc_53C75D
- 0001:0013B770       sub_53C770
+ 0001:0013B770       RM_GetStrResource
  0001:0013B7B8       loc_53C7B8
  0001:0013B7F3       loc_53C7F3
  0001:0013B7F5       loc_53C7F5
@@ -38873,7 +38873,7 @@
  0001:00154AF0       sub_555AF0
  0001:00154B30       sub_555B30
  0001:00154B4A       loc_555B4A
- 0001:00154B60       sub_555B60
+ 0001:00154B60       std::ios_base::~ios_base(void)
  0001:00154B70       sub_555B70
  0001:00154B7E       loc_555B7E
  0001:00154B89       loc_555B89
@@ -54138,13 +54138,13 @@
  0001:001E0E7E       loc_5E1E7E
  0001:001E0E82       loc_5E1E82
  0001:001E0ED0       operator delete(void *)
- 0001:001E0EDB       sub_5E1EDB
+ 0001:001E0EDB       std::_Xlen(void)
  0001:001E0F35       unknown_libname_36
  0001:001E0F72       sub_5E1F72
  0001:001E0F8F       sub_5E1F8F
  0001:001E0FA5       loc_5E1FA5
  0001:001E0FAB       sub_5E1FAB
- 0001:001E0FC3       sub_5E1FC3
+ 0001:001E0FC3       std::_Xran(void)
  0001:001E102D       loc_5E202D
  0001:001E1042       loc_5E2042
  0001:001E1047       sub_5E2047
@@ -54259,7 +54259,7 @@
  0001:001E19A9       loc_5E29A9
  0001:001E19AA       loc_5E29AA
  0001:001E19B0       loc_5E29B0
- 0001:001E19B6       loc_5E29B6
+ 0001:001E19B6       std::_CleanUp(void)
  0001:001E19D3       locret_5E29D3
  0001:001E19D4       std::_Lockit::~_Lockit(void)
  0001:001E19E8       locret_5E29E8
@@ -54686,7 +54686,7 @@
  0001:001E41E7       loc_5E51E7
  0001:001E4202       sub_5E5202
  0001:001E421B       sub_5E521B
- 0001:001E4226       sub_5E5226
+ 0001:001E4226       std::runtime_error::_Doraise(void)
  0001:001E4243       sub_5E5243
  0001:001E4259       loc_5E5259
  0001:001E425F       sub_5E525F
@@ -55722,14 +55722,14 @@
  0001:001EAFBC       loc_5EBFBC
  0001:001EAFC2       sub_5EBFC2
  0001:001EAFD8       loc_5EBFD8
- 0001:001EAFDE       sub_5EBFDE
+ 0001:001EAFDE       std::length_error::`scalar deleting destructor'(uint)
  0001:001EAFF4       loc_5EBFF4
  0001:001EAFFA       sub_5EBFFA
- 0001:001EB01D       sub_5EC01D
+ 0001:001EB01D       std::runtime_error::`scalar deleting destructor'(uint)
  0001:001EB033       loc_5EC033
  0001:001EB039       sub_5EC039
  0001:001EB053       sub_5EC053
- 0001:001EB087       sub_5EC087
+ 0001:001EB087       std::ios_base::failure::`scalar deleting destructor'(uint)
  0001:001EB09D       loc_5EC09D
  0001:001EB0A3       sub_5EC0A3
  0001:001EB0A8       sub_5EC0A8
@@ -59539,7 +59539,7 @@
  0001:001FEDF8       unknown_libname_236
  0001:001FEE10       unknown_libname_237
  0001:001FEE29       locret_5FFE29
- 0001:001FEE2A       SEH_453810
+ 0001:001FEE2A       SEH_44ED80
  0001:001FEE40       sub_5FFE40
  0001:001FEE48       sub_5FFE48
  0001:001FEE50       sub_5FFE50
@@ -59569,7 +59569,7 @@
  0001:001FEF63       unknown_libname_243
  0001:001FEF70       unknown_libname_244
  0001:001FEF78       sub_5FFF78
- 0001:001FEF80       SEH_4556C0
+ 0001:001FEF80       SEH_450C60
  0001:001FEF90       sub_5FFF90
  0001:001FEF98       unknown_libname_245
  0001:001FEFB0       sub_5FFFB0
@@ -65732,31 +65732,31 @@
  0002:0000B02C       zlib_cplext
  0002:0000B0A8       zlib_cpdist
  0002:0000B120       zlib_cpdext
- 0002:0000B19C       off_61B19C
- 0002:0000B1A8       aStringTooLong
+ 0002:0000B19C       const bad_cast::`vftable'
+ 0002:0000B1A8       `string'
  0002:0000B1BC       off_61B1BC
  0002:0000B1CC       const std::out_of_range::`vftable'
- 0002:0000B1D8       aInvalidStringP
- 0002:0000B1F0       dword_61B1F0
- 0002:0000B1F4       dword_61B1F4
- 0002:0000B1FC       off_61B1FC
- 0002:0000B208       aIosEofbitSet
- 0002:0000B218       aIosFailbitSet
- 0002:0000B22C       aIosBadbitSet
+ 0002:0000B1D8       `string'
+ 0002:0000B1F0       int std::fpos<int>::_Stz
+ 0002:0000B1F4       ?_Fpz@std@@3_JB@4
+ 0002:0000B1FC       const std::ios_base::failure::`vftable'
+ 0002:0000B208       `string'
+ 0002:0000B218       `string'
+ 0002:0000B22C       `string'
  0002:0000B240       off_61B240
- 0002:0000B250       off_61B250
+ 0002:0000B250       const std::ios_base::`vftable'
  0002:0000B258       off_61B258
  0002:0000B260       off_61B260
- 0002:0000B268       off_61B268
- 0002:0000B270       off_61B270
+ 0002:0000B268       const std::ostrstream::`vftable'
+ 0002:0000B270       const std::strstreambuf::`vftable'
  0002:0000B2A8       const std::basic_streambuf<char,std::char_traits<char>>::`vftable'
  0002:0000B2E0       const std::basic_ios<char,std::char_traits<char>>::`vftable'
  0002:0000B2E8       const std::basic_ostream<char,std::char_traits<char>>::`vftable'
- 0002:0000B2F0       asc_61B2F0
+ 0002:0000B2F0       `string'
  0002:0000B2F8       const std::locale::_Locimp::`vftable'
  0002:0000B300       const std::locale::facet::`vftable'
  0002:0000B308       off_61B308
- 0002:0000B328       off_61B328
+ 0002:0000B328       const std::numpunct<char>::`vftable'
  0002:0000B344       off_61B344
  0002:0000B364       off_61B364
  0002:0000B390       off_61B390
@@ -65817,7 +65817,7 @@
  0002:0000B8FC       off_61B8FC
  0002:0000B928       const exception::`vftable'
  0002:0000B930       aUnknownExcepti
- 0002:0000B948       off_61B948
+ 0002:0000B948       const type_info::`vftable'
  0002:0000B950       unk_61B950
  0002:0000B970       stru_61B970
  0002:0000B980       stru_61B980
@@ -67102,11 +67102,11 @@
  0002:0001E560       stru_62E560
  0002:0001E588       stru_62E588
  0002:0001E5B0       $T12550
- 0002:0001E608       unk_62E608
+ 0002:0001E608       __TI3?AVlength_error@std@@
  0002:0001E618       stru_62E618
  0002:0001E640       stru_62E640
  0002:0001E668       stru_62E668
- 0002:0001E6C0       unk_62E6C0
+ 0002:0001E6C0       __TI3?AVfailure@ios_base@std@@
  0002:0001E6D0       stru_62E6D0
  0002:0001E6F8       stru_62E6F8
  0002:0001E720       stru_62E720
@@ -67138,7 +67138,7 @@
  0002:0001EC50       stru_62EC50
  0002:0001EC78       stru_62EC78
  0002:0001ECB0       stru_62ECB0
- 0002:0001ED10       unk_62ED10
+ 0002:0001ED10       __TI2?AVruntime_error@std@@
  0002:0001ED20       stru_62ED20
  0002:0001EDA0       stru_62EDA0
  0002:0001EDC8       stru_62EDC8
@@ -67782,7 +67782,7 @@
  0003:0000220C       aDialgbox_def
  0003:0000221C       aDiboxbck_pcx
  0003:0000222C       aCrgen4_txt
- 0003:00002238       aCrgen1_txt
+ 0003:00002238       fileName
  0003:00002244       aXtrainfo_txt
  0003:00002254       aAdvmanager
  0003:00002260       aHorse02d_wav
@@ -70972,7 +70972,7 @@
  0003:00018000       aGames
  0003:00018008       aWb0
  0003:00018010       aWb6
- 0003:00018018       a_Data
+ 0003:00018018       lpData
  0003:00018020       aS_gmD
  0003:00018028       aS_S
  0003:00018030       off_64A030
@@ -71435,9 +71435,9 @@
  0003:0001F854       aTest_h3m
  0003:0001F860       aButton_wav
  0003:0001F86C       Text
- 0003:0001F884       aUnableToInitia
- 0003:0001F8BC       aFilesFromHeroe
- 0003:0001F900       a__1
+ 0003:0001F884       sResourceInitError
+ 0003:0001F8BC       sMissingFiles
+ 0003:0001F900       lpThisDir
  0003:0001F904       aSHeroesIiiEnco
  0003:0001F92C       aCredits_fnt
  0003:0001F938       aUltimatelose
@@ -74767,8 +74767,7 @@
  0003:0003E4A8       dword_6704A8
  0003:0003E4AC       dword_6704AC
  0003:0003E4B0       dword_6704B0
- 0003:0003E4B8       unk_6704B8
- 0003:0003E4BC       t1_Head
+ 0003:0003E4B8       t1_Head
  0003:0003E4C8       dword_6704C8
  0003:0003E4CC       dword_6704CC
  0003:0003E4D0       dword_6704D0
@@ -75201,7 +75200,7 @@
  0003:00045CF0       dword_677CF0
  0003:00045CF4       vector_SkilllevShort
  0003:00045D00       dword_677D00
- 0003:00045D04       dy_some_dword_5D8450
+ 0003:00045D04       lodf_Genrltxt_0
  0003:00045D08       _Border_Guard_Keymaster_Tent_colors
  0003:00045D10       dword_677D10
  0003:00045D28       vector_Priskill
@@ -75815,10 +75814,10 @@
  0003:0004B0E8       stru_67D0E8
  0003:0004B100       dword_67D100
  0003:0004B104       _errno
- 0003:0004B10C       dword_67D10C
- 0003:0004B130       byte_67D130
- 0003:0004B140       CriticalSection
- 0003:0004B158       Target
+ 0003:0004B10C       _stdstr
+ 0003:0004B130       _stdopens
+ 0003:0004B140       __CritSec
+ 0003:0004B158       __InitFlag
  0003:0004B15C       dword_67D15C
  0003:0004B160       std::locale::_Locimp * std::locale::_Locimp::_Clocptr
  0003:0004B164       std::locale::_Locimp * std::locale::_Locimp::_Global
@@ -75929,7 +75928,7 @@
  0003:0004B6D0       byte_67D6D0
  0003:0004B6D4       dword_67D6D4
  0003:0004B6D8       dword_67D6D8
- 0003:0004B6F8       dword_67D6F8
+ 0003:0004B6F8       __aenvptr
  0003:0004B700       dword_67D700
  0003:0004B704       unk_67D704
  0003:0004B708       word_67D708
@@ -76006,7 +76005,7 @@
  0003:0004BA44       dword_67DA44
  0003:0004BA48       byte_67DA48
  0003:0004BA49       byte_67DA49
- 0003:0004BA4C       dword_67DA4C
+ 0003:0004BA4C       __int64 const std::_Fpz
  0003:0004BA50       byte_67DA50
  0003:0004BA54       dword_67DA54
  0003:0004BA58       dword_67DA58
@@ -76037,7 +76036,7 @@
  0003:0004CDE0       dword_67EDE0
  0003:0004CDE4       dword_67EDE4
  0003:0004CDE8       Addend
- 0003:0004CDEC       dword_67EDEC
+ 0003:0004CDEC       __acmdln
  0003:0004CDF0       dword_67EDF0
  0003:0004CDF4       dword_67EDF4
  0003:0004CDF8       dword_67EDF8
