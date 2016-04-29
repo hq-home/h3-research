@@ -942,6 +942,47 @@ static Enums_0(id) {
 	AddConstEx(id,"IDC_HELP",	0X7F8B,	-1);
 	id = AddEnum(-1,"_Mref",0x1100000);
 	AddConstEx(id,"_FROZEN",	0XFF,	-1);
+	id = AddEnum(-1,"MACRO_DRIVERVERSION",0x2220000);
+	AddConstEx(id,"DRIVERVERSION",	0,	-1);
+	AddConstEx(id,"TECHNOLOGY",	0X2,	-1);
+	AddConstEx(id,"HORZSIZE",	0X4,	-1);
+	AddConstEx(id,"VERTSIZE",	0X6,	-1);
+	AddConstEx(id,"HORZRES",	0X8,	-1);
+	AddConstEx(id,"VERTRES",	0XA,	-1);
+	AddConstEx(id,"BITSPIXEL",	0XC,	-1);
+	AddConstEx(id,"PLANES",	0XE,	-1);
+	AddConstEx(id,"NUMBRUSHES",	0X10,	-1);
+	AddConstEx(id,"NUMPENS",	0X12,	-1);
+	AddConstEx(id,"NUMMARKERS",	0X14,	-1);
+	AddConstEx(id,"NUMFONTS",	0X16,	-1);
+	AddConstEx(id,"NUMCOLORS",	0X18,	-1);
+	AddConstEx(id,"PDEVICESIZE",	0X1A,	-1);
+	AddConstEx(id,"CURVECAPS",	0X1C,	-1);
+	AddConstEx(id,"LINECAPS",	0X1E,	-1);
+	AddConstEx(id,"POLYGONALCAPS",	0X20,	-1);
+	AddConstEx(id,"TEXTCAPS",	0X22,	-1);
+	AddConstEx(id,"CLIPCAPS",	0X24,	-1);
+	AddConstEx(id,"RASTERCAPS",	0X26,	-1);
+	AddConstEx(id,"ASPECTX",	0X28,	-1);
+	AddConstEx(id,"ASPECTY",	0X2A,	-1);
+	AddConstEx(id,"ASPECTXY",	0X2C,	-1);
+	AddConstEx(id,"LOGPIXELSX",	0X58,	-1);
+	AddConstEx(id,"LOGPIXELSY",	0X5A,	-1);
+	AddConstEx(id,"SIZEPALETTE",	0X68,	-1);
+	AddConstEx(id,"NUMRESERVED",	0X6A,	-1);
+	AddConstEx(id,"COLORRES",	0X6C,	-1);
+	AddConstEx(id,"PHYSICALWIDTH",	0X6E,	-1);
+	AddConstEx(id,"PHYSICALHEIGHT",	0X6F,	-1);
+	AddConstEx(id,"PHYSICALOFFSETX",	0X70,	-1);
+	AddConstEx(id,"PHYSICALOFFSETY",	0X71,	-1);
+	AddConstEx(id,"SCALINGFACTORX",	0X72,	-1);
+	AddConstEx(id,"SCALINGFACTORY",	0X73,	-1);
+	AddConstEx(id,"VREFRESH",	0X74,	-1);
+	AddConstEx(id,"DESKTOPVERTRES",	0X75,	-1);
+	AddConstEx(id,"DESKTOPHORZRES",	0X76,	-1);
+	AddConstEx(id,"BLTALIGNMENT",	0X77,	-1);
+	AddConstEx(id,"SHADEBLENDCAPS",	0X78,	-1);
+	AddConstEx(id,"COLORMGMTCAPS",	0X79,	-1);
 	return id;
 }
 
@@ -1260,6 +1301,7 @@ static ApplyStrucTInfos_0(void) {
 	SetType(GetMemberId(id, 0x8), "double");
 	SetType(GetMemberId(id, 0x10), "double");
 	SetType(GetMemberId(id, 0x18), "double");
+	id = GetStrucIdByName("SimpleArray");
 	return id;
 }
 
@@ -1406,6 +1448,7 @@ static Structures_0(id) {
 	id = AddStrucEx(-1,"IDirDrawClipper",0);
 	id = AddStrucEx(-1,"_CRT_FLOAT",0);
 	id = AddStrucEx(-1,"_exception",0);
+	id = AddStrucEx(-1,"SimpleArray",0);
 	
 	id = GetStrucIdByName("_SCOPETABLE_ENTRY");
 	mid = AddStrucMember(id,"EnclosingLevel",	0,	0x20000400,	-1,	4);
@@ -2360,6 +2403,7 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"field_10",	0X10,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"cName",	0X14,	0x000400,	-1,	32);
 	mid = AddStrucMember(id,"field_34",	0X34,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_38",	0X38,	0x000400,	-1,	396);
 	mid = AddStrucMember(id,"fstr_6C",	0X1C4,	0x60000400,	GetStrucIdByName("str6C"),	20383);
 	mid = AddStrucMember(id,"field_5170",	0X5170,	0x60000400,	GetStrucIdByName("str10"),	32);
 	mid = AddStrucMember(id,"field_51DC",	0X51DC,	0x60000400,	GetStrucIdByName("str528"),	55440);
@@ -2553,6 +2597,7 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"bLodHeader",	0X11C,	0x60000400,	GetStrucIdByName("LodHead"),	92);
 	mid = AddStrucMember(id,"FileCount",	0X178,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"FATstruc",	0X17C,	0x60000400,	GetStrucIdByName("FATstr"),	16);
+	mid = AddStrucMember(id,"lodFilename_Ptr",	0X18C,	0x20000400,	-1,	4);
 	
 	id = GetStrucIdByName("LOD_FATitem");
 	mid = AddStrucMember(id,"Name",	0,	0x000400,	-1,	16);
@@ -2830,16 +2875,16 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"img5_fname_Ptr",	0X20,	0x20000400,	-1,	4);
 	
 	id = GetStrucIdByName("HelpText");
-	mid = AddStrucMember(id,"rollover_Ptr",	0,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"rightClick_Ptr",	0X4,	0x20000400,	-1,	4);
-	
-	id = GetStrucIdByName("UnitAnimInfo");
 	return id;
 }
 
 static Structures_1(id) {
         auto mid;
 
+	mid = AddStrucMember(id,"rollover_Ptr",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"rightClick_Ptr",	0X4,	0x20000400,	-1,	4);
+	
+	id = GetStrucIdByName("UnitAnimInfo");
 	mid = AddStrucMember(id,"UR_MO_X",	0,	0x10000400,	-1,	2);
 	SetMemberComment(id,	0,	"Upper-right Missile Offset",	0);
 	mid = AddStrucMember(id,"UR_MO_Y",	0X2,	0x10000400,	-1,	2);
@@ -3006,6 +3051,12 @@ static Structures_1(id) {
 	mid = AddStrucMember(id,"arg2",	0X10,	0x90000400,	-1,	8);
 	mid = AddStrucMember(id,"retval",	0X18,	0x90000400,	-1,	8);
 	SetStrucAlign(id,3);
+	
+	id = GetStrucIdByName("SimpleArray");
+	mid = AddStrucMember(id,"count",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"FirstPtr",	0X4,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"count2",	0X8,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"FirstPtr2",	0XC,	0x20000400,	-1,	4);
 	return id;
 }
 

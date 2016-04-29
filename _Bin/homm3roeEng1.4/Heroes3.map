@@ -467,7 +467,7 @@
  0001:000034C3       loc_4044C3
  0001:000034DD       loc_4044DD
  0001:000034FD       loc_4044FD
- 0001:00003520       sub_404520
+ 0001:00003520       std::logic_error::_Doraise(void)
  0001:00003540       sub_404540
  0001:00003564       loc_404564
  0001:0000356D       loc_40456D
@@ -32225,7 +32225,7 @@
  0001:00113220       sub_514220
  0001:00113293       loc_514293
  0001:001132F0       sub_5142F0
- 0001:00113310       loc_514310
+ 0001:00113310       std::logic_error::`vector deleting destructor'(uint)
  0001:0011332A       loc_51432A
  0001:00113340       sub_514340
  0001:0011339A       loc_51439A
@@ -36728,7 +36728,7 @@
  0001:00139EB3       loc_53AEB3
  0001:00139EBC       loc_53AEBC
  0001:00139EC8       loc_53AEC8
- 0001:00139ECE       loc_53AECE
+ 0001:00139ECE       EH_loc_53AECE
  0001:00139EE3       loc_53AEE3
  0001:00139F10       sub_53AF10
  0001:00139F24       loc_53AF24
@@ -67883,7 +67883,7 @@
  0002:00017120       stru_627120
  0002:00017170       stru_627170
  0002:000171A0       stru_6271A0
- 0002:000171F8       unk_6271F8
+ 0002:000171F8       EH_unk_6271F8
  0002:00017208       stru_627208
  0002:00017260       stru_627260
  0002:00017288       stru_627288
@@ -74265,9 +74265,9 @@
  0003:0002C848       dword_65E848
  0003:0002C84C       dword_65E84C
  0003:0002C850       dword_65E850
- 0003:0002C858       dword_65E858
- 0003:0002C85C       scr_BPP
- 0003:0002C860       scr_WIDTH
+ 0003:0002C858       scr_BPP
+ 0003:0002C85C       scr_WIDTH
+ 0003:0002C860       scr_HEIGHT
  0003:0002C864       aCH3srcGameWing
  0003:0002C88C       aDirectdrawErro
  0003:0002C8C4       aDderr_videonot
@@ -75400,12 +75400,12 @@
  0003:000391D0       dword_66B1D0
  0003:000391D4       dword_66B1D4
  0003:000391D8       dword_66B1D8
- 0003:000391DC       dword_66B1DC
+ 0003:000391DC       lodNamesTblIdxPtr
  0003:000391E0       dword_66B1E0
  0003:000391E4       dword_66B1E4
  0003:000391E8       dword_66B1E8
  0003:000391EC       dword_66B1EC
- 0003:000391F0       unk_66B1F0
+ 0003:000391F0       _lodNamesTbl_
  0003:000391F8       dword_66B1F8
  0003:000391FC       dword_66B1FC
  0003:00039200       sample_ButtonWav
@@ -75863,10 +75863,8 @@
  0003:0003D7F0       bitMaskB3
  0003:0003D7F4       B_bitPos
  0003:0003D7F8       R_bitPos2
- 0003:0003D800       dword_66F800
- 0003:0003D804       unk_66F804
- 0003:0003D990       unk_66F990
- 0003:0003DB20       unk_66FB20
+ 0003:0003D800       lodNamesTbl
+ 0003:0003D804       gobLOS_Tbl
  0003:0003DCB0       unk_66FCB0
  0003:0003DE40       unk_66FE40
  0003:0003DFD0       unk_66FFD0
@@ -75883,7 +75881,7 @@
  0003:0003E4AC       dword_6704AC
  0003:0003E4B0       dword_6704B0
  0003:0003E4B8       t1_Head
- 0003:0003E4C8       dword_6704C8
+ 0003:0003E4C8       lodNamesTblRec
  0003:0003E4CC       dword_6704CC
  0003:0003E4D0       dword_6704D0
  0003:0003E4D4       dword_6704D4
