@@ -1250,6 +1250,7 @@ static ApplyStrucTInfos_0(void) {
 	id = GetStrucIdByName("str_C884");
 	id = GetStrucIdByName("str_CA90");
 	id = GetStrucIdByName("z_streamp");
+	id = GetStrucIdByName("LodOpenStrucEx");
 	id = GetStrucIdByName("LodOpenStruc");
 	id = GetStrucIdByName("LodHead");
 	id = GetStrucIdByName("FATstr");
@@ -1403,6 +1404,7 @@ static Structures_0(id) {
 	id = AddStrucEx(-1,"str_C884",0);
 	id = AddStrucEx(-1,"str_CA90",0);
 	id = AddStrucEx(-1,"z_streamp",0);
+	id = AddStrucEx(-1,"LodOpenStrucEx",0);
 	id = AddStrucEx(-1,"LodOpenStruc",0);
 	id = AddStrucEx(-1,"LodHead",0);
 	id = AddStrucEx(-1,"FATstr",0);
@@ -2585,6 +2587,20 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"FAT_ptr2",	0X8,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"EoFAT_ptr",	0XC,	0x20000400,	-1,	4);
 	
+	id = GetStrucIdByName("LodOpenStrucEx");
+	mid = AddStrucMember(id,"LodFilename_Ptr",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"fileName",	0X4,	0x000400,	-1,	256);
+	mid = AddStrucMember(id,"isOpen",	0X104,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"uncomprBufPtr",	0X108,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"uncomprSize",	0X10C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"curIndex",	0X110,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"uncomprOffset",	0X114,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"FoundIndex",	0X118,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"bLodHeader",	0X11C,	0x60000400,	GetStrucIdByName("LodHead"),	92);
+	mid = AddStrucMember(id,"FileCount",	0X178,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"FATstruc",	0X17C,	0x60000400,	GetStrucIdByName("FATstr"),	16);
+	mid = AddStrucMember(id,"unk",	0X18C,	0x20000400,	-1,	4);
+	
 	id = GetStrucIdByName("LodOpenStruc");
 	mid = AddStrucMember(id,"filePtr",	0,	0x20a00400,	GetStrucIdByName("FILE"),	4);
 	mid = AddStrucMember(id,"fileName",	0X4,	0x000400,	-1,	256);
@@ -2597,7 +2613,6 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"bLodHeader",	0X11C,	0x60000400,	GetStrucIdByName("LodHead"),	92);
 	mid = AddStrucMember(id,"FileCount",	0X178,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"FATstruc",	0X17C,	0x60000400,	GetStrucIdByName("FATstr"),	16);
-	mid = AddStrucMember(id,"lodFilename_Ptr",	0X18C,	0x20000400,	-1,	4);
 	
 	id = GetStrucIdByName("LOD_FATitem");
 	mid = AddStrucMember(id,"Name",	0,	0x000400,	-1,	16);
@@ -2860,6 +2875,12 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"Dungeon",	0X4EC,	0x60000400,	GetStrucIdByName("_Cost"),	252);
 	mid = AddStrucMember(id,"Stronghold",	0X5E8,	0x60000400,	GetStrucIdByName("_Cost"),	252);
 	mid = AddStrucMember(id,"Fortress",	0X6E4,	0x60000400,	GetStrucIdByName("_Cost"),	252);
+	return id;
+}
+
+static Structures_1(id) {
+        auto mid;
+
 	
 	id = GetStrucIdByName("WallSection");
 	mid = AddStrucMember(id,"name_Ptr",	0,	0x20000400,	-1,	4);
@@ -2875,12 +2896,6 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"img5_fname_Ptr",	0X20,	0x20000400,	-1,	4);
 	
 	id = GetStrucIdByName("HelpText");
-	return id;
-}
-
-static Structures_1(id) {
-        auto mid;
-
 	mid = AddStrucMember(id,"rollover_Ptr",	0,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"rightClick_Ptr",	0X4,	0x20000400,	-1,	4);
 	
