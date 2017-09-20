@@ -1,0 +1,59 @@
+THE RESTORATION OF ERATHIA - КОДЫ И ЧИТЫ
+Нажмите TAB и введите любой из следующих кодов: 
+nwconlyamodel - построить все здания во всех городах карты 
+nwcsirrobin - проиграть сценарий 
+nwctrojanrabbit - выиграть сценарий 
+nwcavertingoureyes - выбранный герой получает в каждый пустой слот по 5 архангелов 
+nwcantioch - выбранный герой получает палатку, баллисту и боеприпасы 
+nwcigotbetter - уровень выбранного героя повышается на 1 
+nwccastleanthrax - выбранный герой получает максимальную удачу 
+nwccoconuts - даёт герою бесконечное число ходов (пока не нажмете "конец хода" 
+nwcmuchrejoicing - герой получает максимальную мораль 
+nwcalreadygotone - полная мозайка с секретами 
+nwcgeneraldirection- открыть всю карту 
+nwcshrubbery- увеличить все ресурсы 
+nwctim - герой обучается всей магии (для своего уровня) и 999 заклинаниям 
+nwcfleshwound - выбранный герой получает по 5 Рыцарей Смерти в каждый пустой слот 
+nwcphisherprice- добавить яркости 
+
+нормальные коды (???) 
+FOUNTAIN HEAD - домой 
+BAYWATCH - морская собака 
+WILDBAR - почетный гражданин 
+SWAMP TOWN - обреченный 
+BLISTERING HEIGHTS - острый красный цвет 
+THE ARENA - сцена 
+===============================================================
+Armageddon's Blade (посвящается Звёздным войнам)
+Для ввода кодов нажмите [Tab] во вpемя игpы, затем наберите:
+nwcpodracer - бесконечные движения
+nwcdarthmaul - 10 Рыцарей Смерти
+nwccoruscant - полностью застроить замок
+nwcwatto - 100 единиц каждого из ресурсов 10000 золота
+nwcpadme - 5 архангелов
+nwcwr2d2 (или nwcr2d2) - дает герою все военные машины
+nwcquigon - поднимает героя на уровень выше
+nwcpodracer - герой получает бесконечное передвижение
+nwcprophecy - показывает карту обелисков
+nwcrevealourselves - открывает всю карту
+nwcmidichlorians - герой получает 999 маны и все заклинания
+===============================================================
+The Shadow of Death (посвящается Матрице)
+
+nwcagents		 Заполнить клетки 10 чеpными pыцаpями
+nwclotsofguns		 Дать все военные машины
+nwcneo			 Повысить уpовень геpоя
+nwctrinity		 Заполнить клетки 5 аpхангелами
+nwcfollowthewhiterabbit	 Максимум удачи
+nwcnebuchadnezzar	 Hеогpаниченное пеpедвижение
+nwcmorpheus		 Максимальная моpаль
+nwcoracle		 Откpыть каpту с главным аpтефактом
+nwcwhatisthematrix	 Откpыть игpовую каpту
+nwcignoranceisbliss	 Скpыть игpовую каpту
+nwctheconstruct		 Дать 100,000 золота и по 100 каждого pесуpса
+nwcbluepill		 Проиграть игpу
+nwcredpill		 Выигpать игpу
+nwcthereisnospoon	 Дать 999 маны и все заклинания
+nwczion			 Дать все постройки
+nwcphisherprice		 Изменить цвета в игре
+gosolo			 Вместо одного из людей будет играть компьютер

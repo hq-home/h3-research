@@ -1,0 +1,30 @@
+STL
+VIC32.lib - Victor Image Library
+STD Lib
+zlib-1.1.3
+
+Format marks:
+TRUEVISION-XFILE
+
+#includes
+<locale0>
+
+<ios>
+
+?copyfmt@ios_base@std@@QAEAAV12@ABV12@@Z
+??4locale@std@@QAEAAV01@ABV01@@Z
+?_Decref@facet@locale@std@@QAEPAV123@XZ
+?imbue@ios_base@std@@QAE?AVlocale@2@ABV32@@Z
+??1locale@std@@QAE@XZ
+?register_callback@ios_base@std@@QAEXP6AXW4event@12@AAV12@H@ZH@Z
+??_Gios_base@std@@UAEPAXI@Z
+?_Findarr@ios_base@std@@AAEAAU_Iosarray@12@H@Z
+
+
+
+<string>
+
+<strstreambuf>
+
+<bitset>
+

@@ -1,0 +1,33 @@
+http://stackoverflow.com/questions/1658186/examining-code-generated-by-the-visual-studio-c-compiler-part-1
+
+The whole thing
+
+00401010  |> 99             /CDQ
+00401011  |. 2BC2           |SUB EAX,EDX
+00401013  |. D1F8           |SAR EAX,1
+
+stands for the y /= 2. You see, a standalone SAR would not perform the signed integer division the way the compiler authors intended. C++98 standard recommends that signed integer division rounds the result towards 0, while SAR alone would round towards the negative infinity. (It is permissible to round towards negative infinity, the choice is left to the implementation). In order to implement rounding to 0 for negative operands, the above trick is used. If you use an unsigned type instead of a signed one, then the compiler will generate just a single shift instruction, since the issue with negative division will not take place.
+
+The trick is pretty simple: for negative y sign extension will place a pattern of 11111...1 in EDX, which is actually -1 in 2's complement representation. The following SUB will effectively add 1 to EAX if the original y value was negative. If the original y was positive (or 0), the EDX will hold 0 after the sign extension and EAX will remain unchanged.
+
+In other words, when you write y /= 2 with signed y, the compiler generates the code that does something more like the following
+
+y = (y < 0 ? y + 1 : y) >> 1;
+or, better
+
+y = (y + (y < 0)) >> 1;
+Note, that C++ standard does not require the result of the division to be rounded towards zero, so the compiler has the right to do just a single shift even for signed types. However, normally compilers follow the recommendation to round towards zero (or offer an option to control the behavior).
+=====================================================================================
+; divider = 255
+MagicNumber = 80808081h
+mov      eax,X
+mov      edx,MagicNumber
+mul      edx
+shr      edx,7
+
+умножаем число на magic, получаем в старшем дворде результат, двигаем на 32 вправо чтобы получить его в младшем дворде. потом еще на 7 бит двигаем чтобы получить правильный результат для делителя 255.
+32 + 7 = 39 что и получаем в ((__int64)val * 0x80808081) >> 39;
+на асме на 32 бита двигать конечно ненадо у тебя нужное число уже в edx как я понимаю.
+======================================
+
+

@@ -1,0 +1,1245 @@
+005B3408h: possible vtable (25 methods)
+  referencing functions: 
+  .text:00401430
+
+005B346Ch: possible vtable (8 methods)
+  referencing functions: 
+  .text:00401430
+  .text:00402980
+
+005B3494h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00404E10
+  .text:00405300
+
+005B34F8h: possible vtable (3 methods)
+  referencing functions: 
+  .text:00406510 ()
+
+005B3504h: possible vtable (5 methods)
+  referencing functions: 
+  .text:004066F0
+
+005B3528h: possible vtable (14 methods)
+  referencing functions: 
+  .text:0041A470
+
+005B3EE0h: possible vtable (3 methods)
+  referencing functions: 
+  .text:00426F70
+  .text:00427950
+
+005B3EECh: possible vtable (3 methods)
+  referencing functions: 
+  .text:00426F70
+  .text:00427950
+
+005B3F28h: possible vtable (2 methods)
+  referencing functions: 
+  .text:00430420
+  .text:00430CE0
+
+005B3F30h: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3F38h: possible vtable (2 methods)
+  referencing functions: 
+  .text:00430480
+  .text:004318E0
+
+005B3F40h: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3F48h: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3F50h: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3F58h: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3F64h: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3F6Ch: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3F74h: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3F7Ch: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3F84h: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3F8Ch: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3F94h: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3F9Ch: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3FA4h: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3FACh: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3FB4h: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B3FBCh: possible vtable (2 methods)
+  referencing functions: 
+  .text:004318E0
+
+005B4020h: possible vtable (2 methods)
+  referencing functions: 
+  .text:00434390 (2 times)
+  .text:00434590
+  .text:004345D0
+
+005B40F8h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00446240
+  .text:004468A0
+
+005B4138h: possible vtable (3 methods)
+  referencing functions: 
+  .text:00448F60 ()
+
+005B4144h: possible vtable (1 methods)
+  referencing functions: 
+  .text:00449890
+  .text:00449970
+  .text:00449A20
+
+005B4168h: possible vtable (2 methods)
+  referencing functions: 
+  .text:0044A670
+  .text:0044A720
+
+005B4184h: possible vtable (2 methods)
+  referencing functions: 
+  .text:0044AF30
+  .text:0044B000
+
+005B418Ch: possible vtable (12 methods)
+  referencing functions: 
+  .text:0044B3C0
+  .text:0044B400
+  .text:0044B690
+  .text:0044B870
+  .text:0044BBC0
+
+005B41BCh: possible vtable (12 methods)
+  referencing functions: 
+  .text:0044B5F0
+
+005B41ECh: possible vtable (12 methods)
+  referencing functions: 
+  .text:0044B7B0
+  .text:0044B870
+
+005B421Ch: possible vtable (12 methods)
+  referencing functions: 
+  .text:0044BB00
+  .text:0044BBC0
+
+005B424Ch: possible vtable (2 methods)
+  referencing functions: 
+  .text:0044C170
+  .text:0044C1F0
+  .text:0044C540
+  .text:0044C640
+  .text:0044CBC0
+  .text:0044CC40
+  .text:0044CE50
+  .text:0044CED0
+  .text:0044D590
+  .text:0044D610
+  .text:0044DF10
+  .text:0044DF90
+  .text:0044E5E0
+  .text:0044E660
+  .text:0044EA80
+
+005B4254h: possible vtable (2 methods)
+  referencing functions: 
+  .text:0044C1F0
+
+005B4264h: possible vtable (2 methods)
+  referencing functions: 
+  .text:0044C640
+
+005B426Ch: possible vtable (2 methods)
+  referencing functions: 
+  .text:0044CC40
+
+005B4274h: possible vtable (2 methods)
+  referencing functions: 
+  .text:0044CED0
+
+005B427Ch: possible vtable (2 methods)
+  referencing functions: 
+  .text:0044D610
+
+005B4284h: possible vtable (2 methods)
+  referencing functions: 
+  .text:0044DF90
+
+005B428Ch: possible vtable (2 methods)
+  referencing functions: 
+  .text:0044E660
+
+005B429Ch: possible vtable (11 methods)
+  referencing functions: 
+  .text:00451340
+  .text:00451530
+  .text:00451FD0
+  .text:00452190
+
+005B42C8h: possible vtable (11 methods)
+  referencing functions: 
+  .text:00451E40
+  .text:00451FD0
+
+005B42F4h: possible vtable (11 methods)
+  referencing functions: 
+  .text:00452110
+
+005B4328h: possible vtable (8 methods)
+  referencing functions: 
+  .text:00453DE0
+  .text:004551D0
+
+005B4368h: possible vtable (8 methods)
+  referencing functions: 
+  .text:00455D20
+  .text:004563E0
+  .text:00457320
+
+005B5670h: possible vtable (3 methods)
+  referencing functions: 
+  .text:0045C420
+
+005B5698h: possible vtable (4 methods)
+  referencing functions: 
+  .text:00460ED0
+  .text:00461470
+  .text:00461860
+  .text:00461AF0
+
+005B56A8h: possible vtable (4 methods)
+  referencing functions: 
+  .text:004615C0
+
+005B56B8h: possible vtable (4 methods)
+  referencing functions: 
+  .text:00461930
+
+005B56C8h: possible vtable (1 methods)
+  referencing functions: 
+  .text:00461C50
+  .text:00462480
+
+005B56CCh: possible vtable (1 methods)
+  referencing functions: 
+  .text:00462780
+  .text:00463480
+
+005B56D0h: possible vtable (8 methods)
+  referencing functions: 
+  .text:004638B0
+  .text:00464C00
+
+005B56F0h: possible vtable (8 methods)
+  referencing functions: 
+  .text:004657C0
+  .text:00466F30
+
+005B5710h: possible vtable (25 methods)
+  referencing functions: 
+  .text:00467770
+
+005B5774h: possible vtable (8 methods)
+  referencing functions: 
+  .text:00467770
+  .text:00467E80
+
+005B5898h: possible vtable (1 methods)
+  referencing functions: 
+  .text:00470110
+  .text:00470150
+  .text:004707B0
+  .text:004708D0
+
+005B589Ch: possible vtable (1 methods)
+  referencing functions: 
+  .text:00471130
+  .text:004711E0
+  .text:004712B0
+
+005B58D4h: possible vtable (9 methods)
+  referencing functions: 
+  .text:004798C0
+  .text:00479960
+  .text:00479990
+  .text:0047A270
+
+005B58F8h: possible vtable (12 methods)
+  referencing functions: 
+  .text:0047A2E0
+
+005B5928h: possible vtable (14 methods)
+  referencing functions: 
+  .text:0047AA50
+  .text:0047ABF0
+
+005B5960h: possible vtable (14 methods)
+  referencing functions: 
+  .text:0047AE40
+  .text:0047AFE0
+
+005B59A8h: possible vtable (62 methods)
+  referencing functions: 
+  .text:0047FB90 (2 times)
+  .text:00481720
+  .text:004817E0
+
+005B5AA0h: possible vtable (73 methods)
+  referencing functions: 
+  .text:00481720
+  .text:004817E0
+
+005B5BC4h: possible vtable (7 methods)
+  referencing functions: 
+  .text:00481C20 (5 times)
+  .text:00481FF0 (5 times)
+  .text:00482AF0 (2 times)
+  .text:00482D90
+  .text:00482F00
+
+005B5BE0h: possible vtable (6 methods)
+  referencing functions: 
+  .text:00483360
+  .text:004833D0
+  .text:004836E0
+  .text:004837D0
+  .text:00483970
+  .text:00483980
+  .text:00483A60
+  .text:00483BA0
+  .text:00483DB0
+  .text:00484060
+  .text:00484270
+  .text:004845F0
+  .text:004847F0
+  .text:00484820
+  .text:00484B80
+  .text:00484D80
+  .text:00484F90
+  .text:00485160
+  .text:00485330
+  .text:00485510
+  .text:00485710
+  .text:00485940
+  .text:00485B50
+  .text:00485D70
+  .text:00485FE0
+
+005B5BF8h: possible vtable (6 methods)
+  referencing functions: 
+  .text:004833D0
+  .text:00485940
+  .text:00485B50
+
+005B5C10h: possible vtable (6 methods)
+  referencing functions: 
+  .text:004836E0
+  .text:00485B50
+
+005B5C28h: possible vtable (6 methods)
+  referencing functions: 
+  .text:004837D0
+  .text:00484B80
+
+005B5C40h: possible vtable (6 methods)
+  referencing functions: 
+  .text:00483980
+  .text:00484D80
+
+005B5C58h: possible vtable (6 methods)
+  referencing functions: 
+  .text:00483A60
+  .text:00485160
+
+005B5C70h: possible vtable (6 methods)
+  referencing functions: 
+  .text:00483BA0
+  .text:00485510
+
+005B5C88h: possible vtable (6 methods)
+  referencing functions: 
+  .text:00483DB0
+  .text:00484F90
+
+005B5CA0h: possible vtable (6 methods)
+  referencing functions: 
+  .text:00484060
+  .text:00485330
+  .text:00485710
+
+005B5CB8h: possible vtable (6 methods)
+  referencing functions: 
+  .text:00484270
+  .text:00485710
+
+005B5CD0h: possible vtable (6 methods)
+  referencing functions: 
+  .text:004845F0
+
+005B5CE8h: possible vtable (6 methods)
+  referencing functions: 
+  .text:00484820
+  .text:00485D70
+  .text:00485FE0
+
+005B6354h: possible vtable (1 methods)
+  referencing functions: 
+  .text:0049C350
+  .text:0049C3F0
+
+005B63B0h: possible vtable (8 methods)
+  referencing functions: 
+  .text:004B4CA0
+  .text:004B5020
+
+005B671Ch: possible vtable (14 methods)
+  referencing functions: 
+  .text:004BC280
+  .text:004BEFF0
+
+005B6794h: possible vtable (8 methods)
+  referencing functions: 
+  .text:004C3660
+  .text:004C3E80
+
+005B67B4h: possible vtable (3 methods)
+  referencing functions: 
+  .text:004C5040 ()
+  .text:004C5060
+
+005B67C0h: possible vtable (8 methods)
+  referencing functions: 
+  .text:004C50F0
+  .text:004C58A0
+  .text:004C5DB0
+
+005B67E0h: possible vtable (13 methods)
+  referencing functions: 
+  .text:004C51B0 (2 times)
+  .text:004C5750
+
+005B6814h: possible vtable (19 methods)
+  referencing functions: 
+  .text:004C5670
+
+005B6860h: possible vtable (12 methods)
+  referencing functions: 
+  .text:004C66D0
+  .text:004C6760
+
+005B7850h: possible vtable (3 methods)
+  referencing functions: 
+  .text:004C8390 ()
+
+005B785Ch: possible vtable (12 methods)
+  referencing functions: 
+  .text:004D20D0
+
+005B788Ch: possible vtable (3 methods)
+  referencing functions: 
+  .text:004CEF30
+  .text:005300D0 ()
+
+005B7898h: possible vtable (14 methods)
+  referencing functions: 
+  .text:004D4260
+  .text:004D5110
+
+005B78D0h: possible vtable (8 methods)
+  referencing functions: 
+  .text:004D6230
+  .text:004D65B0
+
+005B79A0h: possible vtable (4 methods)
+  referencing functions: 
+  .text:004E4B00 ()
+  .text:004E4B70
+
+005B79B0h: possible vtable (7 methods)
+  referencing functions: 
+  .text:004E5FC0
+
+005B79CCh: possible vtable (17 methods)
+  referencing functions: 
+  .text:004E5FC0
+
+005B7A10h: possible vtable (13 methods)
+  referencing functions: 
+  .text:004E5FC0
+  .text:004E6E50
+
+005B7A44h: possible vtable (7 methods)
+  referencing functions: 
+  .text:004E6DC0
+  .text:004EA410
+  .text:00507400 (4 times)
+
+005B7A60h: possible vtable (14 methods)
+  referencing functions: 
+  .text:004E7D50 (2 times)
+  .text:004E8010
+  .text:004E8840
+  .text:004E8ED0 (3 times)
+  .text:004E95E0
+
+005B7A98h: possible vtable (19 methods)
+  referencing functions: 
+  .text:004E8010 (2 times)
+  .text:004E9B50
+
+005B7AE4h: possible vtable (19 methods)
+  referencing functions: 
+  .text:004E8710
+
+005B7B30h: possible vtable (13 methods)
+  referencing functions: 
+  .text:004E9BC0 (2 times)
+  .text:004E9CA0
+  .text:004EA250
+
+005B7B64h: possible vtable (19 methods)
+  referencing functions: 
+  .text:004E9CA0
+
+005B7BD0h: possible vtable (14 methods)
+  referencing functions: 
+  .text:004EF5C0
+  .text:004F0A80
+
+005B7C14h: possible vtable (1 methods)
+  referencing functions: 
+  .text:004F25E0
+  .text:004F2630
+  .text:004F2660
+  .text:004F2710
+  .text:004F27C0
+  .text:004F2890
+  .text:004F28F0
+
+005B7C18h: possible vtable (2 methods)
+  referencing functions: 
+  .text:004F2DB0
+  .text:004F2E00
+  .text:004F2E30
+  .text:004F2E80
+  .text:004F2EE0
+
+005B7EA8h: possible vtable (14 methods)
+  referencing functions: 
+  .text:004FB8C0
+  .text:004FBC80
+
+005B7EE8h: possible vtable (14 methods)
+  referencing functions: 
+  .text:004FCFD0
+  .text:004FD9B0
+
+005B7F40h: possible vtable (8 methods)
+  referencing functions: 
+  .text:004FE080 (2 times)
+  .text:004FE920
+
+005B7F60h: possible vtable (9 methods)
+  referencing functions: 
+  .text:004FEA50
+  .text:004FEE80
+
+005B7F84h: possible vtable (8 methods)
+  referencing functions: 
+  .text:004FF270
+  .text:004FF920
+  .text:004FFA70
+
+005B7FA4h: possible vtable (8 methods)
+  referencing functions: 
+  .text:00500370
+  .text:00501640
+
+005B7FC4h: possible vtable (3 methods)
+  referencing functions: 
+  .text:00502E10
+  .text:00502F20
+  .text:00503020
+
+005B7FD0h: possible vtable (8 methods)
+  referencing functions: 
+  .text:00503180
+  .text:00503220
+
+005B8048h: possible vtable (74 methods)
+  referencing functions: 
+  .text:00503D70
+  .text:00506F60
+
+005B8178h: possible vtable (23 methods)
+  referencing functions: 
+  .text:00505BC0
+
+005B81D4h: possible vtable (2 methods)
+  referencing functions: 
+  .text:00506450
+  .text:005064B0
+  .text:00506900 (2 times)
+  .text:00506EC0
+  .text:00508350
+  .text:005087A0
+
+005B81DCh: possible vtable (8 methods)
+  referencing functions: 
+  .text:00557420
+  .text:00562560
+  .text:0056C110
+  .text:0056C4A0
+
+005B81FCh: possible vtable (3 methods)
+  referencing functions: 
+  .text:00557420
+  .text:0056C110
+  .text:0056C4A0
+
+005B8208h: possible vtable (13 methods)
+  referencing functions: 
+  .text:00506900
+
+005B823Ch: possible vtable (3 methods)
+  referencing functions: 
+  .text:00506900 (3 times)
+  .text:00506EC0
+  .text:00508350
+  .text:005087A0
+  .text:00509550
+  .text:005095A0
+
+005B8248h: possible vtable (7 methods)
+  referencing functions: 
+  .text:00507BC0
+  .text:005096E0
+  .text:00509A20
+  .text:00521960 (2 times)
+  .text:00521DF0 (2 times)
+
+005B8264h: possible vtable (13 methods)
+  referencing functions: 
+  .text:00508350
+
+005B8298h: possible vtable (13 methods)
+  referencing functions: 
+  .text:005087A0
+
+005B82CCh: possible vtable (1 methods)
+  referencing functions: 
+  .text:00508AC0
+  .text:00508DB0
+
+005B82D0h: possible vtable (12 methods)
+  referencing functions: 
+  .text:00508ED0
+
+005B8300h: possible vtable (4 methods)
+  referencing functions: 
+  .text:00508FA0
+
+005B831Ch: possible vtable (1 methods)
+  referencing functions: 
+  .text:00509C80
+  .text:00509CD0
+  .text:00509D00
+
+005B833Ch: possible vtable (1 methods)
+  referencing functions: 
+  .text:0050A0F0
+  .text:0050A3C0
+  .text:0050A460
+
+005B85E4h: possible vtable (12 methods)
+  referencing functions: 
+  .text:0050EAA0
+
+005B8614h: possible vtable (12 methods)
+  referencing functions: 
+  .text:0050EAA0
+
+005B8644h: possible vtable (12 methods)
+  referencing functions: 
+  .text:0050EAA0
+
+005B8674h: possible vtable (12 methods)
+  referencing functions: 
+  .text:0050F7C0 (2 times)
+  .text:00510630 (2 times)
+
+005B86A4h: possible vtable (14 methods)
+  referencing functions: 
+  .text:0050E500
+  .text:00510A60
+
+005B86DCh: possible vtable (12 methods)
+  referencing functions: 
+  .text:00514D70 (2 times)
+
+005B870Ch: possible vtable (14 methods)
+  referencing functions: 
+  .text:00513B20
+  .text:00514590
+
+005B8744h: possible vtable (1 methods)
+  referencing functions: 
+  .text:005153B0
+  .text:00515470
+
+005B8748h: possible vtable (11 methods)
+  referencing functions: 
+  .text:00515880
+  .text:00517D20
+
+005B8774h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00515880
+  .text:00517DB0
+
+005B87ACh: possible vtable (11 methods)
+  referencing functions: 
+  .text:0051BA70
+
+005B87D8h: possible vtable (9 methods)
+  referencing functions: 
+  .text:0051BC70
+
+005B87FCh: possible vtable (11 methods)
+  referencing functions: 
+  .text:0051BD00
+  .text:0051C2D0
+  .text:0051C670
+
+005B8828h: possible vtable (11 methods)
+  referencing functions: 
+  .text:0051BFF0
+  .text:0051C2D0
+
+005B8854h: possible vtable (9 methods)
+  referencing functions: 
+  .text:0051C280
+
+005B8878h: possible vtable (9 methods)
+  referencing functions: 
+  .text:0051C650
+
+005B889Ch: possible vtable (9 methods)
+  referencing functions: 
+  .text:0051CCA0
+
+005B88F4h: possible vtable (23 methods)
+  referencing functions: 
+  .text:0051E4A0
+
+005B8950h: possible vtable (14 methods)
+  referencing functions: 
+  .text:0051E4A0
+
+005B8988h: possible vtable (1 methods)
+  referencing functions: 
+  .text:0051E4A0
+
+005B898Ch: possible vtable (12 methods)
+  referencing functions: 
+  .text:0051E4A0
+  .text:00521400
+
+005B89BCh: possible vtable (17 methods)
+  referencing functions: 
+  .text:0051E4A0
+
+005B8A00h: possible vtable (17 methods)
+  referencing functions: 
+  .text:0051E4A0
+
+005B8A44h: possible vtable (14 methods)
+  referencing functions: 
+  .text:0051E4A0
+  .text:00524CD0
+
+005B8A7Ch: possible vtable (7 methods)
+  referencing functions: 
+  .text:00524CD0
+  .text:00528820
+  .text:0052A130
+  .text:0052D100
+
+005B8A98h: possible vtable (13 methods)
+  referencing functions: 
+  .text:00528CE0
+
+005B8ACCh: possible vtable (14 methods)
+  referencing functions: 
+  .text:0052D240
+  .text:0052D2F0
+
+005B8B3Ch: possible vtable (15 methods)
+  referencing functions: 
+  .text:00532380
+  .text:00532E80
+
+005B8F6Ch: possible vtable (1 methods)
+  referencing functions: 
+  .text:0053FF90
+  .text:00540010
+  .text:00540060
+
+005B8F70h: possible vtable (25 methods)
+  referencing functions: 
+  .text:005406A0
+
+005B8FD4h: possible vtable (25 methods)
+  referencing functions: 
+  .text:005406A0
+
+005B9038h: possible vtable (8 methods)
+  referencing functions: 
+  .text:005406A0
+  .text:00543E70
+
+005B9058h: possible vtable (3 methods)
+  referencing functions: 
+  .text:00543FB0
+
+005B9064h: possible vtable (3 methods)
+  referencing functions: 
+  .text:00544200
+
+005B9070h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00547890
+  .text:00549140
+
+005B90A8h: possible vtable (17 methods)
+  referencing functions: 
+  .text:0054AAC0
+  .text:0054AC80
+
+005B90ECh: possible vtable (1 methods)
+  referencing functions: 
+  .text:0054BC80
+
+005B90F0h: possible vtable (1 methods)
+  referencing functions: 
+  .text:0054BD90
+  .text:0054BFC0
+
+005B90F4h: possible vtable (1 methods)
+  referencing functions: 
+  .text:0054C040
+  .text:0054C320
+
+005B90F8h: possible vtable (12 methods)
+  referencing functions: 
+  .text:0054C640
+  .text:0054C770
+  .text:0054CA80
+
+005B9128h: possible vtable (12 methods)
+  referencing functions: 
+  .text:0054CB10
+
+005B9168h: possible vtable (14 methods)
+  referencing functions: 
+  .text:0054E7C0
+  .text:0054F520
+  .text:0054F5C0
+  .text:00551860
+  .text:00552110
+
+005B9988h: possible vtable (3 methods)
+  referencing functions: 
+  .text:00553070 ()
+
+005B9994h: possible vtable (8 methods)
+  referencing functions: 
+  .text:00553200
+  .text:00555610
+
+005B99B4h: possible vtable (4 methods)
+  referencing functions: 
+  .text:00556060
+
+005B99C4h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00557DE0
+  .text:005592E0
+
+005B99FCh: possible vtable (14 methods)
+  referencing functions: 
+  .text:00559820
+  .text:0055C390
+
+005B9A34h: possible vtable (14 methods)
+  referencing functions: 
+  .text:0055C400
+  .text:0055DBD0
+
+005B9A6Ch: possible vtable (14 methods)
+  referencing functions: 
+  .text:0055E130
+  .text:0055FE80
+  .text:00560630
+  .text:00560960
+  .text:005609D0
+  .text:00560A60
+  .text:00560B40
+
+005B9AA4h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00560450
+
+005B9ADCh: possible vtable (14 methods)
+  referencing functions: 
+  .text:005606A0
+
+005B9B14h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00560BE0
+  .text:005612A0
+
+005B9B4Ch: possible vtable (14 methods)
+  referencing functions: 
+  .text:00561740
+  .text:00561D80
+
+005B9B84h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00564B90
+  .text:00565150
+
+005B9BBCh: possible vtable (14 methods)
+  referencing functions: 
+  .text:00566700
+  .text:00566F00
+
+005B9BF4h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00567E60
+  .text:0056C0A0
+
+005B9C2Ch: possible vtable (14 methods)
+  referencing functions: 
+  .text:0056EB10
+  .text:00570B70
+
+005B9C64h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00570BE0
+  .text:00572BE0
+
+005B9C9Ch: possible vtable (14 methods)
+  referencing functions: 
+  .text:00572C50
+  .text:00574BE0
+
+005B9CD4h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00574C50
+  .text:00577130
+
+005B9D0Ch: possible vtable (14 methods)
+  referencing functions: 
+  .text:005771A0
+  .text:005791D0
+
+005B9DC0h: possible vtable (12 methods)
+  referencing functions: 
+  .text:0057E8C0 (2 times)
+
+005B9DF0h: possible vtable (14 methods)
+  referencing functions: 
+  .text:0057E8C0
+
+005B9E28h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00581B10
+  .text:005821B0
+  .text:005829F0
+  .text:00582D80
+
+005B9E64h: possible vtable (14 methods)
+  referencing functions: 
+  .text:00588850
+  .text:0058A0D0
+  .text:0058A160
+
+005B9E9Ch: possible vtable (11 methods)
+  referencing functions: 
+  .text:0058B020
+  .text:0058B080
+  .text:0058B0E0
+  .text:0058B100
+
+005B9EC8h: possible vtable (8 methods)
+  referencing functions: 
+  .text:0058B740
+  .text:0058B7D0
+
+005B9EE8h: possible vtable (13 methods)
+  referencing functions: 
+  .text:0058C2F0
+
+005B9F1Ch: possible vtable (3 methods)
+  referencing functions: 
+  .text:0058EB30 ()
+
+005BC208h: possible vtable (1 methods)
+  referencing functions: 
+  .text:00591130
+
+005BCF10h: possible vtable (3 methods)
+(SI)
+0000: std::length_error
+0000:     std::logic_error
+0000:         exception
+ std::length_error::`vftable'
+  referencing functions: 
+  .text:0059602B
+  .text:0059615F
+  scalar deleting destructor: 00596143h
+  destructor: 005960E9h
+
+005BCF30h: possible vtable (3 methods)
+(SI)
+0000: std::logic_error
+0000:     exception
+ std::logic_error::`vftable'
+  referencing functions: 
+  .text:00404160
+  .text:004042E0
+  .text:00596085
+  .text:005960E9 (std::length_error::~length_error)
+
+005BCF40h: possible vtable (3 methods)
+(SI)
+0000: std::out_of_range
+0000:     std::logic_error
+0000:         exception
+ std::out_of_range::`vftable'
+  referencing functions: 
+  .text:00404080
+  .text:00404380
+  .text:0041A7A0
+  .text:00432170
+  .text:004DC5F0
+  .text:005513B0
+  .text:00596177
+
+005BCF74h: possible vtable (3 methods)
+(SI)
+0000: std::ios_base::failure
+0000:     std::runtime_error
+0000:         exception
+ std::ios_base::failure::`vftable'
+  referencing functions: 
+  .text:00596214 (std::ios_base::clear)
+  .text:0059646A
+  scalar deleting destructor: 0059644Eh
+  destructor: 005963F4h
+
+005BCFB8h: possible vtable (3 methods)
+(SI)
+0000: std::runtime_error
+0000:     exception
+ std::runtime_error::`vftable'
+  referencing functions: 
+  .text:005962B0
+  .text:0059633E ()
+  .text:00596397
+  .text:005963F4 (std::ios_base::failure::~failure)
+  scalar deleting destructor: 0059637Bh
+  destructor: 0059633Eh
+
+005BCFC8h: possible vtable (1 methods)
+(SI)
+0000: std::ios_base
+ std::ios_base::`vftable'
+  referencing functions: 
+  .text:0044C9E0
+  .text:005964A8 (std::ios_base::~ios_base)
+  constructor: 0044C9E0h
+
+005BCFD0h: possible vtable (1 methods)
+ std::ostrstream::`vftable'{for `std::basic_ios<char,struct std::char_traits<char>>'}
+  referencing functions: 
+  .text:0044C640
+  .text:0044D610
+  .text:004FE080
+  .text:004FFAE0
+  .text:0050BD30
+  .text:0050CA40
+  .text:0050CDF0
+  .text:00596610 (std::ostrstream::~ostrstream)
+
+005BCFD8h: possible vtable (13 methods)
+(SI)
+0000: std::strstreambuf
+0000:     std::basic_streambuf<char,std::char_traits<char>>
+ std::strstreambuf::`vftable'
+  referencing functions: 
+  .text:0044CA20
+  .text:0044D610
+  .text:00596656 (std::strstreambuf::~strstreambuf)
+
+005BD010h: possible vtable (13 methods)
+(SI)
+0000: std::basic_streambuf<char,std::char_traits<char>>
+ std::basic_streambuf<char,struct std::char_traits<char>>::`vftable'
+  referencing functions: 
+  .text:0044F370
+  .text:0044F420
+  .text:00596656 (std::strstreambuf::~strstreambuf)
+
+005BD048h: possible vtable (1 methods)
+(SI)
+0000: std::basic_ios<char,std::char_traits<char>>
+0000:     std::ios_base
+ std::basic_ios<char,struct std::char_traits<char>>::`vftable'
+  referencing functions: 
+  .text:0044C640 (2 times)
+  .text:0044D610 (2 times)
+  .text:0044ED80
+  .text:0044F360
+  .text:004FE080 (2 times)
+  .text:004FFAE0 (2 times)
+  .text:0050BD30
+  .text:0050CA40 (2 times)
+  .text:0050CDF0 (2 times)
+  .text:0050D120
+
+005BD050h: possible vtable (1 methods)
+ std::basic_ostream<char,struct std::char_traits<char>>::`vftable'{for `std::basic_ios<char,struct std::char_traits<char>>'}
+  referencing functions: 
+  .text:0044ED80
+  .text:0044EE30 (std::basic_ostream<char,std::char_traits<char>>::~basic_ostream<char,std::char_traits<char>>)
+  .text:0044F6A0
+  .text:004FE080
+  .text:00596610 (std::ostrstream::~ostrstream)
+
+005BD060h: possible vtable (1 methods)
+(SI)
+0000: std::locale::_Locimp
+0000:     std::locale::facet
+ std::locale::_Locimp::`vftable'
+  referencing functions: 
+  .text:00596ECD (std::locale::_Locimp::_Locimp)
+  .text:00596F5B (std::locale::_Locimp::~_Locimp)
+  scalar deleting destructor: 00596F3Fh
+  destructor: 00596F5Bh
+  constructor: 00596ECDh
+
+005BD068h: possible vtable (1 methods)
+(SI)
+0000: std::locale::facet
+ std::locale::facet::`vftable'
+  referencing functions: 
+  .text:0044FB50
+  .text:00450350
+  .text:00451030
+  .text:00596ECD (std::locale::_Locimp::_Locimp)
+  .text:00596F5B (std::locale::_Locimp::~_Locimp)
+
+005BD070h: possible vtable (6 methods)
+(SI)
+0000: std::numpunct<char>
+0000:     std::locale::facet
+ std::numpunct<char>::`vftable'
+  referencing functions: 
+  .text:00450C60
+  .text:00451030
+
+005BD08Ch: possible vtable (7 methods)
+(SI)
+0000: std::num_put<char,std::ostreambuf_iterator<char,std::char_traits<char>>>
+0000:     std::locale::facet
+ std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char>>>::`vftable'
+  referencing functions: 
+  .text:0044FAF0
+
+005BD0ACh: possible vtable (3 methods)
+(SI)
+0000: std::bad_cast
+0000:     exception
+ std::bad_cast::`vftable'
+  referencing functions: 
+  .text:0044EE40
+  .text:0044F090
+  .text:0044F0F0
+  .text:0044FE20
+
+005BD0C0h: possible vtable (2 methods)
+(SI)
+0000: exception
+ exception::`vftable'
+  referencing functions: 
+  .text:00597794 (exception::exception)
+  .text:005977D1 (exception::exception)
+  .text:0059781B
+  scalar deleting destructor: 00597778h
+  destructor: 0059781Bh
+
+005BD0E0h: possible vtable (2 methods)
+(SI)
+0000: type_info
+ type_info::`vftable'
+  referencing functions: 
+  .text:0059783E (type_info::~type_info)
+  scalar deleting destructor: 00597867h
+  destructor: 0059783Eh
+
+005BD3D0h: possible vtable (1 methods)
+  referencing functions: 
+  .text:0059C839 ()
+
+005BDF8Ch: possible vtable (1 methods)
+  referencing functions: 
+  .text:005A36F4 ()
+
+005BDF90h: possible vtable (1 methods)
+  referencing functions: 
+  .text:005A36F4 ()
+

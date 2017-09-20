@@ -1232,7 +1232,7 @@ static ApplyStrucTInfos_0(void) {
 	id = GetStrucIdByName("SoundManager");
 	id = GetStrucIdByName("cls1B");
 	id = GetStrucIdByName("gos30BE0");
-	id = GetStrucIdByName("gos3B0");
+	id = GetStrucIdByName("gos3B8");
 	id = GetStrucIdByName("str6C");
 	id = GetStrucIdByName("str10");
 	id = GetStrucIdByName("gos137F4");
@@ -1386,7 +1386,7 @@ static Structures_0(id) {
 	id = AddStrucEx(-1,"SoundManager",0);
 	id = AddStrucEx(-1,"cls1B",0);
 	id = AddStrucEx(-1,"gos30BE0",0);
-	id = AddStrucEx(-1,"gos3B0",0);
+	id = AddStrucEx(-1,"gos3B8",0);
 	id = AddStrucEx(-1,"str6C",0);
 	id = AddStrucEx(-1,"str10",0);
 	id = AddStrucEx(-1,"gos137F4",0);
@@ -1931,11 +1931,11 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"field_48",	0X48,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_4C",	0X4C,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_50",	0X50,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"field_54",	0X54,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"someStruOrArray",	0X54,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_58",	0X58,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"ni_field_5C",	0X5C,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_60",	0X60,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"ni_field_64",	0X64,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"isVisible",	0X64,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_68",	0X68,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"ni_field_6C",	0X6C,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"ni_field_70",	0X70,	0x20000400,	-1,	4);
@@ -1960,6 +1960,7 @@ static Structures_0(id) {
 	SetMemberComment(id,	0X38,	"-1",	0);
 	mid = AddStrucMember(id,"field_3C",	0X3C,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X3C,	"-1",	0);
+	mid = AddStrucMember(id,"field_40",	0X40,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_44",	0X44,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X44,	"0",	0);
 	mid = AddStrucMember(id,"field_48",	0X48,	0x000400,	-1,	1);
@@ -1985,14 +1986,14 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"cName",	0X14,	0x000400,	-1,	32);
 	mid = AddStrucMember(id,"isOpen",	0X34,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"ni_field_38",	0X38,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"field_3C",	0X3C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"isMutedOrClosedOrPlaying",	0X3C,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_40",	0X40,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"Samples",	0X44,	0x20000400,	-1,	56);
 	mid = AddStrucMember(id,"SampleCount",	0X7C,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"ni_field_80",	0X80,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_84",	0X84,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_88",	0X88,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"field_8C",	0X8C,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"IsPlaying",	0X8C,	0x000400,	-1,	1);
 	mid = AddStrucMember(id,"critSectRec1",	0X90,	0x60000400,	GetStrucIdByName("_RTL_CRITICAL_SECTION"),	24);
 	mid = AddStrucMember(id,"critSectRec2",	0XA8,	0x60000400,	GetStrucIdByName("_RTL_CRITICAL_SECTION"),	24);
 	mid = AddStrucMember(id,"critSectRec3",	0XC0,	0x60000400,	GetStrucIdByName("_RTL_CRITICAL_SECTION"),	24);
@@ -2286,7 +2287,7 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"std_StrC",	0X30BC0,	0x60000400,	GetStrucIdByName("STDRec"),	16);
 	mid = AddStrucMember(id,"std_StrD",	0X30BD0,	0x60000400,	GetStrucIdByName("STDRec"),	16);
 	
-	id = GetStrucIdByName("gos3B0");
+	id = GetStrucIdByName("gos3B8");
 	mid = AddStrucMember(id,"virtTablePtr",	0,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_4",	0X4,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_8",	0X8,	0x20000400,	-1,	4);
@@ -2874,13 +2875,13 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"Necropolis",	0X3F0,	0x60000400,	GetStrucIdByName("_Cost"),	252);
 	mid = AddStrucMember(id,"Dungeon",	0X4EC,	0x60000400,	GetStrucIdByName("_Cost"),	252);
 	mid = AddStrucMember(id,"Stronghold",	0X5E8,	0x60000400,	GetStrucIdByName("_Cost"),	252);
-	mid = AddStrucMember(id,"Fortress",	0X6E4,	0x60000400,	GetStrucIdByName("_Cost"),	252);
 	return id;
 }
 
 static Structures_1(id) {
         auto mid;
 
+	mid = AddStrucMember(id,"Fortress",	0X6E4,	0x60000400,	GetStrucIdByName("_Cost"),	252);
 	
 	id = GetStrucIdByName("WallSection");
 	mid = AddStrucMember(id,"name_Ptr",	0,	0x20000400,	-1,	4);

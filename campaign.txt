@@ -1,0 +1,157 @@
+Restoration of Erathia
+
+1. Long Live the Queen (no Relations)
+
+a) Homecoming
+ Bonus:
+ - 14 Pikeman
+ - 5 Sulfur, Mercury, Crystal and Gems
+ - First Aid Tent
+ Difficulty: Horse
+ Restriction: 6th level hero
+ Condition: Capture town of Terraneus
+ Aftermission: 4 strogest heroes stored in Campaign state
+
+b) Gaurdian Angels
+ Beforemission (take from store):
+ - 4 strogest heroes (w/o army and inventory)
+ Bonus:
+ - 1 Angel
+ - 3 Zealots
+ - Scroll of Prayer
+ Difficulty: Horse
+ Restriction: 12th level hero
+ Condition: Capture all towns/castles and defeat all heroes
+ Aftermission: 8 strogest heroes stored in Campaign state
+
+c) Griffin Cliff
+ Beforemission (take from store):
+ - 8 strogest heroes (w/o army and inventory)
+ Bonus:
+ - Golden Bow
+ - Lions Shield
+ - Endless sack of Gold
+ Difficulty: Horse
+ Condition: Flag all 7 Griffin towers
+
+
+2. Dungeons and Devils (no Relations)
+
+a) A Devilish Plan
+ Bonus:
+ - Scroll of Slayer
+ - Armor of Wonder
+ - 100 Imps
+ Difficulty: Horse
+ Restriction: 12th level hero
+ Condition: Find and kill Gold Dragon Queen
+ Aftermission: 8 strogest heroes stored in Campaign state
+
+b) Groundbreaking
+ Bonus:
+ - Pillar of Eyes
+ - Mage Guild Level 1
+ - Battle Scholar Academy
+ Difficulty: Horse
+ Restriction: 12th level hero
+ Condition: Capture all towns/castles and defeat all heroes
+ Aftermission: 8 strogest heroes stored in Campaign state
+
+c) Steadwick's Fall
+ Bonus:
+ - heroes from A Devilish Plan (w/o army and inventory)
+ - heroes from Groundbreaking (w/o army and inventory)
+ Difficulty: Horse
+ Condition: Capture city of Steadwick in 3 months
+ 
+
+3. Spoils of War (no Relations)
+
+a) Borderlands
+ Bonus:
+ - Korbac
+ - Verdish
+ - Random Hero
+ Difficulty: Horse
+ Restriction: 12th level hero
+ Condition: Flag all mines
+ Aftermission: 8 strogest heroes stored in Campaign state
+
+b) Gold Rush
+ Bonus:
+ - 3 Thunderbirds
+ - 2 Cyclops Kings
+ - 1 Ancient Behemoth
+ Difficulty: Horse
+ Restriction: 12th level hero
+ Condition: Accumulate 200000 Gold
+ Aftermission: 8 strogest heroes stored in Campaign state
+ Note: mission starts with 2 heroes, actually they are Shiva and Zubin. Shiva - north, Zubin - south. Zubin gets selected bonus.
+
+c) Greed
+ Bonus:
+ - heroes from Borderlands (w/o army and inventory)
+ - heroes from Gold Rush (w/o army and inventory)
+ Difficulty: Horse
+ Condition: Capture all towns/castles and defeat all heroes
+
+
+4. Liberation (Relations: Long Live the Queen, Dungeons and Devils, Spoils of War)
+
+a) Steadwick's Liberation
+ Bonus:
+ - 10000 Gold
+ - 2 Archangels
+ - 2 Titans
+ Difficulty: Horse
+ Condition: Capture city of Steadwick
+ Aftermission: reward stored in Campaign state (Badge of Courage)
+ * Note about Border Guards: in this campaign you have a choice of scenario order of completion (i.e. you may decide to play either Deal with the Devil or Neutral Affairs as your second scenario). Depending on your choice, you may collect different prizes in the final scenario of the campaign. If you did Deal with the Devil first, the blue Border Guard will be passable in that scenario, the red one will be available to you during Neutral Affairs, and you will collect the Sentinel's Shield (+12 d, -3 a) in the final scenario. If you did Neutral Affairs first, reverse the Border Guard availability issue and collect the Thunder Helmet (+10 k, -2 p) at the end. Regardless of what path you follow, make sure the same hero carries both quest artifacts when you complete each scenario.
+ 
+b) Deal with the Devil
+ Beforemission (take from store):
+ - Badge of Courage
+ - Pendant of Life
+ Bonus:
+ - Scroll of Protection from the Fire
+ - Scroll of Ice Bolt
+ - Scroll of Precision
+ Difficulty: Horse
+ Condition: Capture city of Kleesive
+ Aftermission: reward stored in Campaign state (Charm of Mana or the Spyglass)
+ Bug?: Borderguard require Pedant of Life but it does not present on map
+
+c) Neutral Affairs
+ Beforemission (take from store):
+ - Badge of Courage
+ - Charm of Mana
+ Bonus:
+ - Expert Logistics
+ - Shield of the Dwarven Lords
+ - Centaurs Axe
+ Difficulty: Horse
+ Condition: Capture all towns/castles and defeat all heroes
+ Aftermission: reward stored in Campaign state (Pendant of Life or the Speculum)
+ Bug?: Borderguard require Speculum but it does not present on map
+ Note: Borderguard require Badge of Courage but - it present on map
+ Note: Maybe b) anc c) should change order of appearance
+
+d) Tunnels and Troglodites
+ Beforemission (take from store):
+ - Speculum
+ - Spyglass
+ Bonus:
+ - Expert Navigation
+ - Mage Guild Level 1 in all 3 towns
+ - Mage Guild Level 3
+ Difficulty: Horse
+ Condition: Capture all towns/castles and defeat all heroes
+ Bug?: Borderguard require Spyglass but it does not present on map
+ Bug?: Borderguard require Speculum but it does not present on map
+
+5. Long Live the King (Relations: Long Live the Queen, Dungeons and Devils, Spoils of War)
+
+6. Song for the father (Relations: Long Live the Queen, Dungeons and Devils, Spoils of War)
+
+7. Seeds of discontent (Relations: Liberation, Long Live the King, Song for the father)
+

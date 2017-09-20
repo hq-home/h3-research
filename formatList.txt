@@ -1,0 +1,6 @@
+lod
+vid
+snd
+cgm (saved game)
+h3m
+h3c
