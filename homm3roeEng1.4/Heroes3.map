@@ -221,6 +221,7 @@
  0001:00173570       ResumeAllStreams
  0001:00173990       gSoundMgr_SmackClose
  0001:00174760       InitBitMaskPos
+ 0001:001753E0       HQ_TODO
  0001:00175480       SoundMgr_ctor
  0001:001754F0       gSoundMgr_Init
  0001:001757B0       gSoundMgr_Close
@@ -2763,7 +2764,7 @@
  0003:00001374       aIam004_def
  0003:00001380       aIam002_def
  0003:0000138C       aGosolo
- 0003:00001394       aSS
+ 0003:00001394       format
  0003:0000139C       aHpsyyy_pcx
  0003:000013A8       aHpsxxx_pcx
  0003:000013C0       a_?avexception@
@@ -2985,7 +2986,7 @@
  0003:00002380       aS_2
  0003:00002384       aS_1
  0003:0000238C       aIncome
- 0003:00002398       aIS
+ 0003:00002398       Format
  0003:000023A0       aAdvmap_pcx
  0003:000023AC       a_
  0003:000023B0       a_gmD
@@ -5069,6 +5070,7 @@
  0003:0000DB24       aObdtl10_pcx
  0003:0000DB30       aObdtl06_pcx
  0003:0000DB3C       aObdtl04_pcx
+ 0003:0000DB6C       vaList
  0003:0000F238       aSgelmanc_pcx
  0003:0000F248       aSgelman1_pcx
  0003:0000F258       aSgelman2_pcx
@@ -8177,7 +8179,7 @@
  0003:00030544       a1252
  0003:00030CA4       __daylight
  0003:00030CA8       __dstbias
- 0003:00030D2C       Dest
+ 0003:00030D2C       stdDest
  0003:00030D38       _dststart
  0003:00030D3C       _dststart_1
  0003:00030D40       _dststart_2
@@ -8193,6 +8195,7 @@
  0003:00030E20       aBe
  0003:000311E9       gSoundMgr_mem4
  0003:000311F0       emptyString
+ 0003:000312CC       buffer
  0003:00031330       vector_Crgen4
  0003:000314D8       vector_Crgen1
  0003:0003161C       lodf_Crgen4

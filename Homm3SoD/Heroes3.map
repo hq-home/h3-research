@@ -154,6 +154,7 @@
  0001:0018DE40       unknown_libname_26
  0001:00196AA0       gBinkMgr_PauseAllStreams
  0001:00196F70       gSoundMgr_SmackClose
+ 0001:001989C0       HQ_TODO
  0001:00198A60       SoundMgr_ctor
  0001:00198AD0       gSoundMgr_Init
  0001:00198D90       gSoundMgr_Close
@@ -2886,7 +2887,7 @@
  0003:000013B4       aIam004_def
  0003:000013C0       aIam002_def
  0003:000013CC       aGosolo
- 0003:000013D4       aSS
+ 0003:000013D4       format
  0003:000013DC       aHpsyyy_pcx
  0003:000013E8       aHpsxxx_pcx
  0003:000013F8       ??_R0?AVexception@@@8
@@ -8841,6 +8842,7 @@
  0003:00032E90       aBe
  0003:00033259       gSoundMgr_mem4
  0003:00033260       emptyString
+ 0003:0003333C       buffer
  0003:00036D00       gBinkMgr_BinkData1
  0003:00036D04       gBinkMgr_BinkData2
  0003:00036D2C       gBinkMgr_IsStreamsPaused
