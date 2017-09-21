@@ -4,71 +4,89 @@
 #include "stdafx.h"
 #include "Heroes3.h"
 
-#define MAX_LOADSTRING 100
-const PTCHAR AppClassName = _T("Heroes III");
-const PTCHAR AppWinName = _T("Heroes of Might and Magic III");
-const PTCHAR AppErrWinName = _T("Heroes of Might and Magic III");
-const PTCHAR ErrAlreadyRunning = _T("Heroes of Might and Magic III is already running.");
-const PTCHAR ErrCaptionStartup = _T("Startup error");
+#define MAX_LOADSTRING	100
+#define MAX_CMD_LINE	100
 
-TCHAR gTextBuffer[768] = _T("");
+const LPTSTR AppClassName = _T("Heroes III");
+const LPTSTR AppWinName = _T("Heroes of Might and Magic III");
+const LPTSTR AppErrWinName = _T("Heroes of Might and Magic III");
+const LPTSTR ErrAlreadyRunning = _T("Heroes of Might and Magic III is already running.");
+const LPTSTR ErrCaptionStartup = _T("Startup error");
+
+struct _gameConfig {
+	int WinX, WinY;
+	bool IsFullScreen;
+} GameConfig;
+
 
 // Global Variables:
-HINSTANCE hInst;                                // current instance
-WCHAR szTitle[MAX_LOADSTRING];                  // The title bar text
-WCHAR szWindowClass[MAX_LOADSTRING];            // the main window class name
+HINSTANCE hH3Instance;                                // current instance
+HANDLE hH3Event;
+TCHAR gTextBuffer[768] = _T("");
+bool IsGameInitialised = false;
+TCHAR LPCmdLine[MAX_CMD_LINE + 1];
+HMENU hH3Menu;
+HWND hH3Wnd;
+
+int _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int nCmdShow);
 
 // Forward declarations of functions included in this code module:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
-BOOL                InitInstance(HINSTANCE, int);
+bool                InitInstance();
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
+bool GameInitialize();
+void j_CreateDDSurfaces();
+void SOD_unk_sub_4B65F0(HINSTANCE hInstance, HWND hWnd);
+void MainCircle();
 
-int APIENTRY HQ_WINMAIN(_In_ HINSTANCE hInstance,
+int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
-                     _In_ LPWSTR    lpCmdLine,
+                     _In_ LPTSTR    lpCmdLine,
                      _In_ int       nCmdShow)
 {
-    UNREFERENCED_PARAMETER(hPrevInstance);
-    UNREFERENCED_PARAMETER(lpCmdLine);
-
     // TODO: Place code here.
-	HANDLE hObject = CreateEvent(NULL, FALSE, FALSE, APPNAME);
-	DWORD lastError = GetLastError();
-	if (hObject && lastError != ERROR_ALREADY_EXISTS) {
+	HANDLE hH3Event = CreateEvent(NULL, false, false, APPNAME);
+	if (!hH3Event || GetLastError() == ERROR_ALREADY_EXISTS) {
+		_stprintf(gTextBuffer, ErrAlreadyRunning, AppErrWinName);
+		MessageBox(NULL, gTextBuffer, ErrCaptionStartup, MB_ICONSTOP);
+		return 0;
+	}
 	
-	}
-	else {
-		sprintf((PTCHAR)gTextBuffer, (const PTCHAR)ErrAlreadyRunning, AppErrWinName);
-		MessageBox(NULL, gTextBuffer, (PTCHAR)ErrCaptionStartup, MB_ICONSTOP);
-	}
+	memset(LPCmdLine, 0, (MAX_CMD_LINE+1)*sizeof(TCHAR));
+	_tcsncpy(LPCmdLine, lpCmdLine, MAX_CMD_LINE);
+	
+	// Minimum timer resolution, in milliseconds, for the application or device driver. A lower value specifies a higher (more accurate) resolution.
+	timeBeginPeriod(1); // <== TODO: required to close with timeEndPeriod(1)
 
-    // Initialize global strings
-    //LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
-    //LoadStringW(hInstance, IDC_HEROES3, szWindowClass, MAX_LOADSTRING);
-    MyRegisterClass(hInstance);
+	DWORD winStyle, winExStyle;
+	if (!GameInitialize() ||
+		!hPrevInstance && !MyRegisterClass(hInstance) ||
 
-    // Perform application initialization:
-    if (!InitInstance (hInstance, nCmdShow))
-    {
-        return FALSE;
-    }
+	// Perform application initialization:
+		!InitInstance())return 0;
+
 
     //HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_HEROES3));
 
-    MSG msg;
+	SOD_unk_sub_4B65F0(hH3Instance, hH3Wnd);
+
+	MainCircle();
+	
+	/*MSG msg;
 
     // Main message loop:
     while (GetMessage(&msg, nullptr, 0, 0))
     {
-        if (!TranslateAccelerator(msg.hwnd, NULL /*hAccelTable*/, &msg))
+        if (!TranslateAccelerator(msg.hwnd, NULL *//*hAccelTable*//*, &msg))
         {
             TranslateMessage(&msg);
             DispatchMessage(&msg);
         }
     }
+    return (int) msg.wParam;*/
 
-    return (int) msg.wParam;
+	return 0;
 }
 
 
@@ -78,25 +96,22 @@ int APIENTRY HQ_WINMAIN(_In_ HINSTANCE hInstance,
 //
 //  PURPOSE: Registers the window class.
 //
-ATOM MyRegisterClass(HINSTANCE hInstance)
+inline ATOM MyRegisterClass(HINSTANCE hInstance)
 {
-    WNDCLASSEXW wcex;
+    WNDCLASS wndClass;
 
-    wcex.cbSize = sizeof(WNDCLASSEX);
+	wndClass.hCursor = NULL;
+	wndClass.hIcon = LoadIcon(hInstance, (LPCSTR)IDI_HEROES3SOD);
+	wndClass.lpszMenuName = NULL;
+	wndClass.lpszClassName = AppClassName;
+	wndClass.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
+	wndClass.hInstance = hInstance;
+	wndClass.style = CS_BYTEALIGNCLIENT | CS_DBLCLKS | CS_HREDRAW | CS_VREDRAW; // 0x100B
+	wndClass.lpfnWndProc = (WNDPROC)WndProc;
+	wndClass.cbWndExtra = 0;
+	wndClass.cbClsExtra = 0;
 
-    wcex.style          = CS_HREDRAW | CS_VREDRAW;
-    wcex.lpfnWndProc    = WndProc;
-    wcex.cbClsExtra     = 0;
-    wcex.cbWndExtra     = 0;
-    wcex.hInstance      = hInstance;
-    wcex.hIcon          = LoadIcon(hInstance, MAKEINTRESOURCE(IDI_HEROES3));
-    wcex.hCursor        = LoadCursor(nullptr, IDC_ARROW);
-    wcex.hbrBackground  = (HBRUSH)(COLOR_WINDOW+1);
-	wcex.lpszMenuName = _T("HHHHHHHHHH"); // MAKEINTRESOURCEW(IDC_HEROES3);
-    wcex.lpszClassName  = szWindowClass;
-    wcex.hIconSm        = LoadIcon(wcex.hInstance, MAKEINTRESOURCE(IDI_HEROES3));
-
-    return RegisterClassExW(&wcex);
+    return RegisterClass(&wndClass);
 }
 
 //
@@ -109,22 +124,40 @@ ATOM MyRegisterClass(HINSTANCE hInstance)
 //        In this function, we save the instance handle in a global variable and
 //        create and display the main program window.
 //
-BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
+inline bool InitInstance()
 {
-   hInst = hInstance; // Store instance handle in our global variable
+	DWORD winStyle, winExStyle;
+	struct tagRECT rect;
 
-   HWND hWnd = CreateWindowW(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
-      CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, nullptr, nullptr, hInstance, nullptr);
+	if (GameConfig.IsFullScreen)
+	{
+		winStyle = WS_POPUP | WS_VISIBLE;
+		winExStyle = WS_EX_TOPMOST;
+	}
+	else
+	{
+		winStyle = 0;
+		winExStyle = WS_VISIBLE | WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU;
+	}
 
-   if (!hWnd)
-   {
-      return FALSE;
-   }
+	rect.left = 0;
+	rect.top = 0;
+	rect.right = 800;
+	rect.bottom = 600;
+	AdjustWindowRect(&rect, winStyle, !GameConfig.IsFullScreen);
 
-   ShowWindow(hWnd, nCmdShow);
-   UpdateWindow(hWnd);
+	hH3Wnd = CreateWindowEx(winExStyle, AppClassName, AppWinName, winStyle, 
+		GameConfig.WinX, GameConfig.WinY, rect.right - rect.left, rect.bottom - rect.top,
+		NULL, GameConfig.IsFullScreen ? NULL : hH3Menu, hH3Instance, NULL);
 
-   return TRUE;
+	if (!hH3Wnd)return false;
+
+
+	j_CreateDDSurfaces();
+	HCURSOR gameCursor = LoadCursor(NULL, (LPCSTR)IDC_ARROW);
+	SetCursor(gameCursor);
+
+   return true;
 }
 
 //
@@ -148,7 +181,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             switch (wmId)
             {
             case IDM_ABOUT:
-                DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hWnd, About);
+                DialogBox(hH3Instance, MAKEINTRESOURCE(IDD_ABOUTBOX), hWnd, About);
                 break;
             case IDM_QUIT:
                 DestroyWindow(hWnd);
@@ -195,84 +228,23 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
     return (INT_PTR)FALSE;
 }
 
-
-int __stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
+bool GameInitialize()
 {
-	DWORD v4; // eax@1
-	DWORD v5; // esi@7
-	DWORD v6; // edi@7
-	HCURSOR v7; // eax@10
-	WNDCLASSA WndClass; // [sp+Ch] [bp-38h]@5
-	struct tagRECT Rect; // [sp+34h] [bp-10h]@9
+	hH3Menu = LoadMenu(hH3Instance, (LPTSTR)IDM_HEROES3);
+	return false;
+}
 
-	hH3Instance = hInstance;
-	hObject = CreateEventA(0, 0, 0, gameName);
-	v4 = GetLastError();
-	if (hObject && v4 != 183)
-	{
-		memset(&LPCmdLine, 0, 0x3Cu);
-		*(&LPCmdLine + 60) = 0;
-		strncpy(&LPCmdLine, lpCmdLine, 0x3Cu);
-		timeBeginPeriod(1u);
-		if (GameInitialize())
-		{
-			if (hPrevInstance
-				|| (WndClass.hCursor = 0,
-					WndClass.hIcon = LoadIconA(hInstance, (LPCSTR)0x73),
-					WndClass.lpszMenuName = 0,
-					WndClass.lpszClassName = h3ClassName,
-					WndClass.hbrBackground = (HBRUSH)6,
-					WndClass.hInstance = hInstance,
-					WndClass.style = 4107,
-					WndClass.lpfnWndProc = (WNDPROC)sub_4F8290,
-					WndClass.cbWndExtra = 0,
-					WndClass.cbClsExtra = 0,
-					RegisterClassA(&WndClass)))
-			{
-				if (*(_DWORD *)&MDS_60_MainGameFullScreen)
-				{
-					v5 = -1879048192;
-					v6 = 8;
-				}
-				else
-				{
-					v6 = 0;
-					v5 = 281673728;
-				}
-				Rect.left = 0;
-				Rect.top = 0;
-				Rect.right = 800;
-				Rect.bottom = 600;
-				AdjustWindowRect(&Rect, v5, *(_DWORD *)&MDS_60_MainGameFullScreen == 0);
-				hHeroes3Wnd = CreateWindowExA(
-					v6,
-					h3ClassName,
-					H3WindowName,
-					v5,
-					*(int *)&MDS_58_MainGameX,
-					*(int *)&MDS_5C_MainGameY,
-					Rect.right - Rect.left,
-					Rect.bottom - Rect.top,
-					0,
-					(HMENU)(*(_DWORD *)&MDS_60_MainGameFullScreen == 0 ? (unsigned int)hMainMenu : 0),
-					hInstance,
-					0);
-				if (hHeroes3Wnd)
-				{
-					j_CreateDDSurfaces();
-					v7 = LoadCursorA(0, (LPCSTR)0x7F00);
-					SetCursor(v7);
-					SOD_unk_sub_4B65F0((int)hH3Instance, hHeroes3Wnd);
-					gameStart();
-					return 0;
-				}
-			}
-		}
-	}
-	else
-	{
-		sprintf((char *)&txtBuff, aHeroesOfMigh_1, aHeroesOfMigh_0);
-		MessageBoxA(0, &txtBuff, aStartupError, 0x10u);
-	}
-	return 0;
+void j_CreateDDSurfaces() 
+{
+
+}
+
+void SOD_unk_sub_4B65F0(HINSTANCE hInstance, HWND hWnd)
+{
+
+}
+
+void MainCircle()
+{
+
 }

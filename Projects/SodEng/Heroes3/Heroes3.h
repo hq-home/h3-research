@@ -1,8 +1,7 @@
 #pragma once
+#define _MBCS
+#undef _UNICODE
 
 #include "resource.h"
-#include <stdio.h> 
 
-#define HQ_WINMAIN wWinMain
-
-const LPWSTR APPNAME = _T("Heroes III");
+const LPTSTR APPNAME = _T("Heroes III");

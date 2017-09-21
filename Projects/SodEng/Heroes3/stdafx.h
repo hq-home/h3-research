@@ -2,13 +2,23 @@
 // or project specific include files that are used frequently, but
 // are changed infrequently
 //
-
+#pragma comment(lib, "winmm.lib")
 #pragma once
 
 #include "targetver.h"
 
 #define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
-//#define _MBCS
+
+//****** HQ Comment ******************
+// Remove next 3 lines for Unicode version or invert them
+#define _MBCS
+#undef _UNICODE			// for tchar.h
+#undef UNICODE			// for winnt.h
+
+//#undef _MBCS
+//#define _UNICODE			// for tchar.h
+//#define UNICODE			// for winnt.h
+
 // Windows Header Files:
 #include <windows.h>
 
@@ -20,3 +30,5 @@
 
 
 // TODO: reference additional headers your program requires here
+#include <stdio.h> 
+#include <TimeAPI.h>
