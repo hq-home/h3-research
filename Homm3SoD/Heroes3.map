@@ -85,9 +85,11 @@
  0001:000ECCE0       GameInitialize
  0001:000ED1D0       CreateGameObjects
  0001:000EDA70       gameStart
+ 0001:000EFD20       ReadCmdLineParams
  0001:000F2D20       ShowErrorMessage
  0001:000F3950       ShowError_OutOfMemory
  0001:000F70C0       _WinMain@16
+ 0001:000F7290       H3WndProc
  0001:000F7630       unknown_libname_4
  0001:000F77D0       DialogFunc
  0001:000F7970       timeGetTime
@@ -128,6 +130,15 @@
  0001:001157B0       unknown_libname_21
  0001:00116150       ??_Elogic_error@std@@UAEPAXI@Z_0
  0001:0011AD60       nullsub_5
+ 0001:00122030       c21C_getSize
+ 0001:00122320       c31C_LODFile_ctor0
+ 0001:00122370       c31C_LODFile_ctor1
+ 0001:001223A0       c31C_LODFile_ctor2
+ 0001:001223F0       c31C_LODFile_ctor3
+ 0001:00122460       c31C_getSize
+ 0001:00122470       Math_Float_Func002
+ 0001:00122680       Math_Float_Func000
+ 0001:001227E0       Math_Float_Func001
  0001:00130350       unknown_libname_22
  0001:00132640       ?do_always_noconv@codecvt_base@std@@MBE_NXZ_0
  0001:00148C80       nullsub_6
@@ -2296,7 +2307,7 @@
  0002:000034A8       aAjpgurervfab_0
  0002:00003E60       aAllocationFail
  0002:00004600       str
- 0002:0000465C       a_Games
+ 0002:0000465C       aGamesDir
  0002:000049F2       aA
  0002:00004B8C       c8D4_vtab
  0002:00005E10       InputManager_vtab
@@ -2345,6 +2356,8 @@
  0002:00006030       dblConst_9000
  0002:00006038       MouseManager_vtab
  0002:00006290       a_msk
+ 0002:00006378       c21C_vtab
+ 0002:00006384       c31C_LODFile_vtab
  0002:00006CB0       SubKey
  0002:00006CFC       aHeroes3_icd
  0002:00006D08       aHeroes3_exe
@@ -6634,6 +6647,7 @@
  0003:0001A140       aGtsingl_def
  0003:0001A37A       aASs33Ffc
  0003:0001A3A0       aSsFfc
+ 0003:0001A3D8       someDword1@ReadCmdLineParams
  0003:0001A3E0       a1_1_3
  0003:0001A400       a_?avtdataerror
  0003:0001BCCC       aHerospec_txt
@@ -8889,8 +8903,11 @@
  0003:0003A867       MDS_BF_NetworkDefaultName
  0003:0003A888       CFG_CDDrive
  0003:0003AA10       gos3B8_698A10
+ 0003:0003AA18       someDword4@ReadCmdLineParams
  0003:0003AA34       hMainMenu
  0003:0003AA4C       SErrMsg_set_dword_698A4C
+ 0003:0003AA84       isCheatMenuON
+ 0003:0003AA88       someDword3@ReadCmdLineParams
  0003:0003B28C       lodNamesTblIdxPtr
  0003:0003B2B0       gMouseManager
  0003:0003B2B8       gop_3B0
@@ -8902,14 +8919,18 @@
  0003:0003B414       gSoundMgr
  0003:0003B41C       gop_CHiScore
  0003:0003B420       gop_c137F4
+ 0003:0003B42C       someDword2@ReadCmdLineParams
+ 0003:0003B430       gFilename
  0003:0003B530       gInputManager
  0003:0003B538       gop_30BE0
+ 0003:0003B540       gSoundMgr_isNOsound_NOmusic
  0003:0003B54C       gop_c1D8
  0003:0003B550       gManagerFactory
  0003:0003B574       MDS_FirstTime
  0003:0003B578       MDS_TestDecomp
  0003:0003B57C       MDS_TestRead
  0003:0003B580       MDS_TestBlit
+ 0003:0003B5A0       lodf_Genrltxt
  0003:0003B5D0       IsGameInitialised
  0003:0003B5DD       errorAlreadyOccured
  0003:0003B5DE       errorAlreadyOccured2

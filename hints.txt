@@ -29,5 +29,32 @@ shr      edx,7
 32 + 7 = 39 что и получаем в ((__int64)val * 0x80808081) >> 39;
 на асме на 32 бита двигать конечно ненадо у тебя нужное число уже в edx как я понимаю.
 ======================================
-
+				
+; get Length of string by addrOfStr
+                mov     edi, addrOfStr
+                or      ecx, 0FFFFFFFFh; count of bytes to search
+                xor     eax, eax ; 0 - lookup for
+                repne scasb ; while(*edi != al || ecx != 0) { edi++; ecx--; }
+                not     ecx ; length+1
+                sub     edi, ecx ;restore edi -> addrOfStr
+				dec     ecx ; length
+                
+; copy bytes from DS:ESI -> ES:EDI
+				mov		ecx, N ; bytes to copy
+                mov     edx, ecx ; store Length for getting remainder in future
+                mov     esi, sourceAddr
+                mov     edi, destAddr
+                shr     ecx, 2 ; div Length by 4 for 32bit moving
+                rep movsd ; while(*ecx != 0) { esi+=4; edi+=4; ecx--; }
+                mov     ecx, edx ; restore Length
+                and     ecx, 3   ; get remainder of Length/4
+                rep movsb	; move left bytes
+							; while(*ecx != 0) { esi++; edi++; ecx--; }
+; -----------
+				mov     ecx, offset LPCmdLine
+				mov     eax, 2
+                dec     ecx
+                sub     eax, offset byte_699611
+                mov     ebx, 1                
+				
 

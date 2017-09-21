@@ -6008,6 +6008,7 @@
  0003:000183D0       aGtsingl_def
  0003:0001860A       aASs33Ffc
  0003:00018630       aSsFfc
+ 0003:00018668       someDword1@ReadCmdLineParams
  0003:00018670       a1_1_3
  0003:00018690       a_?avtdataerror
  0003:00019F5C       aHerospec_txt
@@ -8282,12 +8283,12 @@
  0003:000387B7       MDS_BF_NetworkDefaultName
  0003:000387D8       CFG_CDDrive
  0003:00038960       gos3B8_5FAEB0
- 0003:00038968       dy_some_dword_5FB290
+ 0003:00038968       someDword4@ReadCmdLineParams
  0003:00038984       hMainMenu
  0003:00038988       hSubMenu
  0003:0003899C       SErrMsg_set_dword_5FB254
  0003:000389D4       isCheatMenuON
- 0003:000389D8       dy_some_byte_5FBCFC
+ 0003:000389D8       someDword3@ReadCmdLineParams
  0003:00038AC8       arrsScSkilNames_flags
  0003:00038ACC       secSkilDesc
  0003:00038C1C       heroNames
@@ -8309,11 +8310,11 @@
  0003:0003936C       gSoundMgr
  0003:00039374       gop_CHiScore
  0003:00039378       gop_c137F4
- 0003:00039384       some_dword_5D8450
- 0003:00039388       dy_Chaos_mp2
+ 0003:00039384       someDword2@ReadCmdLineParams
+ 0003:00039388       gFilename
  0003:00039488       gInputManager
  0003:00039490       gop_30BE0
- 0003:00039498       is_NOsound_NOmusic
+ 0003:00039498       gSoundMgr_isNOsound_NOmusic
  0003:000394A4       gop_c1D8
  0003:000394A8       gManagerFactory
  0003:000394C8       MDS_FirstTime
