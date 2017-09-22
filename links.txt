@@ -1,5 +1,28 @@
 http://wiki.enleth.com/homm:file-formats
-http://www.terrybutler.co.uk/misc/heroes-of-might-and-magic-iii/
-http://www.heroesofmightandmagic.com/heroes3/
-http://www.ign.com/wikis/heroes-of-might-and-magic-iii-armageddons-blade
-http://heroes.ag.ru/h3/campaigns/SoD/
+http://forum.df2.ru/index.php?showtopic=2733
+http://bazaar.launchpad.net/~openhommdev/openhomm/main/files/head:/doc/formats
+http://bazaar.launchpad.net/~openhommdev/openhomm/main/files/head:/
+http://rewiki.regengedanken.de/wiki/List_of_file_formats
+http://ruby-doc.org/gems/docs/h/h3m-0.1.0/H3m/Map.html
+
+https://github.com/andryunin/h3m
+https://github.com/lekzd/h3m-map-convertor Converts h3m map files to json
+https://github.com/sammusic27/PHP-h3m Parsers of h3m maps
+https://github.com/Janelia-Farm-Xfam/Bio-HMM-Logo Bio::HMM::Logo - Build logo graphics from HMM files
+https://github.com/potmdehex/homm3tools Tools for Heroes of Might and Magic III
+
+http://download.vcmi.eu/tools/
+
+http://ukrfaq.narod.ru/ru/game/strategy/hmm2.htm
+
+Все 8 Хроник for SoD(переведены)
+http://heroes.ag.ru/h3/maps/-campaigns/All_Heroes_Chronicles/All8ChroniclesforSOD_Rus.zip
+
+ХироВорлд
+http://www.heroesworld.ru/forum/index.php
+
+Портал
+http://en.heroesportal.net/tavern/?id=361859
+Файлы для Heroes of Might and Magic III
+
+http://en.heroesportal.net/other.php?storage_3

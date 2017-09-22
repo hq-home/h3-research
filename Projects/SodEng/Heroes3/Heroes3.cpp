@@ -5,7 +5,7 @@
 #include "Heroes3.h"
 
 #define MAX_LOADSTRING	100
-#define MAX_CMD_LINE	100
+#define MAX_CMD_LINE	60
 
 const LPTSTR AppClassName = _T("Heroes III");
 const LPTSTR AppWinName = _T("Heroes of Might and Magic III");

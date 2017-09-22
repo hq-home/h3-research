@@ -86,7 +86,7 @@
  0001:000ED1D0       CreateGameObjects
  0001:000EDA70       gameStart
  0001:000EFD20       ReadCmdLineParams
- 0001:000F2D20       ShowErrorMessage
+ 0001:000F2D20       ShowMessageAndExit
  0001:000F3950       ShowError_OutOfMemory
  0001:000F70C0       _WinMain@16
  0001:000F7290       H3WndProc
@@ -8923,7 +8923,7 @@
  0003:0003B430       gFilename
  0003:0003B530       gInputManager
  0003:0003B538       gop_30BE0
- 0003:0003B540       gSoundMgr_isNOsound_NOmusic
+ 0003:0003B540       gSoundMgr_isNoSoundAndNoMusic
  0003:0003B54C       gop_c1D8
  0003:0003B550       gManagerFactory
  0003:0003B574       MDS_FirstTime
