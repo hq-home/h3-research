@@ -91,6 +91,7 @@
  0001:000C1D50       ??0logic_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
  0001:000CCBE0       c4E7D0_ctor
  0001:000CD230       ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ_3
+ 0001:000D5F60       j_??1exception@@UAE@XZ
  0001:000E5D90       unknown_libname_3
  0001:000E6210       str70_ctor
  0001:000E8130       c8D4_ctor
@@ -271,11 +272,13 @@
  0001:00206400       nullsub_10
  0001:0020A0F0       ??3@YAXPAX@Z
  0001:0020A0FB       ?_Xlen@std@@YAXXZ
- 0001:0020A155       unknown_libname_39
+ 0001:0020A155       ??1length_error@std@@UAE@XZ
+ 0001:0020A1AF       ??_Glength_error@std@@UAEPAXI@Z
  0001:0020A1E3       ?_Xran@std@@YAXXZ
  0001:0020A27F       nullsub_11
  0001:0020A280       ?clear@ios_base@std@@QAEXH_N@Z
- 0001:0020A31C       unknown_libname_40
+ 0001:0020A31C       ??1failure@ios_base@std@@UAE@XZ
+ 0001:0020A376       ??_Gfailure@ios_base@std@@UAEPAXI@Z
  0001:0020A3AA       ??1ios_base@std@@UAE@XZ
  0001:0020A3FA       ?_Callfns@ios_base@std@@AAEXW4event@12@@Z
  0001:0020A41C       ?_Addstd@ios_base@std@@IAEXXZ
@@ -333,12 +336,14 @@
  0001:0020C487       unknown_libname_46
  0001:0020C68A       ??0_Winit@std@@QAE@XZ
  0001:0020C917       unknown_libname_47
+ 0001:0020CA93       ??1?$basic_streambuf@GU?$char_traits@G@std@@@std@@UAE@XZ
  0001:0020CACE       ?xsgetn@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEHPAGH@Z
  0001:0020CB55       ?xsputn@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEHPBGH@Z
  0001:0020CBDD       unknown_libname_48
  0001:0020CC01       unknown_libname_49
  0001:0020CC25       ?setbuf@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MAEPAV12@PA_WH@Z
  0001:0020CC2D       nullsub_16
+ 0001:0020CC3B       ??1?$basic_filebuf@GU?$char_traits@G@std@@@std@@UAE@XZ
  0001:0020CCA0       ?overflow@?$basic_filebuf@GU?$char_traits@G@std@@@std@@MAEGG@Z
  0001:0020CDE8       ?pbackfail@?$basic_filebuf@GU?$char_traits@G@std@@@std@@MAEGG@Z
  0001:0020CE9F       ?underflow@?$basic_filebuf@GU?$char_traits@G@std@@@std@@MAEGXZ
@@ -346,6 +351,9 @@
  0001:0020CFEB       unknown_libname_50
  0001:0020D109       ?setbuf@?$basic_filebuf@GU?$char_traits@G@std@@@std@@MAEPAV?$basic_streambuf@GU?$char_traits@G@std@@@2@PAGH@Z
  0001:0020D137       unknown_libname_51
+ 0001:0020D16F       ??_G?$basic_ios@GU?$char_traits@G@std@@@std@@UAEPAXI@Z
+ 0001:0020D1AA       ??_G?$basic_streambuf@GU?$char_traits@G@std@@@std@@UAEPAXI@Z
+ 0001:0020D1C6       ??_G?$basic_filebuf@GU?$char_traits@G@std@@@std@@UAEPAXI@Z
  0001:0020D1E2       ?init@?$basic_ios@GU?$char_traits@G@std@@@std@@IAEXPAV?$basic_streambuf@GU?$char_traits@G@std@@@2@_N@Z
  0001:0020D22C       ?gbump@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEXH@Z
  0001:0020D240       ?_Gndec@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEPAGXZ
@@ -359,6 +367,8 @@
  0001:0020D386       __Stod
  0001:0020D3C2       __Stof
  0001:0020D3D7       ?_Nomemory@std@@YAXXZ
+ 0001:0020D43B       ??1bad_alloc@std@@UAE@XZ
+ 0001:0020D463       ??_Gbad_alloc@std@@UAEPAXI@Z
  0001:0020D4A1       ?_Makewloc@_Locimp@locale@std@@CAXABV_Locinfo@3@HPAV123@PBV23@@Z
  0001:0020D9FC       ?do_in@?$codecvt@GDH@std@@MBEHAAHPBD1AAPBDPAG3AAPAG@Z
  0001:0020DA7E       ?do_out@?$codecvt@GDH@std@@MBEHAAHPBG1AAPBGPAD3AAPAD@Z
@@ -396,6 +406,22 @@
  0001:0020F2ED       ?do_get_weekday@?$time_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@GU?$char_traits@G@std@@@2@V32@0AAVios_base@2@AAHPAUtm@@@Z
  0001:0020F32B       ?do_get_monthname@?$time_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@GU?$char_traits@G@std@@@2@V32@0AAVios_base@2@AAHPAUtm@@@Z
  0001:0020F369       ?do_get_year@?$time_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@GU?$char_traits@G@std@@@2@V32@0AAVios_base@2@AAHPAUtm@@@Z
+ 0001:0020F3CF       ??_G?$ctype@G@std@@UAEPAXI@Z
+ 0001:0020F3EB       ??1?$ctype@G@std@@UAE@XZ
+ 0001:0020F40B       ??_G?$time_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@UAEPAXI@Z
+ 0001:0020F427       ??1?$time_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@UAE@XZ
+ 0001:0020F441       ??_G?$numpunct@G@std@@UAEPAXI@Z
+ 0001:0020F45D       ??1?$numpunct@G@std@@UAE@XZ
+ 0001:0020F489       ??_G?$messages@G@std@@UAEPAXI@Z
+ 0001:0020F4A5       ??1?$messages@G@std@@UAE@XZ
+ 0001:0020F4C8       ??_G?$collate@D@std@@UAEPAXI@Z
+ 0001:0020F4E4       ??1?$collate@D@std@@UAE@XZ
+ 0001:0020F4EB       ??_G?$moneypunct@G$0A@@std@@UAEPAXI@Z
+ 0001:0020F507       ??_G?$time_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@UAEPAXI@Z
+ 0001:0020F523       ??1?$time_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@UAE@XZ
+ 0001:0020F546       ??1?$moneypunct@G$0A@@std@@UAE@XZ
+ 0001:0020F54B       ??1?$_Mpunct@G@std@@UAE@XZ
+ 0001:0020F57F       ??_G?$_Mpunct@G@std@@UAEPAXI@Z
  0001:0020F59B       ?_Gettnames@_Locinfo@std@@QBE?AV_Timevec@2@XZ
  0001:0020F5B3       ??4?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@QAEAAV01@G@Z
  0001:0020F5D5       ?sputc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEGG@Z
@@ -460,6 +486,16 @@
  0001:0021406B       ?do_get_monthname@?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHPAUtm@@@Z
  0001:002140A9       ?do_get_year@?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHPAUtm@@@Z
  0001:0021410F       ?do_put@?$time_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@PBUtm@@DD@Z
+ 0001:002141E8       ??_G?$messages@D@std@@UAEPAXI@Z
+ 0001:00214204       ??1?$messages@D@std@@UAE@XZ
+ 0001:00214227       ??_G?$moneypunct@D$0A@@std@@UAEPAXI@Z
+ 0001:00214243       ??_G?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@UAEPAXI@Z
+ 0001:0021425F       ??1?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@UAE@XZ
+ 0001:00214282       ??_G?$time_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@UAEPAXI@Z
+ 0001:0021429E       ??1?$time_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@UAE@XZ
+ 0001:002142B8       ??1?$_Mpunct@D@std@@UAE@XZ
+ 0001:002142EC       ??_G?$_Mpunct@D@std@@UAEPAXI@Z
+ 0001:00214308       ??1?$moneypunct@D$0A@@std@@UAE@XZ
  0001:00214335       ?_Getmfld@?$money_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@AAV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@0_NAAVios_base@2@@Z
  0001:00214BAA       ?_Putmfld@?$money_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@_NAAVios_base@2@D1V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z
  0001:002151C8       ?_Getint@?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@CAHAAV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@0HHAAH@Z
@@ -503,8 +539,10 @@
  0001:002168E5       _tolower_0
  0001:002169B0       _isalpha
  0001:002169DE       _sprintf
+ 0001:00216A41       ??_Gexception@@UAEPAXI@Z
  0001:00216A5D       ??0exception@@QAE@ABQBD@Z
  0001:00216A9A       ??0exception@@QAE@ABV0@@Z
+ 0001:00216AE4       ??1exception@@UAE@XZ
  0001:00216AFA       ?what@exception@@UBEPBDXZ
  0001:00216B07       __CxxThrowException@8
  0001:00216B50       _memcpy
@@ -1174,8 +1212,6 @@
  0001:002269C8       unknown_libname_108
  0001:002269E8       unknown_libname_109
  0001:00226A00       SEH_404B80
- 0001:00226A18       unknown_libname_111
- 0001:00226A65       unknown_libname_112
  0001:00226A70       SEH_405160
  0001:00226A88       unknown_libname_113
  0001:00226AC0       unknown_libname_114
@@ -1188,7 +1224,6 @@
  0001:00226B78       unknown_libname_119
  0001:00226B98       unknown_libname_120
  0001:00226BC0       unknown_libname_121
- 0001:00226BD0       unknown_libname_122
  0001:00226BDB       SEH_415E80
  0001:00226BFB       unknown_libname_123
  0001:00226C1B       unknown_libname_124
@@ -1209,6 +1244,8 @@
  0001:00226E18       unknown_libname_139
  0001:00226E40       unknown_libname_140
  0001:00226E68       unknown_libname_141
+ 0001:00226E88       SEH_41B960
+ 0001:00226EA8       SEH_41BAD0
  0001:00226EC8       unknown_libname_142
  0001:00226EE8       unknown_libname_143
  0001:00226F0B       unknown_libname_144
@@ -1277,7 +1314,6 @@
  0001:002278A8       unknown_libname_202
  0001:00227957       unknown_libname_203
  0001:00227978       unknown_libname_204
- 0001:00227990       unknown_libname_205
  0001:0022799B       SEH_449B60
  0001:00227A00       unknown_libname_206
  0001:00227A40       unknown_libname_207
@@ -1300,11 +1336,9 @@
  0001:00227C88       unknown_libname_224
  0001:00227CE9       unknown_libname_225
  0001:00227D08       unknown_libname_226
- 0001:00227D7E       unknown_libname_227
  0001:00227D89       SEH_450EF0
  0001:00227DA8       unknown_libname_228
  0001:00227DC8       unknown_libname_229
- 0001:00227DFB       unknown_libname_230
  0001:00227E06       SEH_4514F0
  0001:00227E18       unknown_libname_231
  0001:00227EBB       unknown_libname_232
@@ -1315,7 +1349,6 @@
  0001:00228098       unknown_libname_237
  0001:00228102       unknown_libname_238
  0001:00228118       unknown_libname_239
- 0001:00228130       unknown_libname_240
  0001:0022814A       SEH_453640
  0001:00228183       SEH_453700
  0001:00228198       SEH_453AA0
@@ -1324,7 +1357,6 @@
  0001:00228223       SEH_454440
  0001:0022824B       unknown_libname_245
  0001:00228283       unknown_libname_246
- 0001:00228290       unknown_libname_247
  0001:002282A0       SEH_455500
  0001:002282B8       unknown_libname_248
  0001:002282D8       unknown_libname_249
@@ -1335,7 +1367,6 @@
  0001:00228398       unknown_libname_254
  0001:002283D6       unknown_libname_255
  0001:002283FE       unknown_libname_256
- 0001:00228423       unknown_libname_257
  0001:0022844F       SEH_456BA0
  0001:00228468       unknown_libname_258
  0001:00228546       unknown_libname_259
@@ -1348,7 +1379,6 @@
  0001:002288A3       unknown_libname_266
  0001:002288FC       unknown_libname_267
  0001:00228988       unknown_libname_268
- 0001:002289A0       unknown_libname_269
  0001:002289AB       SEH_45B7B0
  0001:002289C8       unknown_libname_270
  0001:002289F0       unknown_libname_271
@@ -1373,7 +1403,6 @@
  0001:00228D21       unknown_libname_290
  0001:00228D71       unknown_libname_291
  0001:00228D8B       unknown_libname_292
- 0001:00228DA0       unknown_libname_293
  0001:00228DD7       unknown_libname_294
  0001:00228E08       unknown_libname_295
  0001:00228E28       unknown_libname_296
@@ -1384,7 +1413,6 @@
  0001:00228EC8       unknown_libname_301
  0001:00228EE8       unknown_libname_302
  0001:00228F08       unknown_libname_303
- 0001:00228F20       unknown_libname_304
  0001:00228F2B       SEH_468440
  0001:00228F78       unknown_libname_305
  0001:00228F98       unknown_libname_306
@@ -1396,7 +1424,6 @@
  0001:002290A8       unknown_libname_312
  0001:002290F1       unknown_libname_313
  0001:00229108       unknown_libname_314
- 0001:0022913B       unknown_libname_315
  0001:00229146       SEH_46BBA0
  0001:00229158       unknown_libname_316
  0001:0022921D       unknown_libname_317
@@ -1412,11 +1439,9 @@
  0001:00229723       unknown_libname_326
  0001:00229738       unknown_libname_327
  0001:00229784       unknown_libname_328
- 0001:00229790       unknown_libname_329
  0001:0022979B       SEH_472D30
  0001:002297B8       SEH_473A00
  0001:002297F0       unknown_libname_330
- 0001:00229808       unknown_libname_331
  0001:00229818       SEH_476BE0
  0001:0022984E       unknown_libname_332
  0001:00229878       unknown_libname_333
@@ -1426,11 +1451,8 @@
  0001:00229928       SEH_47A400
  0001:00229948       unknown_libname_337
  0001:00229968       unknown_libname_338
- 0001:00229980       unknown_libname_339
  0001:0022998B       SEH_47B410
- 0001:002299A0       unknown_libname_340
  0001:002299AB       SEH_47B4A0
- 0001:002299D6       unknown_libname_341
  0001:002299E1       SEH_47B520
  0001:002299F8       unknown_libname_342
  0001:00229A18       unknown_libname_343
@@ -1478,16 +1500,13 @@
  0001:0022A304       unknown_libname_383
  0001:0022A318       unknown_libname_384
  0001:0022A33B       unknown_libname_385
- 0001:0022A358       unknown_libname_386
  0001:0022A363       SEH_491270
  0001:0022A378       unknown_libname_387
- 0001:0022A398       unknown_libname_388
  0001:0022A3A3       SEH_491670
  0001:0022A3B8       unknown_libname_389
  0001:0022A3F8       unknown_libname_390
  0001:0022A418       unknown_libname_391
  0001:0022A438       SEH_497230
- 0001:0022A450       unknown_libname_392
  0001:0022A45B       SEH_4976F0
  0001:0022A478       SEH_497E10
  0001:0022A498       SEH_498070
@@ -1495,13 +1514,10 @@
  0001:0022A4E3       unknown_libname_394
  0001:0022A503       unknown_libname_395
  0001:0022A51B       unknown_libname_396
- 0001:0022A530       unknown_libname_397
  0001:0022A53B       SEH_499270
- 0001:0022A550       unknown_libname_398
  0001:0022A55B       SEH_499730
  0001:0022A578       SEH_4997E0
  0001:0022A5A0       unknown_libname_399
- 0001:0022A5B0       unknown_libname_400
  0001:0022A5C0       SEH_49B710
  0001:0022A5D8       unknown_libname_401
  0001:0022A618       unknown_libname_402
@@ -1509,7 +1525,6 @@
  0001:0022A6F0       unknown_libname_404
  0001:0022A730       unknown_libname_405
  0001:0022A778       unknown_libname_406
- 0001:0022A790       unknown_libname_407
  0001:0022A7A0       SEH_4A5280
  0001:0022A7C0       unknown_libname_408
  0001:0022A807       unknown_libname_409
@@ -1529,9 +1544,10 @@
  0001:0022AAB8       unknown_libname_423
  0001:0022AAD8       unknown_libname_424
  0001:0022ABA0       SEH_4B5FC0
- 0001:0022ABD0       unknown_libname_426
+ 0001:0022ABB8       SEH_4B6490
+ 0001:0022ABD0       SOD_unk_sub_4B65F0_SEH
  0001:0022AC0B       unknown_libname_427
- 0001:0022AC40       unknown_libname_428
+ 0001:0022AC28       SEH_4B69A0
  0001:0022AC4B       SEH_4B6B00
  0001:0022AC68       unknown_libname_429
  0001:0022AC88       unknown_libname_430
@@ -1551,7 +1567,6 @@
  0001:0022B1EA       unknown_libname_444
  0001:0022B265       unknown_libname_445
  0001:0022B593       unknown_libname_446
- 0001:0022B5A0       unknown_libname_447
  0001:0022B5B0       SEH_4BEB60
  0001:0022B5C8       SEH_4BEFF0
  0001:0022B5E8       unknown_libname_449
@@ -1615,18 +1630,16 @@
  0001:0022BDF1       unknown_libname_480
  0001:0022BE10       unknown_libname_481
  0001:0022BE30       unknown_libname_482
- 0001:0022BE7F       unknown_libname_483
  0001:0022BE8A       SEH_4D56D0
  0001:0022BEA8       unknown_libname_484
  0001:0022BF0E       unknown_libname_485
  0001:0022BF30       unknown_libname_486
+ 0001:0022BF48       SEH_4D68F0
  0001:0022BF68       unknown_libname_487
  0001:0022BF88       unknown_libname_488
  0001:0022BFB8       unknown_libname_489
- 0001:0022BFD0       unknown_libname_490
  0001:0022BFE0       SEH_4D9C70
  0001:0022BFF8       unknown_libname_491
- 0001:0022C010       unknown_libname_492
  0001:0022C020       SEH_4D9F30
  0001:0022C051       unknown_libname_493
  0001:0022C068       unknown_libname_494
@@ -1636,7 +1649,6 @@
  0001:0022C156       SEH_4DD540
  0001:0022C756       unknown_libname_498
  0001:0022C768       unknown_libname_499
- 0001:0022C780       unknown_libname_500
  0001:0022C78B       SEH_4E1A70
  0001:0022C7B0       unknown_libname_501
  0001:0022C7D8       unknown_libname_502
@@ -1673,7 +1685,6 @@
  0001:0022CCAB       unknown_libname_520
  0001:0022CCCB       unknown_libname_521
  0001:0022CCEB       unknown_libname_522
- 0001:0022CD00       unknown_libname_523
  0001:0022CD10       SEH_4F11B0
  0001:0022CD48       unknown_libname_524
  0001:0022CD68       unknown_libname_525
@@ -1686,10 +1697,8 @@
  0001:0022CEFB       unknown_libname_531
  0001:0022D00F       unknown_libname_532
  0001:0022D049       unknown_libname_533
- 0001:0022D0AA       unknown_libname_534
  0001:0022D139       unknown_libname_535
  0001:0022D158       unknown_libname_536
- 0001:0022D178       unknown_libname_537
  0001:0022D1AF       unknown_libname_538
  0001:0022D1C8       unknown_libname_539
  0001:0022D1F0       unknown_libname_540
@@ -1697,9 +1706,7 @@
  0001:0022D228       unknown_libname_542
  0001:0022D248       unknown_libname_543
  0001:0022D268       unknown_libname_544
- 0001:0022D280       unknown_libname_545
  0001:0022D31B       unknown_libname_546
- 0001:0022D330       unknown_libname_547
  0001:0022D3E6       unknown_libname_548
  0001:0022D3FB       unknown_libname_549
  0001:0022D420       unknown_libname_550
@@ -1731,16 +1738,13 @@
  0001:0022D888       unknown_libname_576
  0001:0022D8B0       unknown_libname_577
  0001:0022D8D0       unknown_libname_578
- 0001:0022D9A3       unknown_libname_579
  0001:0022D9AE       SEH_50E250
  0001:0022D9C8       unknown_libname_580
  0001:0022DA00       unknown_libname_581
  0001:0022DA70       unknown_libname_582
  0001:0022DA88       unknown_libname_583
  0001:0022DAC0       unknown_libname_584
- 0001:0022DAD0       unknown_libname_585
  0001:0022DADB       SEH_511660
- 0001:0022DAF8       unknown_libname_586
  0001:0022DB70       unknown_libname_587
  0001:0022DBA1       unknown_libname_588
  0001:0022DBFA       unknown_libname_589
@@ -1753,7 +1757,6 @@
  0001:0022DCE0       unknown_libname_596
  0001:0022DCF8       unknown_libname_597
  0001:0022DD53       unknown_libname_598
- 0001:0022DD60       unknown_libname_599
  0001:0022DD7A       SEH_5153C0
  0001:0022DDAB       SEH_515480
  0001:0022DDC8       SEH_515750
@@ -1794,7 +1797,6 @@
  0001:0022E50F       unknown_libname_627
  0001:0022E536       unknown_libname_628
  0001:0022E548       unknown_libname_629
- 0001:0022E56B       unknown_libname_630
  0001:0022E576       SEH_51ED90
  0001:0022E5BC       unknown_libname_631
  0001:0022E76F       unknown_libname_632
@@ -1820,7 +1822,6 @@
  0001:0022EC4E       unknown_libname_652
  0001:0022EC7E       unknown_libname_653
  0001:0022EC98       unknown_libname_654
- 0001:0022ECF3       unknown_libname_655
  0001:0022ECFE       SEH_530E70
  0001:0022ED18       unknown_libname_656
  0001:0022ED43       unknown_libname_657
@@ -1863,7 +1864,6 @@
  0001:0022F3F8       unknown_libname_693
  0001:0022F418       unknown_libname_694
  0001:0022F438       unknown_libname_695
- 0001:0022F450       unknown_libname_696
  0001:0022F460       SEH_546530
  0001:0022F480       unknown_libname_697
  0001:0022F498       unknown_libname_698
@@ -1884,7 +1884,6 @@
  0001:0022F937       unknown_libname_711
  0001:0022F958       unknown_libname_712
  0001:0022F991       unknown_libname_713
- 0001:0022F9A0       unknown_libname_714
  0001:0022F9AB       SEH_5502A0
  0001:0022F9F4       SEH_550D40
  0001:0022FA08       unknown_libname_715
@@ -1894,7 +1893,6 @@
  0001:0022FB44       unknown_libname_719
  0001:0022FB58       SEH_555580
  0001:0022FB88       unknown_libname_720
- 0001:0022FBA0       unknown_libname_721
  0001:0022FBAB       SEH_5559A0
  0001:0022FBC8       unknown_libname_722
  0001:0022FBE8       unknown_libname_723
@@ -1904,7 +1902,6 @@
  0001:0022FC68       SEH_557010
  0001:0022FCBA       unknown_libname_727
  0001:0022FCD8       SEH_5574E0
- 0001:0022FCF0       unknown_libname_728
  0001:0022FCFB       SEH_5579B0
  0001:0022FD18       unknown_libname_729
  0001:0022FD38       unknown_libname_730
@@ -1916,7 +1913,6 @@
  0001:0022FEC0       unknown_libname_736
  0001:0022FEE8       SEH_55A490
  0001:0022FF34       unknown_libname_738
- 0001:0022FF79       unknown_libname_739
  0001:0022FF84       SEH_55AE50
  0001:0022FFCC       unknown_libname_740
  0001:00230006       unknown_libname_741
@@ -1966,11 +1962,8 @@
  0001:00230B78       unknown_libname_783
  0001:00230B98       unknown_libname_784
  0001:00230BB8       unknown_libname_785
- 0001:00230BD8       unknown_libname_786
  0001:00230BE8       SEH_56CFD0
- 0001:00230C08       unknown_libname_787
  0001:00230C18       SEH_56D120
- 0001:00230C30       unknown_libname_788
  0001:00230C40       SEH_56D310
  0001:00230C58       unknown_libname_789
  0001:00230C78       unknown_libname_790
@@ -1980,7 +1973,6 @@
  0001:00230D08       SEH_56DB70
  0001:00230D50       SEH_56DCB0
  0001:00230D70       SEH_56DF40
- 0001:00230D80       unknown_libname_791
  0001:00230D90       SEH_56E180
  0001:00230DB8       SEH_56E2B0
  0001:00230DD8       SEH_56E610
@@ -2013,9 +2005,7 @@
  0001:002312F0       SEH_572BD0
  0001:00231308       unknown_libname_793
  0001:00231328       unknown_libname_794
- 0001:00231340       unknown_libname_795
  0001:00231350       SEH_573210
- 0001:00231360       unknown_libname_796
  0001:00231370       SEH_573410
  0001:00231398       unknown_libname_797
  0001:002313C0       unknown_libname_798
@@ -2037,17 +2027,7 @@
  0001:002318AF       SEH_578AE0
  0001:002318E9       SEH_578E10
  0001:0023194F       unknown_libname_814
- 0001:0023198C       unknown_libname_815
  0001:00231997       SEH_5793E0
- 0001:00231A6E       unknown_libname_816
- 0001:00231AD1       unknown_libname_817
- 0001:00231B34       unknown_libname_818
- 0001:00231B6B       unknown_libname_819
- 0001:00231BC3       unknown_libname_820
- 0001:00231BFA       unknown_libname_821
- 0001:00231C31       unknown_libname_822
- 0001:00231C68       unknown_libname_823
- 0001:00231D36       unknown_libname_824
  0001:00231D8E       unknown_libname_825
  0001:00231DA8       unknown_libname_826
  0001:00232028       unknown_libname_827
@@ -2108,7 +2088,6 @@
  0001:00232FD8       unknown_libname_880
  0001:00232FF8       unknown_libname_881
  0001:0023302F       unknown_libname_882
- 0001:00233040       unknown_libname_883
  0001:00233050       SEH_59BDA0
  0001:0023314F       unknown_libname_884
  0001:00233168       unknown_libname_885
@@ -2129,7 +2108,6 @@
  0001:00233498       unknown_libname_899
  0001:002334B8       unknown_libname_900
  0001:002334DB       unknown_libname_901
- 0001:002334F0       unknown_libname_902
  0001:002334FB       SEH_5AA870
  0001:00233CBE       unknown_libname_903
  0001:00233CD8       unknown_libname_904
@@ -2168,7 +2146,6 @@
  0001:00234338       unknown_libname_934
  0001:0023435E       unknown_libname_935
  0001:00234378       unknown_libname_936
- 0001:00234390       unknown_libname_937
  0001:002343A0       SEH_5C0620
  0001:002343C8       unknown_libname_938
  0001:002344B9       unknown_libname_939
@@ -2178,21 +2155,15 @@
  0001:002347F8       unknown_libname_943
  0001:0023488A       unknown_libname_944
  0001:002348C1       unknown_libname_945
- 0001:002348DB       unknown_libname_946
  0001:002348E6       SEH_5C6C70
- 0001:002348F0       unknown_libname_947
  0001:0023491C       SEH_5C7210
  0001:00234AE5       unknown_libname_948
  0001:00234AF8       unknown_libname_949
- 0001:00234C36       unknown_libname_950
- 0001:00234C6D       unknown_libname_951
- 0001:00234CA4       unknown_libname_952
  0001:00234D33       unknown_libname_953
  0001:00234D48       unknown_libname_954
  0001:00234F57       unknown_libname_955
  0001:00234F78       unknown_libname_956
  0001:00234F98       SEH_5CE770
- 0001:00234FBB       unknown_libname_957
  0001:00234FC6       SEH_5CE960
  0001:00235209       unknown_libname_958
  0001:00235228       unknown_libname_959
@@ -2206,15 +2177,11 @@
  0001:002353D8       unknown_libname_967
  0001:002353F8       unknown_libname_968
  0001:00235418       unknown_libname_969
- 0001:00235430       unknown_libname_970
  0001:0023543B       SEH_5D2130
  0001:002354E7       unknown_libname_971
  0001:00235508       unknown_libname_972
- 0001:00235520       unknown_libname_973
  0001:0023552B       SEH_5D2B20
- 0001:0023554B       unknown_libname_974
  0001:00235556       SEH_5D2BB0
- 0001:00235560       unknown_libname_975
  0001:0023556B       SEH_5D2D50
  0001:00235593       unknown_libname_976
  0001:002355AB       unknown_libname_977
@@ -2222,14 +2189,11 @@
  0001:00235650       unknown_libname_978
  0001:002356E1       unknown_libname_979
  0001:002356F8       unknown_libname_980
- 0001:00235726       unknown_libname_981
  0001:00235731       SEH_5D6330
  0001:00235803       unknown_libname_982
  0001:00235818       unknown_libname_983
  0001:0023583B       SEH_5D7F30
- 0001:00235850       unknown_libname_984
  0001:0023585B       SEH_5D82C0
- 0001:00235870       unknown_libname_985
  0001:0023587B       SEH_5D86B0
  0001:0023589B       unknown_libname_986
  0001:002360B6       unknown_libname_987
@@ -2247,11 +2211,9 @@
  0001:00236DA8       unknown_libname_998
  0001:00237051       unknown_libname_999
  0001:00237068       unknown_libname_1000
- 0001:00237080       unknown_libname_1001
  0001:002370B7       unknown_libname_1002
  0001:002370D8       unknown_libname_1003
  0001:0023721C       unknown_libname_1004
- 0001:00237230       unknown_libname_1005
  0001:00237240       SEH_5F0B60
  0001:00237270       unknown_libname_1006
  0001:00237290       unknown_libname_1007
@@ -2277,10 +2239,8 @@
  0001:00237868       unknown_libname_1026
  0001:002378A1       unknown_libname_1027
  0001:002378E7       unknown_libname_1028
- 0001:00237900       unknown_libname_1029
  0001:0023790B       SEH_5FD740
  0001:0023792B       unknown_libname_1030
- 0001:0023794B       unknown_libname_1031
  0001:00237956       SEH_5FF6C0
  0001:00237968       unknown_libname_1032
  0001:00237980       Catch@heroWindowManager_Init
@@ -2294,74 +2254,9 @@
  0001:00237A38       unknown_libname_1040
  0001:00237A4C       tryStart
  0001:00237A74       tryStart2
- 0001:00237AA8       unknown_libname_1041
- 0001:00237AC0       unknown_libname_1042
- 0001:00237AD8       unknown_libname_1043
  0001:00237B16       __ehhandler$?_Init@locale@std@@CAPAV_Locimp@12@XZ
  0001:00237B63       __ehhandler$??1_Locimp@locale@std@@MAE@XZ
  0001:00237B7A       unknown_libname_1044
- 0001:00237B84       unknown_libname_1045
- 0001:00237BC4       unknown_libname_1046
- 0001:00237C10       unknown_libname_1047
- 0001:00237C44       unknown_libname_1048
- 0001:00237C6C       unknown_libname_1049
- 0001:00237C90       unknown_libname_1050
- 0001:00237CB4       unknown_libname_1051
- 0001:00237CE4       unknown_libname_1052
- 0001:00237D60       unknown_libname_1053
- 0001:00237D84       unknown_libname_1054
- 0001:00237DA8       unknown_libname_1055
- 0001:00237DD0       unknown_libname_1056
- 0001:00237E4C       unknown_libname_1057
- 0001:00237E70       unknown_libname_1058
- 0001:00237E94       unknown_libname_1059
- 0001:00237EB8       unknown_libname_1060
- 0001:00237EDC       unknown_libname_1061
- 0001:00237F04       unknown_libname_1062
- 0001:00237F24       unknown_libname_1063
- 0001:00237FB4       unknown_libname_1064
- 0001:00238088       unknown_libname_1065
- 0001:002380B4       unknown_libname_1066
- 0001:002380E0       unknown_libname_1067
- 0001:00238124       unknown_libname_1068
- 0001:00238140       unknown_libname_1069
- 0001:00238170       unknown_libname_1070
- 0001:0023818C       unknown_libname_1071
- 0001:00238234       unknown_libname_1072
- 0001:002382AC       unknown_libname_1073
- 0001:002382C8       unknown_libname_1074
- 0001:002382EC       unknown_libname_1075
- 0001:00238310       unknown_libname_1076
- 0001:0023832C       unknown_libname_1077
- 0001:00238348       unknown_libname_1078
- 0001:00238364       unknown_libname_1079
- 0001:00238388       unknown_libname_1080
- 0001:002383AC       unknown_libname_1081
- 0001:002383C8       unknown_libname_1082
- 0001:002383E4       unknown_libname_1083
- 0001:00238400       unknown_libname_1084
- 0001:0023841C       unknown_libname_1085
- 0001:00238494       unknown_libname_1086
- 0001:002384C4       unknown_libname_1087
- 0001:002384E0       unknown_libname_1088
- 0001:00238600       unknown_libname_1089
- 0001:00238720       unknown_libname_1090
- 0001:00238788       unknown_libname_1091
- 0001:002387B4       unknown_libname_1092
- 0001:002387F8       unknown_libname_1093
- 0001:00238828       unknown_libname_1094
- 0001:002388B8       unknown_libname_1095
- 0001:00238924       unknown_libname_1096
- 0001:00238940       unknown_libname_1097
- 0001:0023895C       unknown_libname_1098
- 0001:00238980       unknown_libname_1099
- 0001:002389A4       unknown_libname_1100
- 0001:002389C0       unknown_libname_1101
- 0001:002389DC       unknown_libname_1102
- 0001:002389F8       unknown_libname_1103
- 0001:00238A28       unknown_libname_1104
- 0001:00238A44       unknown_libname_1105
- 0001:00238B20       unknown_libname_1106
  0002:00000480       Str2
  0002:0000048C       aAjpntragf
  0002:00000498       aAjpybgfbsthaf
@@ -2734,7 +2629,7 @@
  0002:0000CE60       ??_R3?$basic_istream@DU?$char_traits@D@std@@@std@@8
  0002:0000CE70       ??_R4?$basic_istream@DU?$char_traits@D@std@@@std@@6B?$basic_ios@DU?$char_traits@D@std@@@std@@@
  0002:0000CE88       ??_R1A@A@3A@ios_base@std@@8
- 0002:0000CEA0       ??_R1A@A@3AB@?$basic_ios@DU?$char_traits@D@std@@@std@@8
+ 0002:0000CEA0       ??_R1A@A@3BA@?$basic_ios@DU?$char_traits@D@std@@@std@@8
  0002:0000CEB8       ??_R1A@?0A@A@?$basic_istream@DU?$char_traits@D@std@@@std@@8
  0002:0000CED0       ??_R1A@?0A@A@istrstream@std@@8
  0002:0000CEE8       ??_R2istrstream@std@@8
@@ -2798,7 +2693,7 @@
  0002:0000D378       ??_R2?$basic_filebuf@DU?$char_traits@D@std@@@std@@8
  0002:0000D388       ??_R3?$basic_filebuf@DU?$char_traits@D@std@@@std@@8
  0002:0000D398       ??_R4?$basic_filebuf@DU?$char_traits@D@std@@@std@@6B@
- 0002:0000D3B0       ??_R1A@A@3AB@?$basic_ios@GU?$char_traits@G@std@@@std@@8
+ 0002:0000D3B0       ??_R1A@A@3BA@?$basic_ios@GU?$char_traits@G@std@@@std@@8
  0002:0000D3C8       ??_R1A@?0A@A@?$basic_istream@GU?$char_traits@G@std@@@std@@8
  0002:0000D3E0       ??_R2?$basic_istream@GU?$char_traits@G@std@@@std@@8
  0002:0000D3F0       ??_R3?$basic_istream@GU?$char_traits@G@std@@@std@@8
@@ -2976,6 +2871,7 @@
  0003:00001268       aIam010_def
  0003:00001274       aNopqrstuvwxyza
  0003:00001290       aAbcdefghijklmn
+ 0003:000012B0       ??_R0?AVt_create_failure@t_enclosure@force_feedback@@@8
  0003:000012EC       aMedfont_fnt
  0003:000012F8       aSmalfont_fnt
  0003:00001308       aAdrollvr_pcx
@@ -6647,6 +6543,7 @@
  0003:00019888       aFlagmine_wav
  0003:00019898       aMystery_wav
  0003:000198A4       aDS_0
+ 0003:000198C0       ??_R0?AVt_initialize_failure@t_initializer@?%C_Dev_Heroes3Exp2_Game_ForceFeedback.cpp229431533@@@8
  0003:0001992C       aData
  0003:00019938       aP_0
  0003:0001993C       aR
@@ -6701,6 +6598,7 @@
  0003:00019D30       aPlayer
  0003:00019D38       aH3svg
  0003:00019D40       aH3svc
+ 0003:00019D48       ??_R0?AVTOpenFailure@TGzFile@@@8
  0003:00019D6C       aRb_0
  0003:00019D70       aGames
  0003:00019D78       aWb0
@@ -6746,6 +6644,7 @@
  0003:0001A3CC       dword2@gAdvManager_Init
  0003:0001A3D8       someDword1@ReadCmdLineParams
  0003:0001A3E0       a1_1_3
+ 0003:0001A3E8       ??_R0_N@8
  0003:0001A400       a_?avtdataerror
  0003:0001BCCC       aHerospec_txt
  0003:0001BCDC       aMovement_txt
@@ -7424,6 +7323,7 @@
  0003:00025028       aCombatHero
  0003:00025034       aSpriteFrame
  0003:00025044       aSpritedef
+ 0003:00025050       ??_R0?AW4t_open_errors@ResourceManager@@@8
  0003:00025080       aGetbitmap816
  0003:00025090       aGetbitmap16
  0003:0002509C       aGetpalette
