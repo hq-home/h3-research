@@ -50,11 +50,62 @@ shr      edx,7
                 and     ecx, 3   ; get remainder of Length/4
                 rep movsb	; move left bytes
 							; while(*ecx != 0) { esi++; edi++; ecx--; }
-; -----------
-				mov     ecx, offset LPCmdLine
-				mov     eax, 2
-                dec     ecx
-                sub     eax, offset byte_699611
-                mov     ebx, 1                
+
+==============================================================
+Vector deleting destructors
+https://ofekshilon.com/2014/06/09/on-vector-deleting-destructors-and-some-newdelete-internals/							
+
+===============================================================
+Reversing Microsoft Visual C++ Part I: Exception Handling
+http://www.openrce.org/articles/full_view/21
+
+http://www.openrce.org/articles/full_view/23
+
+===============================================================
+### Array Construction Destruction
+
+The MSVC compiler uses a helper function to construct and destroy an array of objects. Consider the following code: 
+
+    A* pA = new A[n];
+    
+    delete [] pA;
+
+It is translated into the following pseudocode: 
+
+    array = new char(sizeof(A)*n+sizeof(int))
+    if (array)
+    {
+      *(int*)array=n; //store array size in the beginning
+      'eh vector constructor iterator'(array+sizeof(int),sizeof(A),count,&A::A,&A::~A);
+    }
+    pA = array;
+    
+    'eh vector destructor iterator'(pA,sizeof(A),count,&A::~A);
+
+If A has a vftable, a 'vector deleting destructor' is invoked instead when deleting the array: 
+
+    ;pA->'vector deleting destructor'(3);
+    mov ecx, pA
+    push 3 ; flags: 0x2=deleting an array, 0x1=free the memory
+    call A::'vector deleting destructor'
+
+If A's destructor is virtual, it's invoked virtually: 
+
+    mov ecx, pA
+    push 3
+    mov eax, [ecx] ;fetch vtable pointer
+    call [eax]     ;call deleting destructor
+
+Consequently, from the vector constructor/destructor iterator calls we can determine:
+* addresses of arrays of objects
+* their constructors
+* their destructors
+* class sizes
+
+
+
+
+
+
 				
 
