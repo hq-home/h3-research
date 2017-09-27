@@ -8,6 +8,11 @@
 
   Address         Publics by Value
 
+ 0001:00000400       gosA0_like_m2
+ 0001:000004D0       gosA0_like_m3
+ 0001:00000510       gosA0_like_ctor
+ 0001:00001AE0       gosA0_like_m1
+ 0001:000030B0       gosA0_like_m9
  0001:000030F0       ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ
  0001:00003130       ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
  0001:00003180       ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
@@ -17,8 +22,10 @@
  0001:00003B70       ?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
  0001:00003B80       ?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z
  0001:00003C90       ?_Split@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
- 0001:00005D80       c3B8_ctor
- 0001:00005F60       c3B8_m1
+ 0001:00005D80       gAdvManager_ctor
+ 0001:00005F60       gAdvManager_Init
+ 0001:00006740       gAdvManager_m2
+ 0001:00007710       gAdvManager_m3
  0001:0001ADB0       ?what@runtime_error@std@@UBEPBDXZ
  0001:0001ADE0       ??0logic_error@std@@QAE@ABV01@@Z
  0001:00031490       aHpfc
@@ -50,11 +57,18 @@
  0001:00061220       __cfltcvt_init
  0001:00061280       __cfltcvt_init_0
  0001:000612E0       __cfltcvt_init_1
- 0001:00061340       c140EC_ctor
- 0001:00061600       c140EC_m1
- 0001:00061E40       c140EC_m2
+ 0001:00061340       CombatManager_ctor
+ 0001:00061470       str70_m5Wrapper
+ 0001:00061490       str70_m1
+ 0001:00061600       CombatManager_Init
+ 0001:00061E40       CombatManager_m2
+ 0001:00069230       str70_m5
+ 0001:000692F0       str70_m2
+ 0001:00069420       str70_m4
+ 0001:00069930       str70_m3_recursed
+ 0001:000699B0       someList_m1@str70_m2
  0001:000720C0       ?_Freeze@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
- 0001:00072A00       c140EC_m3
+ 0001:00072A00       CombatManager_m3
  0001:0007A1B0       ??1TaskStack@details@Concurrency@@QAE@XZ
  0001:00084560       ??8_ContextCallback@details@Concurrency@@QBE_NABV012@@Z
  0001:0008C490       ?_Incref@facet@locale@std@@QAEXXZ
@@ -67,21 +81,32 @@
  0001:000AE240       nullsub_4
  0001:000AE880       CopyEDXPtrToECXPtr
  0001:000AF660       ManagerFactory_ctor
+ 0001:000AF670       ManagerFactory_InitializeInputAndWindow
+ 0001:000AF880       ManagerFactory_RegisterManager
  0001:000B55F0       SOD_unk_sub_4B65F0
  0001:000B569F       unknown_libname_2
  0001:000B5940       ??_Elogic_error@std@@UAEPAXI@Z
  0001:000B6BE0       ConcatStringsAndCharSequense
- 0001:000B9E20       c3B8_getOffset1FB70
+ 0001:000B9E20       gAdvManager_getSomeSizeOrOffset
  0001:000C1D50       ??0logic_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
  0001:000CCBE0       c4E7D0_ctor
+ 0001:000CD230       ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ_3
  0001:000E5D90       unknown_libname_3
+ 0001:000E6210       str70_ctor
  0001:000E8130       c8D4_ctor
  0001:000E8160       c8D4_m1
  0001:000E9C10       nullsub_14
+ 0001:000EA810       subMEGOinit_part1
  0001:000EB540       InputManager_ctor
  0001:000EB5B0       InputManager_Init
+ 0001:000EB620       InputManager_Reset
  0001:000EB990       InputManager_InitKeyMap
- 0001:000EC280       SOD_unk_sub_4ED280
+ 0001:000EBDC0       codeArmageddonBladePathes
+ 0001:000EC190       lodNamesTblIdx_ctor
+ 0001:000EC280       EnsureAbInstalled
+ 0001:000EC2B8       loopFor
+ 0001:000EC454       destructStlString
+ 0001:000EC460       j_codeArmageddonBladePathes
  0001:000ECCE0       GameInitialize
  0001:000ED1D0       CreateGameObjects
  0001:000EDA70       gameStart
@@ -108,7 +133,7 @@
  0001:0010BD40       MouseManager_ctor
  0001:0010BDB0       MouseManager_destructor
  0001:0010BDE0       MouseManager_Init
- 0001:0010BE30       MouseManager_showCursor
+ 0001:0010BE30       MouseManager_Reset
  0001:0010BE90       ?_Get_deleter@_Ref_count_base@std@@UBEPAXABVtype_info@@@Z
  0001:00113510       unknown_libname_5
  0001:00113540       unknown_libname_6
@@ -148,11 +173,16 @@
  0001:00157970       LODFileBaseClass_ctor
  0001:001579C0       LOD_File_Destructor
  0001:001579F0       LOD_File_setBaseVirtualtab
+ 0001:00158730       m4@txtBuff_RM_GetWav
  0001:00159490       LoadH3FAT
  0001:00159800       DATAPathAssign
  0001:0015AFE0       RM_GetStrResource
- 0001:0015B930       txtBuff_m1
+ 0001:0015B340       m1@txtBuff_RM_GetWav
+ 0001:0015B5D0       txtBuff_RM_GetWav
+ 0001:0015B930       txtBuff_RM_GetSample
  0001:0015C300       LOD_File_Clear
+ 0001:0015C620       m2@txtBuff_RM_GetWav
+ 0001:0015C810       m3@txtBuff_RM_GetWav
  0001:0015CCF8       unknown_libname_23
  0001:0015CDF0       treeMap_insertV
  0001:0015CF20       treeMap_eraseP
@@ -161,6 +191,9 @@
  0001:0015DE00       treeMap_Lbound
  0001:0015DFE0       unknown_libname_24
  0001:0015E550       unknown_libname_25
+ 0001:00166050       LODwavFile_ctor
+ 0001:001660E0       LODwavFile_m1
+ 0001:00166140       LODwavFile_m3
  0001:0017B115       InitRandomMapSection
  0001:0018DE40       unknown_libname_26
  0001:00196AA0       gBinkMgr_PauseAllStreams
@@ -190,6 +223,16 @@
  0001:001B8460       RMGR_Genrltxt
  0001:001B8480       RMGR_Campbttn
  0001:001BAF90       LODstrFile_ctor
+ 0001:001BB5E0       ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ_0
+ 0001:001FD2D0       vect_4_insert
+ 0001:001FDFB0       gosA0_like_Base_ctor
+ 0001:001FE010       gosA0_like_Base_m1
+ 0001:001FE0A0       gosA0_like_Base_m2
+ 0001:001FE220       gosA0_like_Base_m3
+ 0001:001FE5E0       gosA0_like_Base_m6
+ 0001:001FEA20       gosA0_like_Base_m7
+ 0001:001FEB30       gosA0_like_Base_m8
+ 0001:001FEBB0       gosA0_like_Base_m9
  0001:001FF3D0       unknown_libname_38
  0001:00200A20       IsValidScreenInfo
  0001:00200A80       get_ScrWIDTH
@@ -197,6 +240,7 @@
  0001:00200AA0       j_CreateDDSurfaces
  0001:00201730       heroWindowManager_ctor
  0001:00201770       heroWindowManager_Init
+ 0001:00201890       heroWindowManager_Reset
  0001:00202AB0       GetFileVersionInfoA
  0001:00202AB6       GetFileVersionInfoSizeA
  0001:00202ABC       VerQueryValueA
@@ -1136,7 +1180,9 @@
  0001:00226A88       unknown_libname_113
  0001:00226AC0       unknown_libname_114
  0001:00226AF0       unknown_libname_115
- 0001:00226B1C       unknown_libname_116
+ 0001:00226B00       catch0@gAdvManager_ctor
+ 0001:00226B0E       catch1@gAdvManager_ctor
+ 0001:00226B1C       SEH@gAdvManager_ctor
  0001:00226B46       unknown_libname_117
  0001:00226B58       unknown_libname_118
  0001:00226B78       unknown_libname_119
@@ -1525,7 +1571,34 @@
  0001:0022B868       unknown_libname_463
  0001:0022B8D2       SEH_4CBA00
  0001:0022B8E8       unknown_libname_465
- 0001:0022BAB5       unknown_libname_466
+ 0001:0022B900       catch0@c4E7D0_ctor
+ 0001:0022B90E       catch1@c4E7D0_ctor
+ 0001:0022B92C       catch2@c4E7D0_ctor
+ 0001:0022B93A       catch3@c4E7D0_ctor
+ 0001:0022B948       catch4@c4E7D0_ctor
+ 0001:0022B950       catch5@c4E7D0_ctor
+ 0001:0022B95E       catch6@c4E7D0_ctor
+ 0001:0022B96C       catch7@c4E7D0_ctor
+ 0001:0022B97A       catch8@c4E7D0_ctor
+ 0001:0022B988       catch9@c4E7D0_ctor
+ 0001:0022B9A3       catchA@c4E7D0_ctor
+ 0001:0022B9B1       catchB@c4E7D0_ctor
+ 0001:0022B9CF       catchC@c4E7D0_ctor
+ 0001:0022B9DD       catchD@c4E7D0_ctor
+ 0001:0022B9EB       catchE@c4E7D0_ctor
+ 0001:0022B9F9       catchF@c4E7D0_ctor
+ 0001:0022BA07       catch10@c4E7D0_ctor
+ 0001:0022BA15       catch11@c4E7D0_ctor
+ 0001:0022BA23       catch12@c4E7D0_ctor
+ 0001:0022BA31       catch13@c4E7D0_ctor
+ 0001:0022BA3F       catch14@c4E7D0_ctor
+ 0001:0022BA57       catch15@c4E7D0_ctor
+ 0001:0022BA6F       catch16@c4E7D0_ctor
+ 0001:0022BA7D       catch17@c4E7D0_ctor
+ 0001:0022BA8B       catch18@c4E7D0_ctor
+ 0001:0022BA99       catch19@c4E7D0_ctor
+ 0001:0022BAA7       catch1A@c4E7D0_ctor
+ 0001:0022BAB5       SEH@c4E7D0_ctor
  0001:0022BC51       unknown_libname_467
  0001:0022BC70       unknown_libname_468
  0001:0022BC90       unknown_libname_469
@@ -1578,11 +1651,22 @@
  0001:0022CA38       unknown_libname_510
  0001:0022CA58       unknown_libname_511
  0001:0022CA78       unknown_libname_512
- 0001:0022CAA0       unknown_libname_513
- 0001:0022CAB0       unknown_libname_514
- 0001:0022CAE7       unknown_libname_515
- 0001:0022CB29       unknown_libname_516
- 0001:0022CB34       SEH_4EE1D0
+ 0001:0022CA90       EH_Finally@ensureAbInstalled
+ 0001:0022CA98       EH_Catch2@ensureAbInstalled
+ 0001:0022CAA0       SEH@ensureAbInstalled
+ 0001:0022CAB0       EH_Catch0@CreateGameObjects
+ 0001:0022CABB       EH_Catch1@CreateGameObjects
+ 0001:0022CAC6       EH_Catch2@CreateGameObjects
+ 0001:0022CAD1       EH_Catch3@CreateGameObjects
+ 0001:0022CADC       EH_Catch4@CreateGameObjects
+ 0001:0022CAE7       EH_Catch5@CreateGameObjects
+ 0001:0022CAF2       EH_Catch6@CreateGameObjects
+ 0001:0022CAFD       EH_Catch7@CreateGameObjects
+ 0001:0022CB08       EH_Catch8@CreateGameObjects
+ 0001:0022CB13       EH_Catch9@CreateGameObjects
+ 0001:0022CB1E       EH_CatchA@CreateGameObjects
+ 0001:0022CB29       EH_CatchB@CreateGameObjects
+ 0001:0022CB34       SEH@CreateGameObjects
  0001:0022CB56       unknown_libname_517
  0001:0022CC1B       unknown_libname_518
  0001:0022CC90       unknown_libname_519
@@ -1873,7 +1957,8 @@
  0001:00230898       unknown_libname_776
  0001:002308BB       unknown_libname_777
  0001:002308F1       unknown_libname_778
- 0001:00230908       unknown_libname_779
+ 0001:00230900       catch@LODwavFile_ctor
+ 0001:00230908       SEH@LODwavFile_ctor
  0001:00230AEB       unknown_libname_780
  0001:00230B08       unknown_libname_781
  0001:00230B28       unknown_libname_782
@@ -2198,8 +2283,8 @@
  0001:0023794B       unknown_libname_1031
  0001:00237956       SEH_5FF6C0
  0001:00237968       unknown_libname_1032
- 0001:00237980       unknown_libname_1033
- 0001:0023798B       SEH_602770
+ 0001:00237980       Catch@heroWindowManager_Init
+ 0001:0023798B       SEH@heroWindowManager_Init
  0001:002379A0       unknown_libname_1034
  0001:002379B0       unknown_libname_1035
  0001:002379C0       unknown_libname_1036
@@ -2293,15 +2378,16 @@
  0002:00000544       aAjpgurervfabfc
  0002:00000558       aAjpmvba
  0002:00000560       aAjpcuvfurecevp
+ 0002:000005E4       gosA0_like_vtab
  0002:00000608       ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
  0002:0000060C       ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
- 0002:00000678       c3B8_vtab
- 0002:000019BC       errorHandler
+ 0002:00000678       gAdvManager_vtab
+ 0002:000019BC       errorHandler_vtab
  0002:000019C8       LODimgFile_vtab
  0002:00001B4C       ??_8?$basic_ostream@DU?$char_traits@D@std@@@std@@7B@
  0002:00001CEE       aObtd
  0002:00001CFA       aNasg
- 0002:000033E8       c140EC_vtab
+ 0002:000033E8       CombatManager_vtab
  0002:00003490       aAjpoyhrcvyy_0
  0002:0000349C       aAjperqcvyy_0
  0002:000034A8       aAjpgurervfab_0
@@ -2311,6 +2397,7 @@
  0002:000049F2       aA
  0002:00004B8C       c8D4_vtab
  0002:00005E10       InputManager_vtab
+ 0002:00005E1C       encABPathList
  0002:00005E68       SoundMgr_vtab
  0002:00005F84       lpH3SubKey
  0002:00005F88       lpWalkSpeed
@@ -2369,8 +2456,10 @@
  0002:000070D4       aDefault_pal_0
  0002:000070E0       aDefault_fnt
  0002:000070EC       aDefault_wav
+ 0002:000076E0       LODwavFile_vtab
  0002:00009B34       aStringfileinfo
  0002:00009B50       aStringfilein_0
+ 0002:00009CD4       gosA0_like_Base_vtab
  0002:00009D5C       heroWindowManager_vtab
  0002:00009E28       rclsid
  0002:00009E38       riid
@@ -2837,6 +2926,12 @@
  0002:0000DD88       ??_R3exception@@8
  0002:0000DD98       ??_R4exception@@6B@
  0002:0000DFD0       __TI3?AVout_of_range@std@@
+ 0002:0000E1E8       SEHstru@gAdvManager_ctor
+ 0002:00013C78       SEHstru@c4E7D0_ctor
+ 0002:00014DF0       struEH@ensureAbInstalled
+ 0002:00014E20       struEH@CreateGameObjects
+ 0002:00019488       SEHstru@LODwavFile_ctor
+ 0002:0001FDE8       SEHstru@heroWindowManager_Init
  0002:00020180       __TI3?AVlength_error@std@@
  0002:00021DB0       __IMPORT_DESCRIPTOR_VERSION
  0002:00021DC4       __IMPORT_DESCRIPTOR_WINMM
@@ -6647,6 +6742,8 @@
  0003:0001A140       aGtsingl_def
  0003:0001A37A       aASs33Ffc
  0003:0001A3A0       aSsFfc
+ 0003:0001A3C8       dword1@gAdvManager_Init
+ 0003:0001A3CC       dword2@gAdvManager_Init
  0003:0001A3D8       someDword1@ReadCmdLineParams
  0003:0001A3E0       a1_1_3
  0003:0001A400       a_?avtdataerror
@@ -7020,6 +7117,12 @@
  0003:0002152C       aHiscres_def
  0003:00021538       aHiscext_def
  0003:00021544       aInputmanager
+ 0003:00021554       lodTblIdxCount
+ 0003:00021558       encPath_h3blade_exe
+ 0003:00021564       encPath_h3ab_bmp_lod
+ 0003:00021578       encPath_h3ab_spr_lod
+ 0003:0002158C       encPath_h3ab_ahd_snd
+ 0003:000215A0       encPath_h3ab_ahd_vid
  0003:000215F8       aHallelem_def_0
  0003:00021608       aLoadprog_def
  0003:00021618       aLoadbar_pcx
@@ -7303,7 +7406,7 @@
  0003:00024F68       aResourcemanage
  0003:00024F7C       aCouldNotFindTh
  0003:00024F94       aResource
- 0003:00024FA4       a__0
+ 0003:00024FA4       Delimiter
  0003:00024FA8       a0x
  0003:00024FAC       aPalette
  0003:00024FB4       aFont
@@ -8862,6 +8965,9 @@
  0003:00036D2C       gBinkMgr_IsStreamsPaused
  0003:00036D30       gBinkMgr_IsVideo1Playing
  0003:00036DAC       gBinkMgr_IsVideo2Playing
+ 0003:00036FA0       str70_mem1_Last
+ 0003:00036FA4       str70_mem2
+ 0003:00038A10       P
  0003:00038DC0       Point
  0003:00039428       txtBuff
  0003:0003A614       lpAppPath
@@ -8902,7 +9008,7 @@
  0003:0003A85A       MDS_B2_USID_SC_fName
  0003:0003A867       MDS_BF_NetworkDefaultName
  0003:0003A888       CFG_CDDrive
- 0003:0003AA10       gos3B8_698A10
+ 0003:0003AA10       gAdvManager_mem1
  0003:0003AA18       someDword4@ReadCmdLineParams
  0003:0003AA34       hMainMenu
  0003:0003AA4C       SErrMsg_set_dword_698A4C
@@ -8910,7 +9016,7 @@
  0003:0003AA88       someDword3@ReadCmdLineParams
  0003:0003B28C       lodNamesTblIdxPtr
  0003:0003B2B0       gMouseManager
- 0003:0003B2B8       gop_3B0
+ 0003:0003B2B8       gAdvManager
  0003:0003B2D0       gHeroWindowManager
  0003:0003B2D4       gop_c70
  0003:0003B2DC       oneBytePtr
@@ -8918,11 +9024,11 @@
  0003:0003B410       MDS_isShowIntro
  0003:0003B414       gSoundMgr
  0003:0003B41C       gop_CHiScore
- 0003:0003B420       gop_c137F4
+ 0003:0003B420       gCombatManager
  0003:0003B42C       someDword2@ReadCmdLineParams
  0003:0003B430       gFilename
  0003:0003B530       gInputManager
- 0003:0003B538       gop_30BE0
+ 0003:0003B538       gop_4E7D0
  0003:0003B540       gSoundMgr_isNoSoundAndNoMusic
  0003:0003B54C       gop_c1D8
  0003:0003B550       gManagerFactory
@@ -8932,8 +9038,8 @@
  0003:0003B580       MDS_TestBlit
  0003:0003B5A0       lodf_Genrltxt
  0003:0003B5D0       IsGameInitialised
- 0003:0003B5DD       errorAlreadyOccured
- 0003:0003B5DE       errorAlreadyOccured2
+ 0003:0003B5DD       messagingIsBussy
+ 0003:0003B5DE       errorOOMAlreadyOccured
  0003:0003B5E8       Rect
  0003:0003B604       hH3Instance
  0003:0003B610       LPCmdLine
@@ -8958,7 +9064,7 @@
  0003:00041EB0       Video1Handle
  0003:00041EBC       gSmackMgr_IsVideo2Playing
  0003:00041ED8       gSoundMgr_currentStream
- 0003:00041F02       gSoundMgr_mem5
+ 0003:00041F00       gSoundMgr_mem5_WordA14
  0003:000452B8       gSoundMgr_mem1
  0003:00047DC4       lodf_Genrltxt_0
  0003:00048CE0       lodf_Campbttn

@@ -1234,15 +1234,15 @@ static ApplyStrucTInfos_0(void) {
 	id = GetStrucIdByName("heroWindowManager");
 	id = GetStrucIdByName("SoundManager");
 	id = GetStrucIdByName("cls1B");
-	id = GetStrucIdByName("gos30BE0");
-	id = GetStrucIdByName("gos3B0");
-	id = GetStrucIdByName("str6C");
+	id = GetStrucIdByName("gos4E7D0");
+	id = GetStrucIdByName("AdvManager");
+	id = GetStrucIdByName("str70");
 	id = GetStrucIdByName("str10");
-	id = GetStrucIdByName("gos137F4");
+	id = GetStrucIdByName("CombatManager");
 	id = GetStrucIdByName("gos1D8");
 	id = GetStrucIdByName("hiScoreRec");
 	id = GetStrucIdByName("CHiScore");
-	id = GetStrucIdByName("gos70");
+	id = GetStrucIdByName("gosA0");
 	id = GetStrucIdByName("str528");
 	id = GetStrucIdByName("str32");
 	id = GetStrucIdByName("h3Army");
@@ -1399,15 +1399,15 @@ static Structures_0(id) {
 	id = AddStrucEx(-1,"heroWindowManager",0);
 	id = AddStrucEx(-1,"SoundManager",0);
 	id = AddStrucEx(-1,"cls1B",0);
-	id = AddStrucEx(-1,"gos30BE0",0);
-	id = AddStrucEx(-1,"gos3B0",0);
-	id = AddStrucEx(-1,"str6C",0);
+	id = AddStrucEx(-1,"gos4E7D0",0);
+	id = AddStrucEx(-1,"AdvManager",0);
+	id = AddStrucEx(-1,"str70",0);
 	id = AddStrucEx(-1,"str10",0);
-	id = AddStrucEx(-1,"gos137F4",0);
+	id = AddStrucEx(-1,"CombatManager",0);
 	id = AddStrucEx(-1,"gos1D8",0);
 	id = AddStrucEx(-1,"hiScoreRec",0);
 	id = AddStrucEx(-1,"CHiScore",0);
-	id = AddStrucEx(-1,"gos70",0);
+	id = AddStrucEx(-1,"gosA0",0);
 	id = AddStrucEx(-1,"str528",0);
 	id = AddStrucEx(-1,"str32",0);
 	id = AddStrucEx(-1,"h3Army",0);
@@ -1894,9 +1894,9 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"region_map",	0X18,	0x20000400,	-1,	8);
 	
 	id = GetStrucIdByName("ManagerFactory");
-	mid = AddStrucMember(id,"field_0",	0,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"field_4",	0X4,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"field_8",	0X8,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"ManagerPtr",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"ManagerPtr2",	0X4,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"ManagerPtr3",	0X8,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_C",	0XC,	0x20000400,	-1,	4);
 	
 	id = GetStrucIdByName("ManagerBase");
@@ -1904,7 +1904,7 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"Manager_Ptr",	0X4,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"Manager2_Ptr",	0X8,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_C",	0XC,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"field_10",	0X10,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"someCounterOrPtr",	0X10,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"cName",	0X14,	0x000400,	-1,	32);
 	mid = AddStrucMember(id,"isInited",	0X34,	0x20000400,	-1,	4);
 	
@@ -2215,7 +2215,7 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"std_Str",	0X88,	0x60000400,	GetStrucIdByName("STDRec"),	16);
 	mid = AddStrucMember(id,"field_98",	0X98,	0x000400,	-1,	200);
 	
-	id = GetStrucIdByName("gos30BE0");
+	id = GetStrucIdByName("gos4E7D0");
 	mid = AddStrucMember(id,"field_0",	0,	0x10000400,	-1,	2);
 	mid = AddStrucMember(id,"field_2",	0X2,	0x000400,	-1,	72);
 	mid = AddStrucMember(id,"field_4A",	0X4A,	0x000400,	-1,	1);
@@ -2319,7 +2319,7 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"std_StrC",	0X30BC0,	0x60000400,	GetStrucIdByName("STDRec"),	16);
 	mid = AddStrucMember(id,"std_StrD",	0X30BD0,	0x60000400,	GetStrucIdByName("STDRec"),	16);
 	
-	id = GetStrucIdByName("gos3B0");
+	id = GetStrucIdByName("AdvManager");
 	mid = AddStrucMember(id,"virtTablePtr",	0,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_4",	0X4,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_8",	0X8,	0x20000400,	-1,	4);
@@ -2338,8 +2338,12 @@ static Structures_0(id) {
 	SetMemberComment(id,	0X44,	"0",	0);
 	mid = AddStrucMember(id,"field_48",	0X48,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X48,	"0",	0);
+	mid = AddStrucMember(id,"field_4C",	0X4C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_50",	0X50,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_54",	0X54,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_58",	0X58,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_5C",	0X5C,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"field_60",	0X60,	0x000400,	-1,	40);
+	mid = AddStrucMember(id,"field_60",	0X60,	0x20000400,	-1,	40);
 	mid = AddStrucMember(id,"field_8C",	0X8C,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X8C,	"0",	0);
 	mid = AddStrucMember(id,"field_90",	0X90,	0x20000400,	-1,	4);
@@ -2377,60 +2381,65 @@ static Structures_0(id) {
 	SetMemberComment(id,	0XFC,	"0",	0);
 	mid = AddStrucMember(id,"field_100",	0X100,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X100,	"0",	0);
+	mid = AddStrucMember(id,"field_104",	0X104,	0x000400,	-1,	1);
 	mid = AddStrucMember(id,"field_108",	0X108,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X108,	"0",	0);
-	mid = AddStrucMember(id,"field_10C",	0X10C,	0x000400,	-1,	64);
-	mid = AddStrucMember(id,"field_14C",	0X14C,	0x000400,	-1,	12);
-	mid = AddStrucMember(id,"field_158",	0X158,	0x000400,	-1,	12);
-	mid = AddStrucMember(id,"field_164",	0X164,	0x000400,	-1,	32);
-	mid = AddStrucMember(id,"field_184",	0X184,	0x000400,	-1,	96);
-	mid = AddStrucMember(id,"field_1E4",	0X1E4,	0x000400,	-1,	1);
-	SetMemberComment(id,	0X1E4,	"0",	0);
+	mid = AddStrucMember(id,"field_10C",	0X10C,	0x20000400,	-1,	72);
+	mid = AddStrucMember(id,"field_154",	0X154,	0x000400,	-1,	12);
+	mid = AddStrucMember(id,"field_160",	0X160,	0x000400,	-1,	12);
+	mid = AddStrucMember(id,"field_16C",	0X16C,	0x20000400,	-1,	32);
+	mid = AddStrucMember(id,"field_18C",	0X18C,	0x20000400,	-1,	96);
+	mid = AddStrucMember(id,"field_1EC",	0X1EC,	0x000400,	-1,	1);
 	mid = AddStrucMember(id,"field_1F8",	0X1F8,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X1F8,	"0",	0);
 	mid = AddStrucMember(id,"field_1FC",	0X1FC,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X1FC,	"0",	0);
+	mid = AddStrucMember(id,"field_200",	0X200,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_204",	0X204,	0x000400,	-1,	1);
 	SetMemberComment(id,	0X204,	"0",	0);
 	mid = AddStrucMember(id,"field_208",	0X208,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X208,	"0",	0);
+	mid = AddStrucMember(id,"field_20C",	0X20C,	0x000400,	-1,	1);
 	mid = AddStrucMember(id,"field_210",	0X210,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X210,	"0",	0);
 	mid = AddStrucMember(id,"field_214",	0X214,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X214,	"0",	0);
-	mid = AddStrucMember(id,"field_240",	0X240,	0x000400,	-1,	280);
-	mid = AddStrucMember(id,"field_358",	0X358,	0x000400,	-1,	40);
+	mid = AddStrucMember(id,"field_218",	0X218,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_21C",	0X21C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_240",	0X240,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"field_248",	0X248,	0x20000400,	-1,	280);
+	mid = AddStrucMember(id,"field_360",	0X360,	0x000400,	-1,	40);
 	mid = AddStrucMember(id,"field_388",	0X388,	0x000400,	-1,	1);
 	SetMemberComment(id,	0X388,	"0",	0);
-	mid = AddStrucMember(id,"std_Str1",	0X3A0,	0x60000400,	GetStrucIdByName("STDRec"),	16);
-	
-	id = GetStrucIdByName("str6C");
-	mid = AddStrucMember(id,"field_0",	0,	0x000400,	-1,	1);
-	mid = AddStrucMember(id,"field_10",	0X10,	0x20000400,	-1,	4);
-	SetMemberComment(id,	0X10,	"0",	0);
-	mid = AddStrucMember(id,"field_14",	0X14,	0x000400,	-1,	1);
-	SetMemberComment(id,	0X14,	"-1",	0);
-	mid = AddStrucMember(id,"field_15",	0X15,	0x000400,	-1,	1);
-	SetMemberComment(id,	0X15,	"-1",	1);
-	mid = AddStrucMember(id,"field_16",	0X16,	0x000400,	-1,	1);
-	SetMemberComment(id,	0X16,	"-1",	0);
-	mid = AddStrucMember(id,"field_17",	0X17,	0x000400,	-1,	1);
-	SetMemberComment(id,	0X17,	"-1",	1);
-	mid = AddStrucMember(id,"field_18",	0X18,	0x20000400,	-1,	4);
-	SetMemberComment(id,	0X18,	"0",	0);
-	mid = AddStrucMember(id,"field_48",	0X48,	0x000400,	-1,	1);
-	SetMemberComment(id,	0X48,	"0",	0);
-	mid = AddStrucMember(id,"field_49",	0X49,	0x000400,	-1,	1);
-	SetMemberComment(id,	0X49,	"-1",	0);
-	mid = AddStrucMember(id,"field_6C",	0X6C,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"field_38C",	0X38C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_390",	0X390,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"field_394",	0X394,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_3A0",	0X3A0,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"field_3A4",	0X3A4,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"std_Str1",	0X3A8,	0x60000400,	GetStrucIdByName("STDRec"),	16);
 	
 	id = GetStrucIdByName("str10");
 	mid = AddStrucMember(id,"field_0",	0,	0x000400,	-1,	16);
 	
-	id = GetStrucIdByName("str528");
-	mid = AddStrucMember(id,"field_0",	0,	0x000400,	-1,	1320);
+	id = GetStrucIdByName("str70");
+	mid = AddStrucMember(id,"field_0",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_4SomePtr",	0X4,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_8someListPtr",	0X8,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_C",	0XC,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_10",	0X10,	0x20000400,	-1,	4);
+	SetMemberComment(id,	0X10,	"0",	0);
+	mid = AddStrucMember(id,"field_14",	0X14,	0x20000400,	-1,	4);
+	SetMemberComment(id,	0X14,	"-1",	0);
+	mid = AddStrucMember(id,"field_18",	0X18,	0x000400,	-1,	1);
+	SetMemberComment(id,	0X18,	"0",	0);
+	mid = AddStrucMember(id,"field_19",	0X19,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"field_1A",	0X1A,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"field_1C",	0X1C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_4C",	0X4C,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"field_4D",	0X4D,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"field_6F",	0X6F,	0x000400,	-1,	1);
 	
-	id = GetStrucIdByName("gos137F4");
+	id = GetStrucIdByName("CombatManager");
 	mid = AddStrucMember(id,"virtTablePtr",	0,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_4",	0X4,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_8",	0X8,	0x20000400,	-1,	4);
@@ -2439,9 +2448,8 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"cName",	0X14,	0x000400,	-1,	32);
 	mid = AddStrucMember(id,"field_34",	0X34,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_38",	0X38,	0x000400,	-1,	396);
-	mid = AddStrucMember(id,"fstr_6C",	0X1C4,	0x60000400,	GetStrucIdByName("str6C"),	20383);
-	mid = AddStrucMember(id,"field_5170",	0X5170,	0x60000400,	GetStrucIdByName("str10"),	32);
-	mid = AddStrucMember(id,"field_51DC",	0X51DC,	0x60000400,	GetStrucIdByName("str528"),	55440);
+	mid = AddStrucMember(id,"fstr_70",	0X1C4,	0x60000400,	GetStrucIdByName("str70"),	20944);
+	SetMemberComment(id,	0X1C4,	"187",	0);
 	mid = AddStrucMember(id,"field_12A80",	0X12A80,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X12A80,	"1",	0);
 	mid = AddStrucMember(id,"field_12A88",	0X12A88,	0x20000400,	-1,	4);
@@ -2568,8 +2576,8 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"field_8D0",	0X8D0,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X8D0,	"1",	0);
 	
-	id = GetStrucIdByName("gos70");
-	mid = AddStrucMember(id,"field_0",	0,	0x20000400,	-1,	4);
+	id = GetStrucIdByName("gosA0");
+	mid = AddStrucMember(id,"virtualtablePtr",	0,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0,	"0",	0);
 	mid = AddStrucMember(id,"std_Str4",	0X4,	0x60000400,	GetStrucIdByName("STDRec"),	16);
 	mid = AddStrucMember(id,"field_14",	0X14,	0x000400,	-1,	1);
@@ -2584,13 +2592,29 @@ static Structures_0(id) {
 	SetMemberComment(id,	0X20,	"0",	0);
 	mid = AddStrucMember(id,"field_24",	0X24,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X24,	"0",	0);
-	mid = AddStrucMember(id,"std_Str1",	0X38,	0x60000400,	GetStrucIdByName("STDRec"),	16);
-	mid = AddStrucMember(id,"std_Str2",	0X48,	0x60000400,	GetStrucIdByName("STDRec"),	16);
-	mid = AddStrucMember(id,"std_Str3",	0X58,	0x60000400,	GetStrucIdByName("STDRec"),	16);
-	mid = AddStrucMember(id,"field_68",	0X68,	0x20000400,	-1,	4);
-	SetMemberComment(id,	0X68,	"0",	0);
-	mid = AddStrucMember(id,"field_6C",	0X6C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_30",	0X30,	0x000400,	-1,	1);
+	SetMemberComment(id,	0X30,	"Vector?",	0);
+	mid = AddStrucMember(id,"field_38",	0X38,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"std_Str1",	0X3C,	0x60000400,	GetStrucIdByName("STDRec"),	16);
+	mid = AddStrucMember(id,"std_Str2",	0X4C,	0x60000400,	GetStrucIdByName("STDRec"),	16);
+	mid = AddStrucMember(id,"std_Str3",	0X5C,	0x60000400,	GetStrucIdByName("STDRec"),	16);
+	mid = AddStrucMember(id,"field_6C",	0X6C,	0x000400,	-1,	1);
 	SetMemberComment(id,	0X6C,	"0",	0);
+	mid = AddStrucMember(id,"field_70",	0X70,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_74",	0X74,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_78",	0X78,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_7C",	0X7C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_80",	0X80,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_84",	0X84,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_88",	0X88,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_8C",	0X8C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_90",	0X90,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_94",	0X94,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_98",	0X98,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"field_9C",	0X9C,	0x20000400,	-1,	4);
+	
+	id = GetStrucIdByName("str528");
+	mid = AddStrucMember(id,"field_0",	0,	0x000400,	-1,	1320);
 	
 	id = GetStrucIdByName("z_streamp");
 	mid = AddStrucMember(id,"next_in_Ptr",	0,	0x20000400,	-1,	4);
@@ -2678,7 +2702,8 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"fname12",	0X4,	0x000400,	-1,	12);
 	mid = AddStrucMember(id,"ascii_Zero",	0X10,	0x000400,	-1,	1);
 	mid = AddStrucMember(id,"Type",	0X14,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"isHashed",	0X18,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"isLoaded",	0X18,	0x20000400,	-1,	4);
+	SetMemberComment(id,	0X18,	"-1 - invalid name\n0 - not Loaded\n1 - Loaded",	0);
 	
 	id = GetStrucIdByName("LODwavFile");
 	mid = AddStrucMember(id,"virtualTab",	0,	0x20000400,	-1,	4);
@@ -2864,6 +2889,12 @@ static Structures_0(id) {
 	SetMemberComment(id,	0X14,	"(10+ levels)",	0);
 	mid = AddStrucMember(id,"probSecSkills",	0X18,	0x000400,	-1,	28);
 	SetMemberComment(id,	0X18,	"Pathfinding,Archery,Logistics,Scouting,Diplomacy,\nNavigation,Leadership,Wisdom,Mysticism,Luck,Siege Ballistics,\nEagle Eye,Necromancy,Estates,School of Fire Magic,\nSchool of Air Magic,School of Water Magic,School of Earth Magic,\nMagic Scholar,Battle Tactics,Battlefield Ballistics,Learning,\nOffense,Defense,Intelligence,Sorcery,Magic Resistance,First Aid\nnote: Probability of gaining a secondary skill (out of 112)",	0);
+	return id;
+}
+
+static Structures_1(id) {
+        auto mid;
+
 	mid = AddStrucMember(id,"selection",	0X34,	0x000400,	-1,	8);
 	SetMemberComment(id,	0X34,	"Castle,Rampart, Tower,Inferno,Necro,Dungeon,Stronghold,Fortress",	0);
 	
@@ -2885,12 +2916,6 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"basic_Ptr",	0,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"adv_Ptr",	0X4,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"expert_Ptr",	0X8,	0x20000400,	-1,	4);
-	return id;
-}
-
-static Structures_1(id) {
-        auto mid;
-
 	
 	id = GetStrucIdByName("SecondSkillInfo");
 	mid = AddStrucMember(id,"name_Ptr",	0,	0x20000400,	-1,	4);
