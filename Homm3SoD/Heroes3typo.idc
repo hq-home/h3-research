@@ -986,6 +986,9 @@ static Enums_0(id) {
 	id = AddEnum(-1,"BINK",0x1100000);
 	AddConstEx(id,"BINKMAXFRAMEBUFFERS",	0X2,	-1);
 	AddConstEx(id,"BINKMAXDIRTYRECTS",	0X8,	-1);
+	id = AddEnum(-1,"LODType",0x1100000);
+	AddConstEx(id,"Unknown",	0,	-1);
+	AddConstEx(id,"Table",	0X2,	-1);
 	return id;
 }
 
@@ -1243,7 +1246,7 @@ static ApplyStrucTInfos_0(void) {
 	id = GetStrucIdByName("hiScoreRec");
 	id = GetStrucIdByName("CHiScore");
 	id = GetStrucIdByName("gosA0");
-	id = GetStrucIdByName("str528");
+	id = GetStrucIdByName("str548");
 	id = GetStrucIdByName("str32");
 	id = GetStrucIdByName("h3Army");
 	id = GetStrucIdByName("str462");
@@ -1265,6 +1268,7 @@ static ApplyStrucTInfos_0(void) {
 	id = GetStrucIdByName("LODstrFile");
 	id = GetStrucIdByName("LODimgFile");
 	id = GetStrucIdByName("LODtblFile");
+	id = GetStrucIdByName("SimpleFileRec");
 	id = GetStrucIdByName("Vector");
 	id = GetStrucIdByName("t_Iterator");
 	id = GetStrucIdByName("t_nfPair");
@@ -1275,7 +1279,9 @@ static ApplyStrucTInfos_0(void) {
 	id = GetStrucIdByName("UnitInfo");
 	id = GetStrucIdByName("ArtInfo");
 	id = GetStrucIdByName("SpellInfo");
+	id = GetStrucIdByName("complexArt");
 	id = GetStrucIdByName("HeroInfo");
+	id = GetStrucIdByName("bitset90");
 	id = GetStrucIdByName("HeroClassInfo");
 	id = GetStrucIdByName("BallistInfo");
 	id = GetStrucIdByName("MovementInfo");
@@ -1408,7 +1414,7 @@ static Structures_0(id) {
 	id = AddStrucEx(-1,"hiScoreRec",0);
 	id = AddStrucEx(-1,"CHiScore",0);
 	id = AddStrucEx(-1,"gosA0",0);
-	id = AddStrucEx(-1,"str528",0);
+	id = AddStrucEx(-1,"str548",0);
 	id = AddStrucEx(-1,"str32",0);
 	id = AddStrucEx(-1,"h3Army",0);
 	id = AddStrucEx(-1,"str462",0);
@@ -1430,6 +1436,7 @@ static Structures_0(id) {
 	id = AddStrucEx(-1,"LODstrFile",0);
 	id = AddStrucEx(-1,"LODimgFile",0);
 	id = AddStrucEx(-1,"LODtblFile",0);
+	id = AddStrucEx(-1,"SimpleFileRec",0);
 	id = AddStrucEx(-1,"Vector",0);
 	id = AddStrucEx(-1,"t_Iterator",0);
 	id = AddStrucEx(-1,"t_nfPair",0);
@@ -1440,7 +1447,9 @@ static Structures_0(id) {
 	id = AddStrucEx(-1,"UnitInfo",0);
 	id = AddStrucEx(-1,"ArtInfo",0);
 	id = AddStrucEx(-1,"SpellInfo",0);
+	id = AddStrucEx(-1,"complexArt",0);
 	id = AddStrucEx(-1,"HeroInfo",0);
+	id = AddStrucEx(-1,"bitset90",0);
 	id = AddStrucEx(-1,"HeroClassInfo",0);
 	id = AddStrucEx(-1,"BallistInfo",0);
 	id = AddStrucEx(-1,"MovementInfo",0);
@@ -2450,6 +2459,7 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"field_38",	0X38,	0x000400,	-1,	396);
 	mid = AddStrucMember(id,"fstr_70",	0X1C4,	0x60000400,	GetStrucIdByName("str70"),	20944);
 	SetMemberComment(id,	0X1C4,	"187",	0);
+	mid = AddStrucMember(id,"field_545C",	0X545C,	0x000400,	-1,	1);
 	mid = AddStrucMember(id,"field_12A80",	0X12A80,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X12A80,	"1",	0);
 	mid = AddStrucMember(id,"field_12A88",	0X12A88,	0x20000400,	-1,	4);
@@ -2613,8 +2623,8 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"field_98",	0X98,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_9C",	0X9C,	0x20000400,	-1,	4);
 	
-	id = GetStrucIdByName("str528");
-	mid = AddStrucMember(id,"field_0",	0,	0x000400,	-1,	1320);
+	id = GetStrucIdByName("str548");
+	mid = AddStrucMember(id,"field_0",	0,	0x000400,	-1,	1352);
 	
 	id = GetStrucIdByName("z_streamp");
 	mid = AddStrucMember(id,"next_in_Ptr",	0,	0x20000400,	-1,	4);
@@ -2686,7 +2696,7 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"_Right",	0X8,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"Name",	0XC,	0x000400,	-1,	12);
 	mid = AddStrucMember(id,"field_18",	0X18,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"LODfile",	0X1C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"LODfile",	0X1C,	0x20a00400,	GetStrucIdByName("LOD_File"),	4);
 	mid = AddStrucMember(id,"_Color",	0X20,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X20,	"0 - Red, 1 - Black",	0);
 	
@@ -2751,18 +2761,25 @@ static Structures_0(id) {
 	
 	id = GetStrucIdByName("LODtblFile");
 	mid = AddStrucMember(id,"virtualTab",	0,	0x20000400,	-1,	4);
+	SetMemberComment(id,	0,	"LODtblFile_VirtualTable",	0);
 	mid = AddStrucMember(id,"fname12",	0X4,	0x000400,	-1,	12);
 	mid = AddStrucMember(id,"ascii_Zero",	0X10,	0x000400,	-1,	1);
 	mid = AddStrucMember(id,"Type",	0X14,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"isHashed",	0X18,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"lines",	0X1C,	0x60000400,	GetStrucIdByName("Vector"),	16);
 	mid = AddStrucMember(id,"fileBuff",	0X2C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"fileSize",	0X30,	0x20000400,	-1,	4);
+	
+	id = GetStrucIdByName("SimpleFileRec");
+	mid = AddStrucMember(id,"virtualTable",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"filePtr",	0X4,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Data",	0X8,	0x20000400,	-1,	4);
 	
 	id = GetStrucIdByName("t_Iterator");
 	mid = AddStrucMember(id,"_Ptr",	0,	0x20a00400,	GetStrucIdByName("treeNode"),	4);
 	
 	id = GetStrucIdByName("t_nfPair");
-	mid = AddStrucMember(id,"_NodePtr",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Iterator",	0,	0x20a00400,	GetStrucIdByName("t_Iterator"),	4);
 	mid = AddStrucMember(id,"_bFlag",	0X4,	0x20000400,	-1,	4);
 	
 	id = GetStrucIdByName("guardsStruc");
@@ -2838,11 +2855,17 @@ static Structures_0(id) {
 	id = GetStrucIdByName("ArtInfo");
 	mid = AddStrucMember(id,"name_Ptr",	0,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"cost",	0X4,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"slot_bits",	0X8,	0x20000400,	-1,	4);
-	SetMemberComment(id,	0X8,	"0 0001 - Head\n0 0002 - Shoulders\n0 0004 - Neck \n0 0008 - Right Hand\n0 0010 - Left Hand\n0 0020 - Torso\n0 0040 - Right Ring\n0 0080 - Left Ring\n0 0100 - Feet\n0 0200 - Misc 1\n0 0400 - Misc 2\n0 0800 - Misc 3\n0 1000 - Misc 4\n0 2000 - War Machine 1\n0 4000 - War Machine 2\n0 8000 - War Machine 3\n1 0000 - War Machine 4\n2 0000 - Spell Book",	0);
+	mid = AddStrucMember(id,"slotBitMaskIndex",	0X8,	0x20000400,	-1,	4);
+	SetMemberComment(id,	0X8,	"0 0001 - Head\n0 0002 - Shoulders\n0 0004 - Neck \n0 0008 - Right Hand\n0 0010 - Left Hand\n0 0020 - Torso\n0 0040 - Right Ring\n0 0080 - Left Ring\n0 0100 - Feet\n0 0200 - Misc 1\n0 0400 - Misc 2\n0 0800 - Misc 3\n0 1000 - Misc 4\n0 2000 - War Machine 1\n0 4000 - War Machine 2\n0 8000 - War Machine 3\n1 0000 - War Machine 4\n2 0000 - Spell Book\n4 0000 - War Machine 5",	0);
 	mid = AddStrucMember(id,"class_bit",	0XC,	0x20000400,	-1,	4);
-	SetMemberComment(id,	0XC,	"0001 - S\n0002 - T\n0004 - N\n0008 - J\n0010 - R",	0);
+	SetMemberComment(id,	0XC,	"\n0001 - S\n0002 - T\n0004 - N\n0008 - J\n0010 - R",	0);
 	mid = AddStrucMember(id,"descr_Ptr",	0X10,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"ComplexTblIndex",	0X14,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"ParentComplexTblIndex",	0X18,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"isKickAss",	0X1C,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"doesContainSpell",	0X1D,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"field_1E",	0X1E,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"field_1F",	0X1F,	0x000400,	-1,	1);
 	
 	id = GetStrucIdByName("SpellInfo");
 	mid = AddStrucMember(id,"field_0",	0,	0x20000400,	-1,	4);
@@ -2867,10 +2890,23 @@ static Structures_0(id) {
 	SetMemberComment(id,	0X74,	"Normal, Basic, Advanced, Expert",	0);
 	mid = AddStrucMember(id,"field_78",	0X78,	0x000400,	-1,	12);
 	
+	id = GetStrucIdByName("bitset90");
+	mid = AddStrucMember(id,"Mask",	0,	0x20000400,	-1,	20);
+	
+	id = GetStrucIdByName("complexArt");
+	mid = AddStrucMember(id,"artefactID",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"childArtefacts",	0X4,	0x60000400,	GetStrucIdByName("bitset90"),	20);
+	
 	id = GetStrucIdByName("HeroInfo");
 	mid = AddStrucMember(id,"field_0",	0,	0x000400,	-1,	60);
 	mid = AddStrucMember(id,"name_Ptr",	0X3C,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"_1stCrStackLow",	0X40,	0x20000400,	-1,	4);
+	return id;
+}
+
+static Structures_1(id) {
+        auto mid;
+
 	mid = AddStrucMember(id,"_1stCrStackHi",	0X44,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"_2ndCrStackLow",	0X48,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"_2ndCrStackHigh",	0X4C,	0x20000400,	-1,	4);
@@ -2889,12 +2925,6 @@ static Structures_0(id) {
 	SetMemberComment(id,	0X14,	"(10+ levels)",	0);
 	mid = AddStrucMember(id,"probSecSkills",	0X18,	0x000400,	-1,	28);
 	SetMemberComment(id,	0X18,	"Pathfinding,Archery,Logistics,Scouting,Diplomacy,\nNavigation,Leadership,Wisdom,Mysticism,Luck,Siege Ballistics,\nEagle Eye,Necromancy,Estates,School of Fire Magic,\nSchool of Air Magic,School of Water Magic,School of Earth Magic,\nMagic Scholar,Battle Tactics,Battlefield Ballistics,Learning,\nOffense,Defense,Intelligence,Sorcery,Magic Resistance,First Aid\nnote: Probability of gaining a secondary skill (out of 112)",	0);
-	return id;
-}
-
-static Structures_1(id) {
-        auto mid;
-
 	mid = AddStrucMember(id,"selection",	0X34,	0x000400,	-1,	8);
 	SetMemberComment(id,	0X34,	"Castle,Rampart, Tower,Inferno,Necro,Dungeon,Stronghold,Fortress",	0);
 	

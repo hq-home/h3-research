@@ -16,6 +16,7 @@
  0001:000030F0       ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ
  0001:00003130       ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
  0001:00003180       ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+ 0001:00003440       std_Bitset10__Xran
  0001:00003810       ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
  0001:00003A20       ?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z
  0001:00003A40       ?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z
@@ -29,8 +30,28 @@
  0001:0001ADB0       ?what@runtime_error@std@@UBEPBDXZ
  0001:0001ADE0       ??0logic_error@std@@QAE@ABV01@@Z
  0001:00031490       aHpfc
+ 0001:000314B0       ctor
  0001:00033600       STD_CopyStr
+ 0001:00033670       destructor
+ 0001:000336A0       std_Bitset90__Xran
  0001:00049190       nullsub_1
+ 0001:0004B3F0       std_Bitset13__Assign
+ 0001:0004B500       std_Bitset90__Assign
+ 0001:0004B52B       setZeroesToBitSet
+ 0001:0004B630       complexArts_ctor
+ 0001:0004B8D0       slotBitMasks_ctor
+ 0001:0004BA20       RMGR_Artraits
+ 0001:0004BC1B       findBitMaskIndex
+ 0001:0004BD33       calculateCompleArtCost
+ 0001:0004BF0C       std_BitSet_Xran
+ 0001:0004BFEE       lbClearLodFile
+ 0001:0004BFF5       lbExit
+ 0001:0004C010       artSlotNames_dector_delegat
+ 0001:0004C030       ArtRaitsStrings_destructor_delegate
+ 0001:0004C050       bitset13h_set
+ 0001:0004C0B0       truncate31bits
+ 0001:0004C0D0       std_Bitset__Xran12h
+ 0001:0004C1A0       std_Bitset90__Test
  0001:0004C200       baseClassMgrUnknown_ctor
  0001:0004C990       gSoundMgr_BinkClose
  0001:0004CC40       LODimgFile_ctor
@@ -58,11 +79,11 @@
  0001:00061280       __cfltcvt_init_0
  0001:000612E0       __cfltcvt_init_1
  0001:00061340       CombatManager_ctor
- 0001:00061470       str70_m5Wrapper
- 0001:00061490       str70_m1
+ 0001:00061470       str10_ctor
+ 0001:00061490       str10_destructor
  0001:00061600       CombatManager_Init
  0001:00061E40       CombatManager_m2
- 0001:00069230       str70_m5
+ 0001:00069230       str10_m5
  0001:000692F0       str70_m2
  0001:00069420       str70_m4
  0001:00069930       str70_m3_recursed
@@ -71,6 +92,7 @@
  0001:00072A00       CombatManager_m3
  0001:0007A1B0       ??1TaskStack@details@Concurrency@@QAE@XZ
  0001:00084560       ??8_ContextCallback@details@Concurrency@@QBE_NABV012@@Z
+ 0001:00086920       SimpleFileRec2_Clear
  0001:0008C490       ?_Incref@facet@locale@std@@QAEXXZ
  0001:0008D780       ?do_always_noconv@codecvt_base@std@@MBE_NXZ
  0001:00098CC0       ??0Iostream_init@@QAE@XZ
@@ -124,6 +146,7 @@
  0001:000F9CF0       FindIndexByFName
  0001:000F9F30       LOD_OpenFAT
  0001:000FA100       LOD_seekByName
+ 0001:000FA1B0       LOD_loadResFile
  0001:000FA2D0       FATstruc_Init
  0001:0010A420       ValidateConfig
  0001:0010A690       InitConfig_Defaults
@@ -174,22 +197,33 @@
  0001:00157970       LODFileBaseClass_ctor
  0001:001579C0       LOD_File_Destructor
  0001:001579F0       LOD_File_setBaseVirtualtab
+ 0001:00158340       SimpleFileRec_ReadFile
+ 0001:00158360       SimpleFileRec2_ReadFile
  0001:00158730       m4@txtBuff_RM_GetWav
+ 0001:00158750       ResourceManager_ShowError
  0001:00159490       LoadH3FAT
  0001:00159800       DATAPathAssign
+ 0001:001599E0       SimpleFileRec_Clear
  0001:0015AFE0       RM_GetStrResource
+ 0001:0015B070       RM_ReadTblResource
+ 0001:0015B199       readFromLODFile
+ 0001:0015B2B0       RM_GetTblResource
  0001:0015B340       m1@txtBuff_RM_GetWav
  0001:0015B5D0       txtBuff_RM_GetWav
  0001:0015B930       txtBuff_RM_GetSample
  0001:0015C300       LOD_File_Clear
  0001:0015C620       m2@txtBuff_RM_GetWav
+ 0001:0015C740       someDesructor@ResourceManager_ShowError
  0001:0015C810       m3@txtBuff_RM_GetWav
  0001:0015CCF8       unknown_libname_23
  0001:0015CDF0       treeMap_insertV
  0001:0015CF20       treeMap_eraseP
  0001:0015D560       tree_It_find_kV
  0001:0015D5C0       tree_constIt_Inc
+ 0001:0015DA10       treeMap_InsertXYV
  0001:0015DE00       treeMap_Lbound
+ 0001:0015DE60       tree_constIt_Dec
+ 0001:0015DF20       treeMap_Consval
  0001:0015DFE0       unknown_libname_24
  0001:0015E550       unknown_libname_25
  0001:00166050       LODwavFile_ctor
@@ -224,7 +258,12 @@
  0001:001B8460       RMGR_Genrltxt
  0001:001B8480       RMGR_Campbttn
  0001:001BAF90       LODstrFile_ctor
+ 0001:001BB230       LODtblFile_Delete
+ 0001:001BB260       LODtblFile_ctor
+ 0001:001BB550       LODtblFile_Size
+ 0001:001BB560       LODtblFile_Reset
  0001:001BB5E0       ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ_0
+ 0001:001BB610       STD_Vector_erase
  0001:001FD2D0       vect_4_insert
  0001:001FDFB0       gosA0_like_Base_ctor
  0001:001FE010       gosA0_like_Base_m1
@@ -234,6 +273,7 @@
  0001:001FEA20       gosA0_like_Base_m7
  0001:001FEB30       gosA0_like_Base_m8
  0001:001FEBB0       gosA0_like_Base_m9
+ 0001:001FEE90       SimpleFileRec_m3
  0001:001FF3D0       unknown_libname_38
  0001:00200A20       IsValidScreenInfo
  0001:00200A80       get_ScrWIDTH
@@ -269,6 +309,7 @@
  0001:00202B40       ?Initialize@CImmEnclosure@@UAEHPAVCImmDevice@@ABUFEELIT_EFFECT@@K@Z
  0001:00202B46       ?GetIsCompatibleGUID@CImmEnclosure@@UAEHAAU_GUID@@@Z
  0001:002030D0       nullsub_17
+ 0001:002061A0       _uncompress
  0001:00206400       nullsub_10
  0001:0020A0F0       ??3@YAXPAX@Z
  0001:0020A0FB       ?_Xlen@std@@YAXXZ
@@ -2277,6 +2318,9 @@
  0002:00000608       ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
  0002:0000060C       ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
  0002:00000678       gAdvManager_vtab
+ 0002:00001940       ArtPosIndexes
+ 0002:0000198C       kickAss_ArtIndexes
+ 0002:00001998       complexArts_ContainsSpell
  0002:000019BC       errorHandler_vtab
  0002:000019C8       LODimgFile_vtab
  0002:00001B4C       ??_8?$basic_ostream@DU?$char_traits@D@std@@@std@@7B@
@@ -2344,14 +2388,17 @@
  0002:00006CFC       aHeroes3_icd
  0002:00006D08       aHeroes3_exe
  0002:0000700C       LOD_File_base_vtab
- 0002:0000709C       name
+ 0002:0000709C       fName
  0002:000070A8       aDfault24_pcx_0
  0002:000070B8       aDfault24_pcx
  0002:000070C8       aDefault_pal
  0002:000070D4       aDefault_pal_0
  0002:000070E0       aDefault_fnt
  0002:000070EC       aDefault_wav
+ 0002:00007138       SimpleFileRec2_VirtualTable
+ 0002:00007144       SimpleFileRec_VirtualTable
  0002:000076E0       LODwavFile_vtab
+ 0002:00008DB4       LODtblFile_VirtualTable
  0002:00009B34       aStringfileinfo
  0002:00009B50       aStringfilein_0
  0002:00009CD4       gosA0_like_Base_vtab
@@ -3175,6 +3222,8 @@
  0003:00002B40       aS2
  0003:00002B48       aS1
  0003:00002B50       aSAreAlwaysLuck
+ 0003:00002B68       ArtRaitsList_Ptr
+ 0003:00002B6C       ComplexArts_Ptr
  0003:00002B70       aArtslots_txt
  0003:00002B80       aArtraits_txt
  0003:00002B90       aUnknown
@@ -8860,6 +8909,15 @@
  0003:00033259       gSoundMgr_mem4
  0003:00033260       emptyString
  0003:0003333C       buffer
+ 0003:000336DC       memBlock
+ 0003:000358E8       slotBitMasks
+ 0003:00035924       ArtResMemory_flag
+ 0003:00035928       isArtRaitsStringsMemAllocated
+ 0003:0003592C       ArtRaitsStrings
+ 0003:00035930       buffArtSlot_isAllocated
+ 0003:00035934       buffArtSlotNames
+ 0003:00035938       cplxArtsList
+ 0003:00035A58       ArtRaitsList
  0003:00036D00       gBinkMgr_BinkData1
  0003:00036D04       gBinkMgr_BinkData2
  0003:00036D2C       gBinkMgr_IsStreamsPaused
@@ -8974,8 +9032,8 @@
  0003:0004CD04       lineSize
  0003:0004CD08       lpSurface
  0003:0004CD20       lpDD
- 0003:0004D200       CriticalSection
- 0003:0004D218       Target
+ 0003:0004D200       __CritSec
+ 0003:0004D218       __InitFlag
  0003:0004D224       ?_Global@_Locimp@locale@std@@0PAV123@A
  0003:0004D848       CodePage
  0003:0004D85C       lpTopLevelExceptionFilter
