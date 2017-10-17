@@ -988,7 +988,17 @@ static Enums_0(id) {
 	AddConstEx(id,"BINKMAXDIRTYRECTS",	0X8,	-1);
 	id = AddEnum(-1,"LODType",0x1100000);
 	AddConstEx(id,"Unknown",	0,	-1);
-	AddConstEx(id,"Table",	0X2,	-1);
+	AddConstEx(id,"h3Text",	0X2,	-1);
+	id = AddEnum(-1,"MACRO__O",0x1100000);
+	AddConstEx(id,"_O_RDONLY",	0,	-1);
+	AddConstEx(id,"_O_WRONLY",	0X1,	-1);
+	AddConstEx(id,"_O_RDWR",	0X2,	-1);
+	AddConstEx(id,"_O_APPEND",	0X8,	-1);
+	AddConstEx(id,"_O_CREAT",	0X100,	-1);
+	AddConstEx(id,"_O_TRUNC",	0X200,	-1);
+	AddConstEx(id,"_O_EXCL",	0X400,	-1);
+	AddConstEx(id,"_O_TEXT",	0X4000,	-1);
+	AddConstEx(id,"_O_BINARY",	0X8000,	-1);
 	return id;
 }
 
@@ -1272,12 +1282,15 @@ static ApplyStrucTInfos_0(void) {
 	id = GetStrucIdByName("Vector");
 	id = GetStrucIdByName("t_Iterator");
 	id = GetStrucIdByName("t_nfPair");
+	id = GetStrucIdByName("HiScoreScen");
+	id = GetStrucIdByName("HiScoreCamp");
 	id = GetStrucIdByName("CrBankStruc");
 	id = GetStrucIdByName("guardsStruc");
 	id = GetStrucIdByName("CrBankInfoStruc");
 	id = GetStrucIdByName("jkTextData");
 	id = GetStrucIdByName("UnitInfo");
 	id = GetStrucIdByName("ArtInfo");
+	id = GetStrucIdByName("ArtSlotInfo");
 	id = GetStrucIdByName("SpellInfo");
 	id = GetStrucIdByName("complexArt");
 	id = GetStrucIdByName("HeroInfo");
@@ -1323,6 +1336,12 @@ static ApplyStrucTInfos_0(void) {
 	id = GetStrucIdByName("BINKFRAMEBUFFERS");
 	id = GetStrucIdByName("BINKFRAMEPLANESET");
 	id = GetStrucIdByName("BINKPLANE");
+	id = GetStrucIdByName("Pair");
+	id = GetStrucIdByName("ObjectInfo");
+	id = GetStrucIdByName("StdIOS");
+	id = GetStrucIdByName("StdIOSBasic");
+	id = GetStrucIdByName("SeerText");
+	id = GetStrucIdByName("SeerTextsList");
 	return id;
 }
 
@@ -1440,12 +1459,15 @@ static Structures_0(id) {
 	id = AddStrucEx(-1,"Vector",0);
 	id = AddStrucEx(-1,"t_Iterator",0);
 	id = AddStrucEx(-1,"t_nfPair",0);
+	id = AddStrucEx(-1,"HiScoreScen",0);
+	id = AddStrucEx(-1,"HiScoreCamp",0);
 	id = AddStrucEx(-1,"CrBankStruc",0);
 	id = AddStrucEx(-1,"guardsStruc",0);
 	id = AddStrucEx(-1,"CrBankInfoStruc",0);
 	id = AddStrucEx(-1,"jkTextData",0);
 	id = AddStrucEx(-1,"UnitInfo",0);
 	id = AddStrucEx(-1,"ArtInfo",0);
+	id = AddStrucEx(-1,"ArtSlotInfo",0);
 	id = AddStrucEx(-1,"SpellInfo",0);
 	id = AddStrucEx(-1,"complexArt",0);
 	id = AddStrucEx(-1,"HeroInfo",0);
@@ -1490,6 +1512,12 @@ static Structures_0(id) {
 	id = AddStrucEx(-1,"BINKFRAMEBUFFERS",0);
 	id = AddStrucEx(-1,"BINKFRAMEPLANESET",0);
 	id = AddStrucEx(-1,"BINKPLANE",0);
+	id = AddStrucEx(-1,"Pair",0);
+	id = AddStrucEx(-1,"ObjectInfo",0);
+	id = AddStrucEx(-1,"StdIOS",0);
+	id = AddStrucEx(-1,"StdIOSBasic",0);
+	id = AddStrucEx(-1,"SeerText",0);
+	id = AddStrucEx(-1,"SeerTextsList",0);
 	
 	id = GetStrucIdByName("_SCOPETABLE_ENTRY");
 	mid = AddStrucMember(id,"EnclosingLevel",	0,	0x20000400,	-1,	4);
@@ -2741,9 +2769,9 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"ascii_Zero",	0X10,	0x600400,	-1,	1);
 	SetMemberComment(id,	0X10,	"0",	0);
 	mid = AddStrucMember(id,"Type",	0X14,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"isHashed",	0X18,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"isLoaded",	0X18,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"lines",	0X1C,	0x60000400,	GetStrucIdByName("Vector"),	16);
-	mid = AddStrucMember(id,"fileBuff",	0X2C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"fileBuff_Ptr",	0X2C,	0x20000400,	-1,	4);
 	
 	id = GetStrucIdByName("LODimgFile");
 	mid = AddStrucMember(id,"virtualTab",	0,	0x20000400,	-1,	4);
@@ -2781,6 +2809,18 @@ static Structures_0(id) {
 	id = GetStrucIdByName("t_nfPair");
 	mid = AddStrucMember(id,"_Iterator",	0,	0x20a00400,	GetStrucIdByName("t_Iterator"),	4);
 	mid = AddStrucMember(id,"_bFlag",	0X4,	0x20000400,	-1,	4);
+	
+	id = GetStrucIdByName("HiScoreScen");
+	mid = AddStrucMember(id,"Player",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Land",	0X4,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Days",	0X8,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Score",	0XC,	0x20000400,	-1,	4);
+	
+	id = GetStrucIdByName("HiScoreCamp");
+	mid = AddStrucMember(id,"Player",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Campaign",	0X4,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Days",	0X8,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Score",	0XC,	0x20000400,	-1,	4);
 	
 	id = GetStrucIdByName("guardsStruc");
 	mid = AddStrucMember(id,"id_creature1",	0,	0x20000400,	-1,	4);
@@ -2824,33 +2864,34 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"townType",	0,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0,	"0 - Castle\n1 - Rampart\n2 - Tower\n3 - Inferno\n4 - Necropolis\n5 - Dungeon\n6 - Stronghold\n7 - Fortress",	0);
 	mid = AddStrucMember(id,"level",	0X4,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"_unk_id1",	0X8,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"_unk_id2",	0XC,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"acronym_Ptr",	0X8,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"animFileName_Ptr",	0XC,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"abilityFlags",	0X10,	0x20000400,	-1,	4);
-	SetMemberComment(id,	0X10,	"0000 0001 - DOUBLE_WIDE\n0000 0002 - FLYING_ARMY\n0000 0004 - SHOOTING_ARMY\n0000 0008 - ?dragon_breath | magic resist\n0000 0010 - bio-alive\n0000 0020 - CATAPULT\n0000 0040 - SIEGE_WEAPON\n0000 0080 - KING_1\n0000 0100 - KING_2\n0000 0200 - KING_3 \n0000 0400 - Mind_spell_immunity \n0000 0800 - ?Magic_shot | const_no_wall_penalty\n0000 1000 - const_no_melee_penalty\n0000 2000 -\n0000 4000 - ?Immune_to_fire\n0000 8000 - const_two_attacks\n0001 0000 - No_enemy_retaliation\n0002 0000 - ??elemental\n0004 0000 - IS_UNDEAD\n0008 0000 -\n0010 0000 - AOE_attack\n0020 0000 - AOE_conus_attack\n0040 0000 - \n0080 0000 -\n0100 0000 -\n0200 0000 -\n0400 0000 -\n0800 0000 -\n1000 0000 -\n2000 0000 -\n4000 0000 -\n8000 0000 -",	0);
+	SetMemberComment(id,	0X10,	"0000 0001 - DOUBLE_WIDE\n0000 0002 - FLYING_ARMY\n0000 0004 - SHOOTING_ARMY\n0000 0008 - HAS_EXTENDED_ATTACK: dragon_breath\n0000 0010 - IS_LIVE\n0000 0020 - CATAPULT\n0000 0040 - SIEGE_WEAPON\n0000 0080 - KING_1: Firebird|Phoenix|Dragon|Behemoth|Hydra\n0000 0100 - KING_2: Angel|Devil\n0000 0200 - KING_3: Titan \n0000 0400 - IMMUNE_TO_MIND_SPELLS\n0000 0800 - ?Magic_shot | const_no_wall_penalty | Hero spells cost less\n0000 1000 - const_no_melee_penalty\n0000 2000 -\n0000 4000 - IMMUNE_TO_FIRE_SPELLS\n0000 8000 - const_two_attacks\n0001 0000 - const_free_attack (No enemy retaliation)\n0002 0000 - IS_INSENSATE: elemental, golem, undead, war machine, not gargoyle (stone?)\n0004 0000 - IS_UNDEAD\n0008 0000 - MULTI_HEADED\n0010 0000 - AOE_attack: Fireball | Death cloud attack\n0020 0000 - AOE_conus_attack: Hellhound\n0040 0000 - \n0080 0000 -\n0100 0000 -\n0200 0000 -\n0400 0000 -\n0800 0000 -\n1000 0000 -\n2000 0000 -\n4000 0000 -\n8000 0000 - IS_DRAGON",	0);
 	mid = AddStrucMember(id,"name_s_Ptr",	0X14,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"name_pl_Ptr",	0X18,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"abilityText_Ptr",	0X1C,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"costWood",	0X20,	0x10000400,	-1,	2);
-	mid = AddStrucMember(id,"costMercury",	0X22,	0x10000400,	-1,	2);
-	mid = AddStrucMember(id,"costOre",	0X24,	0x10000400,	-1,	2);
-	mid = AddStrucMember(id,"costSulfur",	0X26,	0x10000400,	-1,	2);
-	mid = AddStrucMember(id,"costCrystal",	0X28,	0x10000400,	-1,	2);
-	mid = AddStrucMember(id,"costGems",	0X2A,	0x10000400,	-1,	2);
-	mid = AddStrucMember(id,"costGold",	0X2C,	0x10000400,	-1,	2);
-	mid = AddStrucMember(id,"fightValue",	0X2E,	0x10000400,	-1,	2);
-	mid = AddStrucMember(id,"AI_value",	0X30,	0x10000400,	-1,	2);
-	mid = AddStrucMember(id,"Growth",	0X34,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"HordeGrowth",	0X38,	0x10000400,	-1,	2);
-	mid = AddStrucMember(id,"HitPoints",	0X3C,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"Speed",	0X40,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"Attack",	0X44,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"Defense",	0X48,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"dmgLow",	0X4C,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"dmgHigh",	0X50,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"dmgShots",	0X54,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"advMap_low",	0X58,	0x20000400,	-1,	4);
-	mid = AddStrucMember(id,"advMap_high",	0X5C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"costWood",	0X20,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"costMercury",	0X24,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"costOre",	0X28,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"costSulfur",	0X2C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"costCrystal",	0X30,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"costGems",	0X34,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"costGold",	0X38,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"fightValue",	0X3C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"AI_value",	0X40,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Growth",	0X44,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"HordeGrowth",	0X48,	0x10000400,	-1,	2);
+	mid = AddStrucMember(id,"HitPoints",	0X4C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Speed",	0X50,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Attack",	0X54,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Defense",	0X58,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"dmgLow",	0X5C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"dmgHigh",	0X60,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Shots",	0X64,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Spells",	0X68,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"advMap_low",	0X6C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"advMap_high",	0X70,	0x20000400,	-1,	4);
 	
 	id = GetStrucIdByName("ArtInfo");
 	mid = AddStrucMember(id,"name_Ptr",	0,	0x20000400,	-1,	4);
@@ -2867,6 +2908,10 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"field_1E",	0X1E,	0x000400,	-1,	1);
 	mid = AddStrucMember(id,"field_1F",	0X1F,	0x000400,	-1,	1);
 	
+	id = GetStrucIdByName("ArtSlotInfo");
+	mid = AddStrucMember(id,"Name_Ptr",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"MaskIndex",	0X4,	0x20000400,	-1,	4);
+	
 	id = GetStrucIdByName("SpellInfo");
 	mid = AddStrucMember(id,"field_0",	0,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"field_4",	0X4,	0x20000400,	-1,	4);
@@ -2877,6 +2922,12 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"level",	0X18,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"school_bits",	0X1C,	0x20000400,	-1,	4);
 	SetMemberComment(id,	0X1C,	"1 - Air\n2 - Fire\n4 - Water\n8 - Earth",	0);
+	return id;
+}
+
+static Structures_1(id) {
+        auto mid;
+
 	mid = AddStrucMember(id,"costs",	0X20,	0x20000400,	-1,	16);
 	SetMemberComment(id,	0X20,	"None, Basic, Adv, Expert",	0);
 	mid = AddStrucMember(id,"effect_power",	0X30,	0x20000400,	-1,	4);
@@ -2901,12 +2952,6 @@ static Structures_0(id) {
 	mid = AddStrucMember(id,"field_0",	0,	0x000400,	-1,	60);
 	mid = AddStrucMember(id,"name_Ptr",	0X3C,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"_1stCrStackLow",	0X40,	0x20000400,	-1,	4);
-	return id;
-}
-
-static Structures_1(id) {
-        auto mid;
-
 	mid = AddStrucMember(id,"_1stCrStackHi",	0X44,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"_2ndCrStackLow",	0X48,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"_2ndCrStackHigh",	0X4C,	0x20000400,	-1,	4);
@@ -3353,6 +3398,62 @@ static Structures_1(id) {
 	mid = AddStrucMember(id,"cRcBBufferHeight",	0X10,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"FrameNum",	0X14,	0x20000400,	-1,	4);
 	mid = AddStrucMember(id,"Frames",	0X18,	0x60000400,	GetStrucIdByName("BINKFRAMEPLANESET"),	96);
+	
+	id = GetStrucIdByName("Pair");
+	mid = AddStrucMember(id,"First",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Second",	0X4,	0x20000400,	-1,	4);
+	
+	id = GetStrucIdByName("ObjectInfo");
+	mid = AddStrucMember(id,"IsPassable",	0,	0x000400,	-1,	1);
+	SetMemberComment(id,	0,	"not detected correctly",	0);
+	mid = AddStrucMember(id,"IsPassable2",	0X1,	0x000400,	-1,	1);
+	SetMemberComment(id,	0X1,	"not detected correctly",	0);
+	mid = AddStrucMember(id,"IsMovable",	0X2,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"Name_Ptr",	0X4,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Id",	0X8,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"IsObstacle",	0XC,	0x000400,	-1,	1);
+	mid = AddStrucMember(id,"field_F",	0XF,	0x000400,	-1,	1);
+	
+	id = GetStrucIdByName("StdIOS");
+	mid = AddStrucMember(id,"virtualTable",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_State",	0X4,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Except",	0X8,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Fmtfl",	0XC,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Prec",	0X10,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Wide",	0X14,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Arr",	0X18,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Calls",	0X1C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Loc",	0X20,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Stdstr",	0X24,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Sync",	0X28,	0x20000400,	-1,	4);
+	
+	id = GetStrucIdByName("StdIOSBasic");
+	mid = AddStrucMember(id,"virtualTable",	0,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_State",	0X4,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Except",	0X8,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Fmtfl",	0XC,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Prec",	0X10,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Wide",	0X14,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Arr",	0X18,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Calls",	0X1C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Loc",	0X20,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"Stdstr",	0X24,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Sync",	0X28,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Sb",	0X2C,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Tiestr",	0X30,	0x20000400,	-1,	4);
+	mid = AddStrucMember(id,"_Fillch",	0X34,	0x20000400,	-1,	4);
+	
+	id = GetStrucIdByName("SeerText");
+	mid = AddStrucMember(id,"Quest",	0,	0x60000400,	GetStrucIdByName("STDRec"),	16);
+	mid = AddStrucMember(id,"Progress",	0X10,	0x60000400,	GetStrucIdByName("STDRec"),	16);
+	mid = AddStrucMember(id,"Complete",	0X20,	0x60000400,	GetStrucIdByName("STDRec"),	16);
+	mid = AddStrucMember(id,"Rollover",	0X30,	0x60000400,	GetStrucIdByName("STDRec"),	16);
+	mid = AddStrucMember(id,"Log",	0X40,	0x60000400,	GetStrucIdByName("STDRec"),	16);
+	
+	id = GetStrucIdByName("SeerTextsList");
+	mid = AddStrucMember(id,"List",	0,	0x60000400,	GetStrucIdByName("SeerText"),	800);
+	mid = AddStrucMember(id,"EmptyText",	0X320,	0x60000400,	GetStrucIdByName("STDRec"),	16);
+	mid = AddStrucMember(id,"TimeLimitText",	0X330,	0x60000400,	GetStrucIdByName("STDRec"),	16);
 	return id;
 }
 

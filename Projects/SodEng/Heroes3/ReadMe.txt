@@ -1,3 +1,9 @@
+===[ Helper Projects ]===
+M&M6-8 Projects
+https://github.com/Nommy228/Might-and-Magic-Trilogy/blob/master/LOD.h
+https://github.com/gp-alex/world-of-might-and-magic
+
+
 ========================================================================
     WIN32 APPLICATION : Heroes3 Project Overview
 ========================================================================

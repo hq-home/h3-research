@@ -32,3 +32,8 @@
 // TODO: reference additional headers your program requires here
 #include <stdio.h> 
 #include <TimeAPI.h>
+
+
+#define h3int		int32_t 
+#define h3bool		int32_t 
+#define h3minus1	((int32_t)0xFFFFFFFF)

@@ -23,10 +23,16 @@
  0001:00003B70       ?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
  0001:00003B80       ?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXI@Z
  0001:00003C90       ?_Split@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
+ 0001:00004CB0       RMGR_Crgen14
  0001:00005D80       gAdvManager_ctor
  0001:00005F60       gAdvManager_Init
  0001:00006740       gAdvManager_m2
  0001:00007710       gAdvManager_m3
+ 0001:0001A6B0       RMGR_ObjectsInfo
+ 0001:0001A827       countTotalLength
+ 0001:0001A88B       AllocationFailure
+ 0001:0001A940       objectNamesMem_dector
+ 0001:0001AC40       ??0runtime_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
  0001:0001ADB0       ?what@runtime_error@std@@UBEPBDXZ
  0001:0001ADE0       ??0logic_error@std@@QAE@ABV01@@Z
  0001:00031490       aHpfc
@@ -35,14 +41,17 @@
  0001:00033670       destructor
  0001:000336A0       std_Bitset90__Xran
  0001:00049190       nullsub_1
+ 0001:00049750       CrBankStruc_ctor
+ 0001:000497D0       h3Army_init
  0001:0004B3F0       std_Bitset13__Assign
  0001:0004B500       std_Bitset90__Assign
  0001:0004B52B       setZeroesToBitSet
  0001:0004B630       complexArts_ctor
  0001:0004B8D0       slotBitMasks_ctor
- 0001:0004BA20       RMGR_Artraits
+ 0001:0004BA20       RMGR_ArtInfos
  0001:0004BC1B       findBitMaskIndex
  0001:0004BD33       calculateCompleArtCost
+ 0001:0004BE5E       populateArtSlotInfo
  0001:0004BF0C       std_BitSet_Xran
  0001:0004BFEE       lbClearLodFile
  0001:0004BFF5       lbExit
@@ -90,18 +99,36 @@
  0001:000699B0       someList_m1@str70_m2
  0001:000720C0       ?_Freeze@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
  0001:00072A00       CombatManager_m3
+ 0001:000793B0       CrBanks_ctor
+ 0001:000793E0       CrBanks_dector
+ 0001:00079400       CrBankInfoStruc_ctor
+ 0001:00079460       RMGR_Crbanks
+ 0001:000794BF       $cb_mainLoop
+ 0001:0007951B       $cb_LevelsLoop
+ 0001:00079BC0       RMGR_Crtraits
+ 0001:00079DB0       LoadUnitInfoByIndex
+ 0001:0007A0E0       crAbilityText_Ptrs_dector
+ 0001:0007A100       crNamesPlural_dector
+ 0001:0007A120       crNamesSingular_dector
  0001:0007A1B0       ??1TaskStack@details@Concurrency@@QAE@XZ
  0001:00084560       ??8_ContextCallback@details@Concurrency@@QBE_NABV012@@Z
  0001:00086920       SimpleFileRec2_Clear
+ 0001:000879A0       stlLocale_ctor
  0001:0008C490       ?_Incref@facet@locale@std@@QAEXXZ
  0001:0008D780       ?do_always_noconv@codecvt_base@std@@MBE_NXZ
  0001:00098CC0       ??0Iostream_init@@QAE@XZ
+ 0001:00098CD0       someSTLstring_dector
  0001:00099230       nullsub_2
  0001:00099820       __RTC_NumErrors
  0001:00099900       __RTC_NumErrors_0
  0001:0009A830       nullsub
+ 0001:0009CD50       RMGR_Advevent
+ 0001:0009CD70       RMGR_Artevent
+ 0001:0009CDB0       RMGR_Randsign
  0001:000AE240       nullsub_4
+ 0001:000AE250       vector16_insertPMX
  0001:000AE880       CopyEDXPtrToECXPtr
+ 0001:000AE890       basic_string_Ctor
  0001:000AF660       ManagerFactory_ctor
  0001:000AF670       ManagerFactory_InitializeInputAndWindow
  0001:000AF880       ManagerFactory_RegisterManager
@@ -109,15 +136,18 @@
  0001:000B569F       unknown_libname_2
  0001:000B5940       ??_Elogic_error@std@@UAEPAXI@Z
  0001:000B6BE0       ConcatStringsAndCharSequense
+ 0001:000B7110       RMGR_Randtvrn
  0001:000B9E20       gAdvManager_getSomeSizeOrOffset
  0001:000C1D50       ??0logic_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
  0001:000CCBE0       c4E7D0_ctor
  0001:000CD230       ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ_3
  0001:000D5F60       j_??1exception@@UAE@XZ
- 0001:000E5D90       unknown_libname_3
+ 0001:000E5D90       byPointer_ctor
  0001:000E6210       str70_ctor
- 0001:000E8130       c8D4_ctor
- 0001:000E8160       c8D4_m1
+ 0001:000E8070       CHiScore_LoadDefaults
+ 0001:000E8130       CHiScore_ctor
+ 0001:000E8150       CHiScore_SetVirtualTable
+ 0001:000E8160       CHiScore_Init
  0001:000E9C10       nullsub_14
  0001:000EA810       subMEGOinit_part1
  0001:000EB540       InputManager_ctor
@@ -204,8 +234,10 @@
  0001:00159490       LoadH3FAT
  0001:00159800       DATAPathAssign
  0001:001599E0       SimpleFileRec_Clear
+ 0001:0015A270       RM_GetPalette
+ 0001:0015ADA0       RM_GetText
  0001:0015AFE0       RM_GetStrResource
- 0001:0015B070       RM_ReadTblResource
+ 0001:0015B070       RM_GetSpreadsheet
  0001:0015B199       readFromLODFile
  0001:0015B2B0       RM_GetTblResource
  0001:0015B340       m1@txtBuff_RM_GetWav
@@ -229,6 +261,19 @@
  0001:00166050       LODwavFile_ctor
  0001:001660E0       LODwavFile_m1
  0001:00166140       LODwavFile_m3
+ 0001:0016B060       SeerHutVariants_ctor
+ 0001:0016B090       SeerHutVariants_dector
+ 0001:0016B0B0       SeerTextsList_ctor
+ 0001:0016B110       SeerTextsList_dector
+ 0001:0016B1A0       SeerText_ctor
+ 0001:0016B200       SeerText_dector
+ 0001:0016B300       QuestGuardVariants_ctor
+ 0001:0016B330       QuestGuardVariants_dector
+ 0001:0016B350       SeerHutNamesVector_ctor
+ 0001:0016B380       SeerHutNamesVector_dector
+ 0001:0016B3F0       LODtblFile_populateSeerHutVariants
+ 0001:0016B6A0       setPtr_SeerHutNamesVector
+ 0001:0016B6B0       RMGR_Seerhut
  0001:0017B115       InitRandomMapSection
  0001:0018DE40       unknown_libname_26
  0001:00196AA0       gBinkMgr_PauseAllStreams
@@ -240,6 +285,7 @@
  0001:00199090       gSoundMgr_m1
  0001:001993C0       gSoundMgr_m2
  0001:00199AD0       SoundMgr_serveStream
+ 0001:0019D7B0       byPointer_dector
  0001:001B2D10       unknown_libname_27
  0001:001B2D90       ?reserve_message@?$_Order_node_base@W4agent_status@Concurrency@@@Concurrency@@UAE_NH@Z
  0001:001B2EB0       unknown_libname_28
@@ -257,7 +303,19 @@
  0001:001B62E0       nullsub_9
  0001:001B8460       RMGR_Genrltxt
  0001:001B8480       RMGR_Campbttn
+ 0001:001B84C0       RMGR_Mineevnt
+ 0001:001B84F0       RMGR_Regions
+ 0001:001B8540       RMGR_Camphigh
+ 0001:001B8610       RMGR_Terrname
+ 0001:001B8640       RMGR_Objnames
+ 0001:001B8680       RMGR_Restypes
+ 0001:001B86B0       RMGR_Minename
+ 0001:001B86E0       RMGR_Plcolors
+ 0001:001B8730       RMGR_Priskill
+ 0001:001B8760       RMGR_Skilllev
+ 0001:001BAF60       LODstrlFile_Delete
  0001:001BAF90       LODstrFile_ctor
+ 0001:001BB210       LODstrFile_Size
  0001:001BB230       LODtblFile_Delete
  0001:001BB260       LODtblFile_ctor
  0001:001BB550       LODtblFile_Size
@@ -309,8 +367,28 @@
  0001:00202B40       ?Initialize@CImmEnclosure@@UAEHPAVCImmDevice@@ABUFEELIT_EFFECT@@K@Z
  0001:00202B46       ?GetIsCompatibleGUID@CImmEnclosure@@UAEHAAU_GUID@@@Z
  0001:002030D0       nullsub_17
+ 0001:002051F0       _inflateReset
+ 0001:00205230       _inflateEnd
+ 0001:00205270       _inflateInit2_
+ 0001:00205390       _inflateInit_
+ 0001:002053B0       _inflate
  0001:002061A0       _uncompress
+ 0001:00206230       _zcalloc
+ 0001:00206250       _zcfree
+ 0001:00206260       _adler32
  0001:00206400       nullsub_10
+ 0001:00207ED0       _inflate_blocks_reset
+ 0001:00207F40       _inflate_blocks_new
+ 0001:00207FE0       inflate_blocks
+ 0001:00208CA0       _inflate_blocks_free
+ 0001:00208CD0       _inflate_codes_new
+ 0001:00208D10       _inflate_codes
+ 0001:002094C0       _inflate_codes_free
+ 0001:002094D0       _inflate_trees_bits
+ 0001:00209580       _huft_build
+ 0001:00209BB0       _inflate_trees_fixed
+ 0001:00209BE0       _inflate_flush
+ 0001:00209D30       _inflate_fast
  0001:0020A0F0       ??3@YAXPAX@Z
  0001:0020A0FB       ?_Xlen@std@@YAXXZ
  0001:0020A155       ??1length_error@std@@UAE@XZ
@@ -2318,6 +2396,13 @@
  0002:00000608       ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
  0002:0000060C       ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
  0002:00000678       gAdvManager_vtab
+ 0002:000006E4       ObjectMappedIDs
+ 0002:00000854       ObjectObstacles
+ 0002:000009D0       ObjectsMovable
+ 0002:00000A58       ObjectsPassable
+ 0002:00000B00       ObjectsPassable2
+ 0002:00000BA8       off63ABA8_virtTbl
+ 0002:00000BB4       someSTLstring_virtTbl
  0002:00001940       ArtPosIndexes
  0002:0000198C       kickAss_ArtIndexes
  0002:00001998       complexArts_ContainsSpell
@@ -2334,7 +2419,7 @@
  0002:00004600       str
  0002:0000465C       aGamesDir
  0002:000049F2       aA
- 0002:00004B8C       c8D4_vtab
+ 0002:00004B8C       CHiScore_vtab
  0002:00005E10       InputManager_vtab
  0002:00005E1C       encABPathList
  0002:00005E68       SoundMgr_vtab
@@ -2398,6 +2483,7 @@
  0002:00007138       SimpleFileRec2_VirtualTable
  0002:00007144       SimpleFileRec_VirtualTable
  0002:000076E0       LODwavFile_vtab
+ 0002:00008DA8       LODstrFile_virtualTable
  0002:00008DB4       LODtblFile_VirtualTable
  0002:00009B34       aStringfileinfo
  0002:00009B50       aStringfilein_0
@@ -2406,6 +2492,9 @@
  0002:00009E28       rclsid
  0002:00009E38       riid
  0002:0000AE64       a@
+ 0002:0000B344       _border
+ 0002:0000B3C0       d
+ 0002:0000B43C       e
  0002:0000B5AC       ??_7length_error@std@@6B@
  0002:0000B5B8       aStringTooLong
  0002:0000B5CC       ??_7logic_error@std@@6B@_0
@@ -6068,7 +6157,40 @@
  0003:0001223C       aObstacleNameSO
  0003:00012268       aPickup02d_82m
  0003:00012278       aSendingActionD
+ 0003:0001229C       Crbanks_Ptr
+ 0003:000122A0       Crbanks_guardTypes
+ 0003:0001237C       Crbanks_rewCreatureType
  0003:000123A8       aCrbanks_txt
+ 0003:000123B8       CreaturesCastle
+ 0003:00012A10       CreaturesRampart
+ 0003:00013068       CreaturesTower
+ 0003:000136C0       CreaturesInferno
+ 0003:00013D18       CreaturesNecropolis
+ 0003:00014370       CreaturesDungeon
+ 0003:000149C8       CreaturesStronghold
+ 0003:00015020       CreaturesFortress
+ 0003:00015678       CreaturesElemsGolems
+ 0003:00015930       CreaturesConflux
+ 0003:00015F88       CreaturesNeutralDragons
+ 0003:00016158       CreaturesNeutrals
+ 0003:0001656C       CreaturesWarMachines
+ 0003:000167B0       Creatures_Ptr
+ 0003:00017474       aCcrusd_def
+ 0003:00017480       aCrus
+ 0003:00017488       aCsword_def
+ 0003:00017494       aSwrd
+ 0003:0001749C       aCrgrif_def
+ 0003:000174A8       aRgrf
+ 0003:000174B0       aCgriff_def
+ 0003:000174BC       aGrif
+ 0003:000174C4       aChcbow_def
+ 0003:000174D0       aHcrs
+ 0003:000174D8       aClcbow_def
+ 0003:000174E4       aLcrs
+ 0003:000174EC       aChalbd_def
+ 0003:000174F8       aHalb
+ 0003:00017500       aCpkman_def
+ 0003:0001750C       aPike
  0003:00017514       aCrtraits_txt
  0003:00017524       aInterface
  0003:00017530       aPointer
@@ -7055,6 +7177,7 @@
  0003:000211C4       aAphlf1y_def
  0003:000211D0       aAphlftrt_pcx
  0003:000211E0       aAphlftbk_pcx
+ 0003:000211F0       aHiscore_dat_Ptr
  0003:000214D0       aHiscore_dat
  0003:000214DC       aMubchck_def
  0003:000214E8       aHighname_pcx
@@ -8832,6 +8955,10 @@
  0003:0002F99C       aInvalidBlockTy
  0003:0002F9B0       aInvalidDistanc
  0003:0002F9C8       aInvalidLiteral
+ 0003:0002F9E8       fixed_bl
+ 0003:0002F9EC       fixed_bd
+ 0003:0002F9F0       fixed_tl
+ 0003:000309F0       fixed_td
  0003:00030AF0       aIncompleteDyna
  0003:00030B14       aOversubscribed
  0003:00030B3C       aIncompleteLite
@@ -8839,6 +8966,7 @@
  0003:00030B80       aEmptyDistanceT
  0003:00030BA4       aIncompleteDist
  0003:00030BC0       aOversubscrib_0
+ 0003:00030BE0       _inflate_mask
  0003:00030C28       ??_R0?AVlength_error@std@@@8
  0003:00030C50       ??_R0?AVfailure@ios_base@std@@@8
  0003:00030C78       ??_R0?AVios_base@std@@@8
@@ -8909,24 +9037,47 @@
  0003:00033259       gSoundMgr_mem4
  0003:00033260       emptyString
  0003:0003333C       buffer
- 0003:000336DC       memBlock
+ 0003:000333A0       res_Crgen1
+ 0003:000333A4       array_Crgen4
+ 0003:0003354C       array_Crgen1
+ 0003:0003368C       res_Crgen4
+ 0003:000336D8       objectNamesMem_Allocated
+ 0003:000336DC       objectNamesMem
+ 0003:000336E0       objectNamesMem_dectorInited
+ 0003:000336E8       ObjectsInfoList
  0003:000358E8       slotBitMasks
  0003:00035924       ArtResMemory_flag
  0003:00035928       isArtRaitsStringsMemAllocated
  0003:0003592C       ArtRaitsStrings
- 0003:00035930       buffArtSlot_isAllocated
+ 0003:00035930       buffArtSlotNames_isAllocated
  0003:00035934       buffArtSlotNames
  0003:00035938       cplxArtsList
  0003:00035A58       ArtRaitsList
+ 0003:00036C58       ArtSlotNameXBitMask
+ 0003:00036CF0       flagsBinkDDSurfaceType
  0003:00036D00       gBinkMgr_BinkData1
  0003:00036D04       gBinkMgr_BinkData2
+ 0003:00036D24       gBinkMgr_thisOrMem1
  0003:00036D2C       gBinkMgr_IsStreamsPaused
  0003:00036D30       gBinkMgr_IsVideo1Playing
+ 0003:00036DA8       binkMgr_isMutedOrClosedOrPlaying
  0003:00036DAC       gBinkMgr_IsVideo2Playing
  0003:00036FA0       str70_mem1_Last
  0003:00036FA4       str70_mem2
+ 0003:00037088       CrBanks
+ 0003:000381E0       crName_PtrsPlural
+ 0003:00038438       crName_PtrsSingular
+ 0003:00038690       unitInfoArrayFlags
+ 0003:00038694       crAbilityText_Ptrs
  0003:00038A10       P
+ 0003:00038A68       res_Advevent
+ 0003:00038A6C       res_Randsign
+ 0003:00038A7C       array_Artevent
+ 0003:00038CC0       res_Artevent
+ 0003:00038CC4       array_Randsign
  0003:00038DC0       Point
+ 0003:00038DEC       array_Randtvrn
+ 0003:000392E4       res_Randtvrn
  0003:00039428       txtBuff
  0003:0003A614       lpAppPath
  0003:0003A7A8       MDS_00_ComputerWalkSp
@@ -9010,6 +9161,10 @@
  0003:00040560       t1_Head
  0003:00040570       lodNamesSimpleVector
  0003:00040604       treeMap_Nil
+ 0003:00040780       SeerHutNamesVector_Ptr
+ 0003:00040788       QuestGuardVariants
+ 0003:00041148       SeerHutVariants
+ 0003:00041B08       SeerHutNamesVector
  0003:00041E28       hHandle
  0003:00041E2C       hEvent
  0003:00041E55       gSmackMgr_IsVideo1Playing
@@ -9024,8 +9179,31 @@
  0003:00041ED8       gSoundMgr_currentStream
  0003:00041F00       gSoundMgr_mem5_WordA14
  0003:000452B8       gSoundMgr_mem1
- 0003:00047DC4       lodf_Genrltxt_0
- 0003:00048CE0       lodf_Campbttn
+ 0003:00047390       res_Restypes
+ 0003:000473F8       array_Priskill
+ 0003:00047438       res_Minename
+ 0003:00047920       lines_Campbttn
+ 0003:00047C8C       res_Regions
+ 0003:00047DB4       array_SkilllevShort
+ 0003:00047DC4       res_Genrl_txt
+ 0003:00047E88       array_Mineevnt
+ 0003:00047ECC       array_Restypes
+ 0003:00047EEC       array_Terrname
+ 0003:00047F34       array_Camphigh
+ 0003:00047FE4       res_Mineevnt
+ 0003:00048C5C       res_Priskill
+ 0003:00048CB0       res_Objnames
+ 0003:00048CE0       res_Campbttn
+ 0003:00049538       array_Minename
+ 0003:00049584       res_Plcolors
+ 0003:000495D8       array_Skilllev
+ 0003:00049774       res_Terrname
+ 0003:00049850       res_Camphigh
+ 0003:00049A54       array_Objnames
+ 0003:00049E60       array_Plcolors
+ 0003:00049F68       res_Skilllev
+ 0003:00049F70       array_Landhigh
+ 0003:0004A020       array_Regions
  0003:0004A100       NewLoadSave
  0003:0004CCFC       Width
  0003:0004CD00       Height
@@ -9045,6 +9223,7 @@
  0003:0004DD5C       lpMem
  0003:0004DD60       hHeap
  0003:0004DE80       uNumber
+ 0003:0004EEA0       NumOfElements
  0003:0004EEA8       Addend
 
 Program entry point at 0001:00219884
